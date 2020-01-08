@@ -23,9 +23,9 @@ namespace ManyMethods
 
         static void hello()
         {
-            Console.WriteLine("Please enter your name");
+            Console.WriteLine("What's your name?");
             string name = Console.ReadLine();
-            Console.WriteLine("You entered " + name);
+            Console.WriteLine("Hello " + name+ "!");
         }
 
         static void Addition()
