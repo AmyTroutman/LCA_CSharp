@@ -1,12 +1,14 @@
 ﻿<Properties StartupConfiguration="{45CFE392-3650-4215-A12B-C75FC2766E16}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="ManyMethods/Program.cs">
     <Files>
-      <File FileName="ManyMethods/Program.cs" Line="33" Column="10" />
+      <File FileName="ManyMethods/Program.cs" Line="28" Column="48" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ClassProjects" expanded="True" selected="True" />
+          <Node name="ClassProjects" expanded="True" selected="True">
+            <Node name="ManyMethods" expanded="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>
