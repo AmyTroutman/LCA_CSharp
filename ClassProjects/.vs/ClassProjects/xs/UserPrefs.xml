@@ -1,19 +1,14 @@
 ﻿<Properties StartupConfiguration="{45CFE392-3650-4215-A12B-C75FC2766E16}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ManyMethods/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PigLatin/Program.cs">
     <Files>
-      <File FileName="ManyMethods/Program.cs" Line="33" Column="10" />
+      <File FileName="ManyMethods/Program.cs" Line="119" Column="1" />
+      <File FileName="PigLatin/Program.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="ClassProjects" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.ManyMethods PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.ItemProperties.PigLatin FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

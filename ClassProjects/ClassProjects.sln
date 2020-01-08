@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManyMethods", "ManyMethods\ManyMethods.csproj", "{45CFE392-3650-4215-A12B-C75FC2766E16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PigLatin", "PigLatin\PigLatin.csproj", "{D9118DA4-FE71-4C0F-A4C5-AFD8022A1F31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -13,5 +15,9 @@ Global
 		{45CFE392-3650-4215-A12B-C75FC2766E16}.Debug|anycpu.Build.0 = Debug|anycpu
 		{45CFE392-3650-4215-A12B-C75FC2766E16}.Release|anycpu.ActiveCfg = Release|anycpu
 		{45CFE392-3650-4215-A12B-C75FC2766E16}.Release|anycpu.Build.0 = Release|anycpu
+		{D9118DA4-FE71-4C0F-A4C5-AFD8022A1F31}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{D9118DA4-FE71-4C0F-A4C5-AFD8022A1F31}.Debug|anycpu.Build.0 = Debug|anycpu
+		{D9118DA4-FE71-4C0F-A4C5-AFD8022A1F31}.Release|anycpu.ActiveCfg = Release|anycpu
+		{D9118DA4-FE71-4C0F-A4C5-AFD8022A1F31}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
