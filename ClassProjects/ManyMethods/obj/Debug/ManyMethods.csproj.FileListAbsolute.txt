@@ -1,0 +1,5 @@
+/Users/homeboi/Projects/ManyMethods/ManyMethods/bin/Debug/ManyMethods.exe
+/Users/homeboi/Projects/ManyMethods/ManyMethods/bin/Debug/ManyMethods.pdb
+/Users/homeboi/Projects/ManyMethods/ManyMethods/obj/Debug/ManyMethods.csprojAssemblyReference.cache
+/Users/homeboi/Projects/ManyMethods/ManyMethods/obj/Debug/ManyMethods.exe
+/Users/homeboi/Projects/ManyMethods/ManyMethods/obj/Debug/ManyMethods.pdb
