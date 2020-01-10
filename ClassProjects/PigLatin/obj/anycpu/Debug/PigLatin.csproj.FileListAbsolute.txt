@@ -1,0 +1,5 @@
+/Users/homeboi/Documents/DevFolder/LCA_CSharp/ClassProjects/PigLatin/obj/anycpu/Debug/PigLatin.csprojAssemblyReference.cache
+/Users/homeboi/Documents/DevFolder/LCA_CSharp/ClassProjects/PigLatin/bin/Debug/PigLatin.exe
+/Users/homeboi/Documents/DevFolder/LCA_CSharp/ClassProjects/PigLatin/bin/Debug/PigLatin.pdb
+/Users/homeboi/Documents/DevFolder/LCA_CSharp/ClassProjects/PigLatin/obj/anycpu/Debug/PigLatin.exe
+/Users/homeboi/Documents/DevFolder/LCA_CSharp/ClassProjects/PigLatin/obj/anycpu/Debug/PigLatin.pdb
