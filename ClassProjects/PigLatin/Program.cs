@@ -51,7 +51,7 @@ namespace PigLatin
                 //no vowels in word
                 if (englishWord.IndexOfAny(vowels) == -1)
                 {
-                    Console.WriteLine(englishWord + "ay");
+                    Console.WriteLine(englishWord + " translated into Pig Latin is " + englishWord + "ay");
                 }
                 //first letter is a vowel
                 else if (firstLetter.IndexOfAny(vowels) == 0)
@@ -59,12 +59,12 @@ namespace PigLatin
                     //last letter is a vowel
                     if (lastLetter.IndexOfAny(vowels) == 0)
                     {
-                        Console.WriteLine(englishWord + "yay");
+                        Console.WriteLine(englishWord + " translated into Pig Latin is " + englishWord + "yay");
                     }
                     //last letter is a consonant
                     else
                     {
-                        Console.WriteLine(englishWord + "ay");
+                        Console.WriteLine(englishWord + " translated into Pig Latin is " + englishWord + "ay");
                     }
                 }
                 //First letter is a consonant. Accounts for multiple consonants!!
