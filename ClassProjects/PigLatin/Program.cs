@@ -6,17 +6,19 @@ namespace PigLatin
     {
         public static void Main(string[] args)
         {
-            
-            Console.WriteLine("Give me a word and I'll translate it into pig latin.");
+            /* can I loop this? So instead of having to rerun, it can keep
+             * accepting new words? Like a function? Or is "public satic
+             * void Main..." the function? */
+            Console.WriteLine("Give me a word and I'll translate it into Pig Latin.");
             string englishWord = Console.ReadLine();
 
-            //char checker
+            //vowel checker
             char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
 
             //grab first letter
             string firstLetter = englishWord.Substring(0, 1);
 
-            //grab second letter
+            //grab last letter
             string lastLetter = englishWord.Substring(englishWord.Length -1);
 
             //begin building piglatin word
@@ -39,13 +41,21 @@ namespace PigLatin
                     Console.WriteLine(englishWord + "ay");
                 }
             }
-            //first letter is a consonant
+            //First letter is a consonant. Accounts for multiple consonants!!
             else
             {
-                string pigWord = englishWord.Substring(1, englishWord.Length - 1) + firstLetter;
-                Console.WriteLine(pigWord + "ay");
+                //Finds the first vowel
+                int firstVowel = englishWord.IndexOfAny(vowels);
+                //Grabs the consonants that precede the first vowel
+                string consonants = englishWord.Substring(0, firstVowel);
+                //Grabs the letters after the last leading consonant
+                string clipWord = englishWord.Substring(firstVowel);
+                //Builds the pigLatin word. 
+                string pigWord = clipWord + consonants + "ay";
+                Console.WriteLine(englishWord + " translated into Pig Latin is " +pigWord);
                 
             }
+            
             Console.ReadKey();
         }
     }
