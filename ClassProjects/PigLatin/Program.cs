@@ -51,7 +51,7 @@ namespace PigLatin
                 //no vowels in word
                 if (englishWord.IndexOfAny(vowels) == -1)
                 {
-                    Console.WriteLine(englishWord + " translated into Pig Latin is " + englishWord + "ay");
+                    Console.WriteLine(englishWord + "ay" + " is the Pig Latin translation of " + englishWord);
                 }
                 //first letter is a vowel
                 else if (firstLetter.IndexOfAny(vowels) == 0)
@@ -59,13 +59,13 @@ namespace PigLatin
                     //last letter is a vowel
                     if (lastLetter.IndexOfAny(vowels) == 0)
                     {
-                        Console.WriteLine(englishWord + " translated into Pig Latin is " + englishWord + "yay");
+                        Console.WriteLine(englishWord + "yay" + " is the Pig Latin translation of " + englishWord);
                     }
                     //last letter is a consonant
                     else
                     {
-                        Console.WriteLine(englishWord + " translated into Pig Latin is " + englishWord + "ay");
-                    }
+                        Console.WriteLine(englishWord + "ay" + " is the Pig Latin translation of " + englishWord);
+                }
                 }
                 //First letter is a consonant. Accounts for multiple consonants!!
                 else
@@ -78,7 +78,7 @@ namespace PigLatin
                     string clipWord = englishWord.Substring(firstVowel);
                     //Builds the pigLatin word. 
                     string pigWord = clipWord + consonants + "ay";
-                    Console.WriteLine(englishWord + " translated into Pig Latin is " + pigWord);
+                    Console.WriteLine(pigWord + " is the Pig Latin translation of " + englishWord);
 
                 }
 
