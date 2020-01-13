@@ -9,9 +9,6 @@ namespace PigLatin
             /* There's definitely a way to have it repeat without just queuing
              * a bunch of "PigLatin()". Would I write another function that asks if you want to translate another word?*/
             PigLatin();
-            PigLatin();
-            PigLatin();
-            PigLatin();
             //Repeat();
             Console.ReadKey();
         }

@@ -1,19 +1,8 @@
 ﻿<Properties StartupConfiguration="{D9118DA4-FE71-4C0F-A4C5-AFD8022A1F31}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="PigLatin/Program.cs">
     <Files>
-      <File FileName="PigLatin/Program.cs" Line="1" Column="1" />
+      <File FileName="PigLatin/Program.cs" Line="8" Column="9" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="ClassProjects" expanded="True">
-            <Node name="PigLatin" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
