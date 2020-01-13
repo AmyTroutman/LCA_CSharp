@@ -6,32 +6,12 @@ namespace PigLatin
     {
         public static void Main(string[] args)
         {
-            /* There's definitely a way to have it repeat without just queuing
-             * a bunch of "PigLatin()". Would I write another function that asks if you want to translate another word?*/
             PigLatin();
-            //Repeat();
-            
         }
-
-        //Would this be close to how I would repeat the function PigLatin but still be able to exit?
-        /*static void Repeat()
-         * {
-         * Console.WriteLine("Do you want to translate another word? y/n");
-         * char answer = Console.ReadLine();
-         * if (answer == "y")
-         *  {
-         *  run PigLatin();
-         *  }
-         *  else
-         *  {
-         *  Console.ReadKey();
-         *  }
-         * }
-        */
 
         static void PigLatin()
         {
-                
+            //Do you want to play a game?
                 Console.WriteLine("Give me a word or sentence and I'll translate it into Pig Latin.");
                 string sentence = Console.ReadLine();
 
@@ -39,7 +19,7 @@ namespace PigLatin
                 char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
 
             //if given a sentence, this splits it into individual words
-            /* So this will do each word, but since I have only told it to output without saving the word, it outputs the whole translation sentence for each word. So I either remove the extra wording or figure out how to save each word to it's own string and do a final concatenation at the end. Or unsplit the string, is that a thing??? Surely?? */
+            /* So this will do each word, but since I have only told it to output without saving the word, it outputs the whole translation sentence for each word. So I either remove the extra wording or figure out how to save each word to it's own string and do a final concatenation at the end. Or unsplit the string, is that a thing??? Surely?? There has to be another way. */
             string[] splitSentence = sentence.Split(' ');
 
             foreach (string englishWord in splitSentence)
@@ -80,12 +60,23 @@ namespace PigLatin
                     string consonants = englishWord.Substring(0, firstVowel);
                     //Grabs the letters after the last leading consonant
                     string clipWord = englishWord.Substring(firstVowel);
-                    //Builds the pigLatin word. 
+                    //Builds the pigLatin word, because reasons. 
                     string pigWord = clipWord + consonants + "ay";
                     Console.WriteLine(pigWord);
 
                 }
-
+               
+            }
+            //do you want to play again? Because who doesn't want to play again??
+            Console.WriteLine("Do you want to translate another word? y/n");
+            string answer = Console.ReadLine();
+            if (answer == "y")
+            {
+                PigLatin();
+            }
+            else
+            {
+                Console.ReadKey();
             }
         }
         
