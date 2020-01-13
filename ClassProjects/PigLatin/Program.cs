@@ -10,7 +10,7 @@ namespace PigLatin
              * a bunch of "PigLatin()". Would I write another function that asks if you want to translate another word?*/
             PigLatin();
             //Repeat();
-            Console.ReadKey();
+            
         }
 
         //Would this be close to how I would repeat the function PigLatin but still be able to exit?
@@ -32,11 +32,18 @@ namespace PigLatin
         static void PigLatin()
         {
                 
-                Console.WriteLine("Give me a word and I'll translate it into Pig Latin.");
-                string englishWord = Console.ReadLine();
+                Console.WriteLine("Give me a word or sentence and I'll translate it into Pig Latin.");
+                string sentence = Console.ReadLine();
 
                 //vowel checker
                 char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
+
+            //if given a sentence, this splits it into individual words
+            /* So this will do each word, but since I have only told it to output without saving the word, it outputs the whole translation sentence for each word. So I either remove the extra wording or figure out how to save each word to it's own string and do a final concatenation at the end. Or unsplit the string, is that a thing??? Surely?? */
+            string[] splitSentence = sentence.Split(' ');
+
+            foreach (string englishWord in splitSentence)
+            {
 
                 //grab first letter
                 string firstLetter = englishWord.Substring(0, 1);
@@ -48,7 +55,7 @@ namespace PigLatin
                 //no vowels in word
                 if (englishWord.IndexOfAny(vowels) == -1)
                 {
-                    Console.WriteLine(englishWord + "ay" + " is the Pig Latin translation of " + englishWord);
+                    Console.WriteLine(englishWord + "ay");
                 }
                 //first letter is a vowel
                 else if (firstLetter.IndexOfAny(vowels) == 0)
@@ -56,13 +63,13 @@ namespace PigLatin
                     //last letter is a vowel
                     if (lastLetter.IndexOfAny(vowels) == 0)
                     {
-                        Console.WriteLine(englishWord + "yay" + " is the Pig Latin translation of " + englishWord);
+                        Console.WriteLine(englishWord + "yay");
                     }
                     //last letter is a consonant
                     else
                     {
-                        Console.WriteLine(englishWord + "ay" + " is the Pig Latin translation of " + englishWord);
-                }
+                        Console.WriteLine(englishWord + "ay");
+                    }
                 }
                 //First letter is a consonant. Accounts for multiple consonants!!
                 else
@@ -75,11 +82,11 @@ namespace PigLatin
                     string clipWord = englishWord.Substring(firstVowel);
                     //Builds the pigLatin word. 
                     string pigWord = clipWord + consonants + "ay";
-                    Console.WriteLine(pigWord + " is the Pig Latin translation of " + englishWord);
+                    Console.WriteLine(pigWord);
 
                 }
 
-              
+            }
         }
         
     }
