@@ -25,7 +25,7 @@ namespace RockPaperScissors
             Console.WriteLine("Rock, Paper, Scissors!");
             string yourHand = Console.ReadLine().ToLower();
 
-            //random picker. need to read up on this first bit: "Shapes myhand". 
+            //randomly assign a value to myHand from Shapes. 
             Shapes myHand = (Shapes)(new Random()).Next(0, 3);
 
             //The swtich! 
