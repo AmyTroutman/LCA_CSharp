@@ -30,15 +30,18 @@ namespace ManyMethods
 
         static void Addition()
         {
-            int firstNumber = 3;
-            int secondNumber = 5;
-            Console.WriteLine(firstNumber + secondNumber);
+            Console.WriteLine("Lets do some addition! Give me a number, any number!");
+            int firstNumber = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Give me a another number!");
+            int secondNumber = Convert.ToInt32(Console.ReadLine());
+            int sum = firstNumber + secondNumber;
+            Console.WriteLine("The sum of your numbers is " + sum);
         }
 
         static void catDog()
         {
             Console.WriteLine("Do you like cats or dogs?");
-            string answer = Console.ReadLine();
+            string answer = Console.ReadLine().ToLower();
             if (answer == "cats")
             {
                 Console.WriteLine("meow");
@@ -103,7 +106,7 @@ namespace ManyMethods
         static void guess()
         {
             Console.WriteLine("Guess the secret word!");
-            string word = Console.ReadLine();
+            string word = Console.ReadLine().ToLower();
             if (word == "csharp")
             {
                 Console.WriteLine("CORRECT!!!");
