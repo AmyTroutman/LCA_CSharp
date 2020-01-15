@@ -12,11 +12,11 @@ namespace PigLatin
         static void PigLatin()
         {
             //Do you want to play a game?
-                Console.WriteLine("Give me a word or sentence and I'll translate it into Pig Latin.");
-                string sentence = Console.ReadLine();
+            Console.WriteLine("Give me a word or sentence and I'll translate it into Pig Latin.");
+            string sentence = Console.ReadLine();
 
-                //vowel checker
-                char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
+            //vowel checker
+            char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
 
             //if given a sentence, this splits it into individual words
             /* So this will do each word, but since I have only told it to output without saving the word, it outputs the whole translation sentence for each word. So I either remove the extra wording or figure out how to save each word to it's own string and do a final concatenation at the end. Or unsplit the string, is that a thing??? Surely?? There has to be another way. */
@@ -65,7 +65,7 @@ namespace PigLatin
                     Console.WriteLine(pigWord);
 
                 }
-               
+
             }
             //do you want to play again? Because who doesn't want to play again??
             Console.WriteLine("Do you want to translate another word? y/n");
@@ -79,6 +79,6 @@ namespace PigLatin
                 Console.ReadKey();
             }
         }
-        
+
     }
 }

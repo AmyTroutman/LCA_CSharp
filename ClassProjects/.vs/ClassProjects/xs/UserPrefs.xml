@@ -1,15 +1,16 @@
-﻿<Properties StartupConfiguration="{D9118DA4-FE71-4C0F-A4C5-AFD8022A1F31}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PigLatin/Program.cs">
+﻿<Properties StartupConfiguration="{E4879155-99DD-4639-B6E1-1B6A1B7EF62A}|Default">
+  <MonoDevelop.Ide.ItemProperties.RockPaperScissors PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RockPaperScissors/Program.cs">
     <Files>
-      <File FileName="PigLatin/Program.cs" Line="78" Column="14" />
-      <File FileName="ManyMethods/Program.cs" Line="1" Column="1" />
+      <File FileName="RockPaperScissors/Program.cs" Line="23" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ClassProjects" expanded="True">
             <Node name="ManyMethods" expanded="True" />
-            <Node name="PigLatin" expanded="True">
+            <Node name="PigLatin" expanded="True" />
+            <Node name="RockPaperScissors" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
@@ -17,6 +18,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ManyMethods PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.ItemProperties.PigLatin PreferredExecutionTarget="MonoDevelop.Default" />
