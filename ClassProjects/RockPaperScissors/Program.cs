@@ -12,7 +12,6 @@ namespace RockPaperScissors
 
         public static void Main(string[] args)
         {
-
             RPS();
         }
 
