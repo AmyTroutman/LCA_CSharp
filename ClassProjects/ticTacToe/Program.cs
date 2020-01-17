@@ -20,9 +20,10 @@ namespace ticTacToe
             {
                 DrawBoard();
                 GetInput();
+                
 
             } while (!CheckForWin() && !CheckForTie());
-
+       
             // leave this command at the end so your program does not close automatically
             Console.ReadLine();
         }
@@ -39,6 +40,14 @@ namespace ticTacToe
         public static void PlaceMark(int row, int column)
         {
             // your code goes here
+            if (playerTurn == "X")
+            {
+                board[row][column] = "X";
+            }
+            else
+            {
+                board[row][column] = "O";
+            }
         }
 
         public static bool CheckForWin()
