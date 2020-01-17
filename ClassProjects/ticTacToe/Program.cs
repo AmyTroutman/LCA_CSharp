@@ -6,14 +6,7 @@ namespace ticTacToe
     {
         public static void Main(string[] args)
         {
-            //my methods
-            static void placeMarker();
-            static bool isHorizontalWin();
-            static bool isVerticalWin();
-            static bool isDiagonalWin();
-            static bool hasWon();
-            static bool isTie();
-            static void printBoard();
+
             //the board
             String[] row0 = new string[3];
             String[] row1 = new string[3];
@@ -24,21 +17,34 @@ namespace ticTacToe
             board[2] = row2;
 
             //current player's turn
-            String currentPlayer = "X";
+            static String currentPlayer = "X";
 
             //changes current player
             if (currentPlayer == "X")
             {
                 currentPlayer = "O";
-                Console.WriteLine(currentPlayer);
+
             }
             else
             {
                 currentPlayer = "X";
-                Console.WriteLine(currentPlayer);
+
             }
+            //my methods
+            placeMarker(currentPlayer);
+            //isVerticalWin();
+            //isDiagonalWin();
+            //hasWon();
+            //isTie();
+            //printBoard();
+            
+            Console.WriteLine("Let's play tic tac toe! Give me the coordinates of where you'd like mark. (0 0 is the top left corner, 1 1 is the middle square, 2 2 is the bottom right corner.)");
 
-
+            static void placeMarker(string currentPlayer)
+                {
+                Console.WriteLine("It's " + currentPlayer+ "'s turn! Where do you want to play?");
+                String mark = Console.ReadLine();
+            }
         }
      
     }
