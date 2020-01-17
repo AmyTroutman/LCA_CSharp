@@ -12,15 +12,18 @@ namespace ticTacToe
                 new string[] {" ", " ", " "},
                 new string[] {" ", " ", " "}
         };
-
+        public static int row;
+        public static int column;
 
         public static void Main()
         {
+
             do
             {
                 DrawBoard();
                 GetInput();
-                
+                PlaceMark(row, column);
+
 
             } while (!CheckForWin() && !CheckForTie());
        
@@ -32,9 +35,9 @@ namespace ticTacToe
         {
             Console.WriteLine("Player " + playerTurn);
             Console.WriteLine("Enter Row:");
-            int row = int.Parse(Console.ReadLine());
+            row = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter Column:");
-            int column = int.Parse(Console.ReadLine());
+            column = int.Parse(Console.ReadLine());
         }
 
         public static void PlaceMark(int row, int column)
@@ -43,13 +46,15 @@ namespace ticTacToe
             if (playerTurn == "X")
             {
                 board[row][column] = "X";
+                playerTurn = "O";
             }
-            else
+            else if (playerTurn == "O")
             {
                 board[row][column] = "O";
+                playerTurn = "X";
             }
         }
-
+        
         public static bool CheckForWin()
         {
             // your code goes here
