@@ -14,6 +14,8 @@ namespace ticTacToe
         };
         public static int row;
         public static int column;
+        public static bool win;
+        public static string winner;
 
         public static void Main()
         {
@@ -23,9 +25,10 @@ namespace ticTacToe
                 DrawBoard();
                 GetInput();
                 PlaceMark(row, column);
+                
 
 
-            } while (!CheckForWin() && !CheckForTie());
+            } while (!CheckForWin(win) && !CheckForTie());
        
             // leave this command at the end so your program does not close automatically
             Console.ReadLine();
@@ -55,25 +58,102 @@ namespace ticTacToe
             }
         }
         
-        public static bool CheckForWin()
+        public static bool CheckForWin(bool win)
         {
-            // your code goes here
-
+            // this will call HorizontalWin, VerticalWin, and DiagonalWin
+            HorizontalWin();
+            if (win == true)
+            {
+                return true;
+                
+            }
+           else
             return false;
         }
 
         public static bool CheckForTie()
         {
             // your code goes here
+            //if (board.IndexOfAny(" ")=-1)
 
             return false;
         }
 
-        public static bool HorizontalWin()
+        public static void HorizontalWin()
         {
             // your code goes here
-
-            return false;
+            if (board[0][0] == "X")
+            {
+                if (board[0][1] == "X")
+                {
+                    if (board[0][2] =="X")
+                    {
+                        win = true;
+                        winner = "X";
+                        Console.Write(winner + "is the winner!");
+                    }
+                }
+            }
+            else if (board[1][0] == "X")
+            {
+                if (board[1][1] == "X")
+                {
+                    if (board[1][2] == "X")
+                    {
+                        win = true;
+                        winner = "X";
+                    }
+                }
+            }
+            else if (board[2][0] == "X")
+            {
+                if (board[2][1] == "X")
+                {
+                    if (board[2][2] == "X")
+                    {
+                        win = true;
+                        winner = "X";
+                    }
+                }
+            }
+            else if (board[0][0] == "O")
+            {
+                if (board[0][1] == "O")
+                {
+                    if (board[0][2] == "O")
+                    {
+                        win = true;
+                        winner = "O";
+                    }
+                }
+            }
+            else if (board[1][0] == "O")
+            {
+                if (board[1][1] == "O")
+                {
+                    if (board[1][2] == "O")
+                    {
+                        win = true;
+                        winner = "O";
+                    }
+                }
+            }
+            else if (board[2][0] == "O")
+            {
+                if (board[2][1] == "O")
+                {
+                    if (board[2][2] == "O")
+                    {
+                        win = true;
+                        winner = "O";
+                    }
+                }
+            }
+            else
+            {
+                win = false;
+               
+            }
         }
 
         public static bool VerticalWin()
