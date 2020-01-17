@@ -4,48 +4,89 @@ namespace ticTacToe
 {
     class MainClass
     {
-        public static void Main(string[] args)
+        
+        public static string playerTurn = "X";
+        public static string[][] board = new string[][]
         {
+                new string[] {" ", " ", " "},
+                new string[] {" ", " ", " "},
+                new string[] {" ", " ", " "}
+        };
 
-            //the board
-            String[] row0 = new string[3];
-            String[] row1 = new string[3];
-            String[] row2 = new string[3];
-            String[][] board = new string[3][];
-            board[0] = row0;
-            board[2] = row1;
-            board[2] = row2;
 
-            //current player's turn
-            static String currentPlayer = "X";
-
-            //changes current player
-            if (currentPlayer == "X")
+        public static void Main()
+        {
+            do
             {
-                currentPlayer = "O";
+                DrawBoard();
+                GetInput();
 
-            }
-            else
-            {
-                currentPlayer = "X";
+            } while (!CheckForWin() && !CheckForTie());
 
-            }
-            //my methods
-            placeMarker(currentPlayer);
-            //isVerticalWin();
-            //isDiagonalWin();
-            //hasWon();
-            //isTie();
-            //printBoard();
-            
-            Console.WriteLine("Let's play tic tac toe! Give me the coordinates of where you'd like mark. (0 0 is the top left corner, 1 1 is the middle square, 2 2 is the bottom right corner.)");
-
-            static void placeMarker(string currentPlayer)
-                {
-                Console.WriteLine("It's " + currentPlayer+ "'s turn! Where do you want to play?");
-                String mark = Console.ReadLine();
-            }
+            // leave this command at the end so your program does not close automatically
+            Console.ReadLine();
         }
-     
+
+        public static void GetInput()
+        {
+            Console.WriteLine("Player " + playerTurn);
+            Console.WriteLine("Enter Row:");
+            int row = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Column:");
+            int column = int.Parse(Console.ReadLine());
+        }
+
+        public static void PlaceMark(int row, int column)
+        {
+            // your code goes here
+        }
+
+        public static bool CheckForWin()
+        {
+            // your code goes here
+
+            return false;
+        }
+
+        public static bool CheckForTie()
+        {
+            // your code goes here
+
+            return false;
+        }
+
+        public static bool HorizontalWin()
+        {
+            // your code goes here
+
+            return false;
+        }
+
+        public static bool VerticalWin()
+        {
+            // your code goes here
+
+            return false;
+        }
+
+        public static bool DiagonalWin()
+        {
+            // your code goes here
+
+            return false;
+        }
+
+        public static void DrawBoard()
+        {
+            Console.WriteLine("  0 1 2");
+            Console.WriteLine("0 " + String.Join("|", board[0]));
+            Console.WriteLine("  -----");
+            Console.WriteLine("1 " + String.Join("|", board[1]));
+            Console.WriteLine("  -----");
+            Console.WriteLine("2 " + String.Join("|", board[2]));
+        }
+
     }
 }
+
+
