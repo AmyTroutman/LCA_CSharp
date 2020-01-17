@@ -2,21 +2,8 @@
   <MonoDevelop.Ide.ItemProperties.RockPaperScissors PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="RockPaperScissors/Program.cs">
     <Files>
-      <File FileName="RockPaperScissors/Program.cs" Line="23" Column="15" />
+      <File FileName="RockPaperScissors/Program.cs" Line="28" Column="61" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="ClassProjects" expanded="True">
-            <Node name="ManyMethods" expanded="True" />
-            <Node name="PigLatin" expanded="True" />
-            <Node name="RockPaperScissors" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.ManyMethods PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
