@@ -63,7 +63,7 @@ namespace ticTacToe
             // this will call HorizontalWin, VerticalWin, and DiagonalWin
             HorizontalWin();
             VerticalWin();
-
+            DiagonalWin();
             if (win == true)
             {
                 return true;
@@ -384,11 +384,108 @@ namespace ticTacToe
             }
         }
 
-        public static bool DiagonalWin()
+        public static void DiagonalWin()
         {
             // your code goes here
 
-            return false;
+            if (board[0][0] == "X")
+            {
+                if (board[1][1] == "X")
+                {
+                    if (board[2][2] == "X")
+                    {
+                        win = true;
+                        winner = "X";
+                        Console.Write(winner + " is the winner!");
+                    }
+                    else
+                    {
+                        win = false;
+                    }
+                }
+                else
+                {
+                    win = false;
+                }
+            }
+            else
+            {
+                win = false;
+            }
+            if (board[0][2] == "X")
+            {
+                if (board[1][1] == "X")
+                {
+                    if (board[2][0] == "X")
+                    {
+                        win = true;
+                        winner = "X";
+                        Console.Write(winner + " is the winner!");
+                    }
+                    else
+                    {
+                        win = false;
+
+                    }
+                }
+                else
+                {
+                    win = false;
+                }
+            }
+            else
+            {
+                win = false;
+            }
+            
+            if (board[0][0] == "O")
+            {
+                if (board[1][1] == "O")
+                {
+                    if (board[2][2] == "O")
+                    {
+                        win = true;
+                        winner = "O";
+                        Console.Write(winner + " is the winner!");
+                    }
+                    else
+                    {
+                        win = false;
+                    }
+                }
+                else
+                {
+                    win = false;
+                }
+            }
+            else
+            {
+                win = false;
+            }
+            if (board[0][2] == "O")
+            {
+                if (board[1][1] == "O")
+                {
+                    if (board[2][0] == "O")
+                    {
+                        win = true;
+                        winner = "O";
+                        Console.Write(winner + " is the winner!");
+                    }
+                    else
+                    {
+                        win = false;
+                    }
+                }
+                else
+                {
+                    win = false;
+                }
+            }
+            else
+            {
+                win = false;
+            }
         }
 
         public static void DrawBoard()
