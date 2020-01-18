@@ -89,14 +89,17 @@ namespace ticTacToe
                 return true;
             }
             else
+            {
                 return false;
+            }
+                
         }
         //what is not returning a value??
         public static bool CheckForTie()
         {
-            //CheckForWin(win);
+            
             //check for " " in board array
-            /*foreach (string[] square in board)
+            foreach (string[] square in board)
             {
                 foreach (string subsquare in square)
                 {
@@ -110,8 +113,10 @@ namespace ticTacToe
                     }
                 }
 
-           }*/
-            return false;
+           }
+            
+            
+            
         }
 
         public static void HorizontalWin()
