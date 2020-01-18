@@ -16,6 +16,7 @@ namespace ticTacToe
         public static int column;
         public static bool win;
         public static string winner;
+        
 
         public static void Main()
         {
@@ -30,7 +31,8 @@ namespace ticTacToe
 
             } while (!CheckForWin(win) && !CheckForTie());
 
-            // leave this command at the end so your program does not close automatically
+            // leave this command at the end so your program does not
+            //close automatically
             Console.ReadLine();
         }
 
@@ -38,6 +40,7 @@ namespace ticTacToe
         {
             Console.WriteLine("Player " + playerTurn);
             Console.WriteLine("Enter Row:");
+            //add something to check for correct input
             row = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter Column:");
             column = int.Parse(Console.ReadLine());
@@ -48,13 +51,30 @@ namespace ticTacToe
             // your code goes here
             if (playerTurn == "X")
             {
-                board[row][column] = "X";
-                playerTurn = "O";
+                if (board[row][column] == " ")
+                {
+                    board[row][column] = "X";
+                    playerTurn = "O";
+                }
+                else
+                {
+                    Console.WriteLine("That spot is taken! Try another.");
+                    
+                  
+                }
             }
             else if (playerTurn == "O")
             {
-                board[row][column] = "O";
-                playerTurn = "X";
+                if(board[row][column] == " ")
+                {
+                    board[row][column] = "O";
+                    playerTurn = "X";
+                }
+                else
+                {
+                    Console.WriteLine("That spot is taken! Try another.");
+                    
+                }
             }
         }
 
@@ -67,17 +87,30 @@ namespace ticTacToe
             if (win == true)
             {
                 return true;
-
             }
             else
                 return false;
         }
-
+        //what is not returning a value??
         public static bool CheckForTie()
         {
-            // your code goes here
+            //CheckForWin(win);
+            //check for " " in board array
+            /*foreach (string[] square in board)
+            {
+                foreach (string subsquare in square)
+                {
+                    if (subsquare != " ")
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
 
-
+           }*/
             return false;
         }
 
@@ -490,6 +523,7 @@ namespace ticTacToe
 
         public static void DrawBoard()
         {
+            
             Console.WriteLine("");
             Console.WriteLine("  0 1 2");
             Console.WriteLine("0 " + String.Join("|", board[0]));
