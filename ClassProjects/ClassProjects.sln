@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManyMethods", "ManyMethods\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PigLatin", "PigLatin\PigLatin.csproj", "{D9118DA4-FE71-4C0F-A4C5-AFD8022A1F31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissors", "RockPaperScissors\RockPaperScissors.csproj", "{E4879155-99DD-4639-B6E1-1B6A1B7EF62A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ticTacToe", "ticTacToe\ticTacToe.csproj", "{D814CF5C-D88E-4570-B2B0-9E9CB01A206F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -19,5 +23,13 @@ Global
 		{D9118DA4-FE71-4C0F-A4C5-AFD8022A1F31}.Debug|anycpu.Build.0 = Debug|anycpu
 		{D9118DA4-FE71-4C0F-A4C5-AFD8022A1F31}.Release|anycpu.ActiveCfg = Release|anycpu
 		{D9118DA4-FE71-4C0F-A4C5-AFD8022A1F31}.Release|anycpu.Build.0 = Release|anycpu
+		{E4879155-99DD-4639-B6E1-1B6A1B7EF62A}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{E4879155-99DD-4639-B6E1-1B6A1B7EF62A}.Debug|anycpu.Build.0 = Debug|anycpu
+		{E4879155-99DD-4639-B6E1-1B6A1B7EF62A}.Release|anycpu.ActiveCfg = Release|anycpu
+		{E4879155-99DD-4639-B6E1-1B6A1B7EF62A}.Release|anycpu.Build.0 = Release|anycpu
+		{D814CF5C-D88E-4570-B2B0-9E9CB01A206F}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{D814CF5C-D88E-4570-B2B0-9E9CB01A206F}.Debug|anycpu.Build.0 = Debug|anycpu
+		{D814CF5C-D88E-4570-B2B0-9E9CB01A206F}.Release|anycpu.ActiveCfg = Release|anycpu
+		{D814CF5C-D88E-4570-B2B0-9E9CB01A206F}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
