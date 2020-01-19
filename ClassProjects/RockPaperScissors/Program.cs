@@ -8,30 +8,23 @@ namespace RockPaperScissors
 
     class MainClass
     {
-        public string yourHand;
-        public static void Main(string[] args)
+
+        public static void Main()
         {
+
             //get this to work!!!!
-            PlayerInput(yourHand);
-            CompareHands();
-        }
+            //PlayerInput(yourHand);
+            //CompareHands();
 
-        public static void PlayerInput(string yourHand)
-        {
-            Console.WriteLine("Rock, Paper, Scissors!");
-            yourHand = Console.ReadLine().ToLower();
-        }
-
-        public static void CompareHands()
-        {
-            //score keepers. need to get it to remember...to be persistent.
-            //int myScore = 0;
-            //int yourScore = 0;
-
-            //Start the game!
             Console.WriteLine("Rock, Paper, Scissors!");
             string yourHand = Console.ReadLine().ToLower();
+            CompareHands(yourHand);
 
+
+        }
+
+        public static void CompareHands(string yourHand)
+        {
             //randomly assign a value to myHand from Shapes. 
             Shapes myHand = (Shapes)(new Random()).Next(0, 3);
 
@@ -123,7 +116,7 @@ namespace RockPaperScissors
             string answer = Console.ReadLine().ToLower();
             if (answer == "y")
             {
-                PlayerInput(yourHand);
+                Main();
             }
             else
             {
@@ -133,3 +126,5 @@ namespace RockPaperScissors
         }
     }
 }
+
+
