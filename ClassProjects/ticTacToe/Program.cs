@@ -16,7 +16,7 @@ namespace ticTacToe
         public static int column;
         public static bool win;
         public static string winner;
-      
+
 
 
         public static void Main()
@@ -37,7 +37,7 @@ namespace ticTacToe
                 DrawBoard();
                 Console.WriteLine("It's a tie!");
             }
-            
+
             // leave this command at the end so your program does not
             //close automatically
             Console.ReadLine();
@@ -47,7 +47,7 @@ namespace ticTacToe
         {
             Console.WriteLine("Player " + playerTurn);
             Console.WriteLine("Enter Row:");
-           
+
             row = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter Column:");
             column = int.Parse(Console.ReadLine());
@@ -58,6 +58,7 @@ namespace ticTacToe
             // your code goes here
             if (playerTurn == "X")
             {
+                //check if spot is empty
                 if (board[row][column] == " ")
                 {
                     board[row][column] = "X";
@@ -87,7 +88,7 @@ namespace ticTacToe
 
         public static bool CheckForWin(bool win)
         {
-            // this will call HorizontalWin, VerticalWin, and DiagonalWin
+
             HorizontalWin();
             VerticalWin();
             DiagonalWin();
@@ -101,13 +102,13 @@ namespace ticTacToe
             }
 
         }
-        //what is not returning a value??
+
         public static bool CheckForTie()
         {
-            
+
             //There's defintely a better way to do this...
-            //check for " " in board array
-            if (board [0][0] != " ")
+            //check if the board is full
+            if (board[0][0] != " ")
             {
                 if (board[0][1] != " ")
                 {
@@ -178,14 +179,16 @@ namespace ticTacToe
             {
                 return false;
             }
-            
+
         }
 
-        
+
 
         public static void HorizontalWin()
         {
-            // your code goes here
+            // having figured out win and tie checker bools, I think I
+            // know how to do these as bool instead of void, but it's Sunday
+            //and I still have to fix Rock Paper Scissors.
             if (board[0][0] == "X")
             {
                 if (board[0][1] == "X")
