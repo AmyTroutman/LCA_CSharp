@@ -16,7 +16,8 @@ namespace ticTacToe
         public static int column;
         public static bool win;
         public static string winner;
-        
+      
+
 
         public static void Main()
         {
@@ -31,6 +32,12 @@ namespace ticTacToe
 
             } while (!CheckForWin(win) && !CheckForTie());
 
+            if (CheckForTie() == true)
+            {
+                DrawBoard();
+                Console.WriteLine("It's a tie!");
+            }
+            
             // leave this command at the end so your program does not
             //close automatically
             Console.ReadLine();
@@ -40,7 +47,7 @@ namespace ticTacToe
         {
             Console.WriteLine("Player " + playerTurn);
             Console.WriteLine("Enter Row:");
-            //add something to check for correct input
+           
             row = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter Column:");
             column = int.Parse(Console.ReadLine());
@@ -59,13 +66,13 @@ namespace ticTacToe
                 else
                 {
                     Console.WriteLine("That spot is taken! Try another.");
-                    
-                  
+
+
                 }
             }
             else if (playerTurn == "O")
             {
-                if(board[row][column] == " ")
+                if (board[row][column] == " ")
                 {
                     board[row][column] = "O";
                     playerTurn = "X";
@@ -73,7 +80,7 @@ namespace ticTacToe
                 else
                 {
                     Console.WriteLine("That spot is taken! Try another.");
-                    
+
                 }
             }
         }
@@ -92,32 +99,89 @@ namespace ticTacToe
             {
                 return false;
             }
-                
+
         }
         //what is not returning a value??
         public static bool CheckForTie()
         {
             
+            //There's defintely a better way to do this...
             //check for " " in board array
-            foreach (string[] square in board)
+            if (board [0][0] != " ")
             {
-                foreach (string subsquare in square)
+                if (board[0][1] != " ")
                 {
-                    if (subsquare != " ")
+                    if (board[0][2] != " ")
                     {
-                        return true;
+                        if (board[1][0] != " ")
+                        {
+
+                            if (board[1][1] != " ")
+                            {
+
+                                if (board[1][2] != " ")
+                                {
+
+                                    if (board[2][0] != " ")
+                                    {
+
+                                        if (board[2][1] != " ")
+                                        {
+                                            if (board[2][2] != " ")
+                                            {
+                                                return true;
+                                            }
+                                            else
+                                            {
+                                                return false;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            return false;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        return false;
+                                    }
+                                }
+                                else
+                                {
+                                    return false;
+                                }
+                            }
+                            else
+                            {
+                                return false;
+                            }
+                        }
+                        else
+                        {
+                            return false;
+                        }
+
                     }
                     else
                     {
                         return false;
                     }
+
+                }
+                else
+                {
+                    return false;
                 }
 
-           }
-            
-            
+            }
+            else
+            {
+                return false;
+            }
             
         }
+
+        
 
         public static void HorizontalWin()
         {
@@ -159,7 +223,7 @@ namespace ticTacToe
                     else
                     {
                         win = false;
-                        
+
                     }
                 }
                 else
@@ -475,7 +539,7 @@ namespace ticTacToe
             {
                 win = false;
             }
-            
+
             if (board[0][0] == "O")
             {
                 if (board[1][1] == "O")
@@ -528,7 +592,7 @@ namespace ticTacToe
 
         public static void DrawBoard()
         {
-            
+
             Console.WriteLine("");
             Console.WriteLine("  0 1 2");
             Console.WriteLine("0 " + String.Join("|", board[0]));
