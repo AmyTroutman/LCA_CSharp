@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissors", "RockPaperScissors.csproj", "{E4879155-99DD-4639-B6E1-1B6A1B7EF62A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4879155-99DD-4639-B6E1-1B6A1B7EF62A}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{E4879155-99DD-4639-B6E1-1B6A1B7EF62A}.Debug|anycpu.Build.0 = Debug|anycpu
+		{E4879155-99DD-4639-B6E1-1B6A1B7EF62A}.Release|anycpu.ActiveCfg = Release|anycpu
+		{E4879155-99DD-4639-B6E1-1B6A1B7EF62A}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal
