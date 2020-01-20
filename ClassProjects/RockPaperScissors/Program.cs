@@ -8,19 +8,12 @@ namespace RockPaperScissors
 
     class MainClass
     {
-
+        
         public static void Main()
         {
-
-            //get this to work!!!!
-            //PlayerInput(yourHand);
-            //CompareHands();
-
             Console.WriteLine("Rock, Paper, Scissors!");
             string yourHand = Console.ReadLine().ToLower();
             CompareHands(yourHand);
-
-
         }
 
         public static void CompareHands(string yourHand)
@@ -39,23 +32,16 @@ namespace RockPaperScissors
                         Console.WriteLine("I choose " + myHand);
                         //declare if win, loss, or tie
                         Console.WriteLine("It's a tie!");
-                        //display score
-                        //Console.WriteLine("My Score is: " + myScore + ". Your score is: " + yourScore);
                     }
                     else if (yourHand == "paper")
                     {
                         Console.WriteLine("I choose " + myHand);
                         Console.WriteLine("You win!");
-                        //add one point to score
-                        //yourScore += 1;
-                        //Console.WriteLine("My Score is: " + myScore + ". Your score is: " + yourScore);
                     }
                     else if (yourHand == "scissors")
                     {
                         Console.WriteLine("I choose " + myHand);
                         Console.WriteLine("I win!");
-                        //myScore += 1;
-                        //Console.WriteLine("My Score is: " + myScore + ". Your score is: " + yourScore);
                     }
                     break;
 
@@ -65,21 +51,16 @@ namespace RockPaperScissors
                     {
                         Console.WriteLine("I choose " + myHand);
                         Console.WriteLine("I win!");
-                        //myScore += 1;
-                        //Console.WriteLine("My Score is: " + myScore + ". Your score is: " + yourScore);
                     }
                     else if (yourHand == "paper")
                     {
                         Console.WriteLine("I choose " + myHand);
                         Console.WriteLine("It's a tie!");
-                        //Console.WriteLine("My Score is: " + myScore + ". Your score is: " + yourScore);
                     }
                     else if (yourHand == "scissors")
                     {
                         Console.WriteLine("I choose " + myHand);
                         Console.WriteLine("You win!");
-                        //yourScore += 1;
-                        //Console.WriteLine("My Score is: " + myScore + ". Your score is: " + yourScore);
                     }
                     break;
 
@@ -89,21 +70,16 @@ namespace RockPaperScissors
                     {
                         Console.WriteLine("I choose " + myHand);
                         Console.WriteLine("You win!");
-                        //yourScore += 1;
-                        //Console.WriteLine("My Score is: " + myScore + ". Your score is: " + yourScore);
                     }
                     else if (yourHand == "paper")
                     {
                         Console.WriteLine("I choose " + myHand);
                         Console.WriteLine("I win!");
-                        //myScore += 1;
-                        //Console.WriteLine("My Score is: " + myScore + ". Your score is: " + yourScore);
                     }
                     else if (yourHand == "scissors")
                     {
                         Console.WriteLine("I choose " + myHand);
                         Console.WriteLine("It's a tie!");
-                        //Console.WriteLine("My Score is: " + myScore + ". Your score is: " + yourScore);
                     }
                     break;
                 default:
@@ -112,6 +88,7 @@ namespace RockPaperScissors
             }
 
             //do you want to play again? Because who doesn't want to play again??
+            
             Console.WriteLine("Do you want to play another hand? y/n");
             string answer = Console.ReadLine().ToLower();
             if (answer == "y")
