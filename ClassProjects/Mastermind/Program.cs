@@ -2,14 +2,13 @@
 
 namespace Mastermind
 {
-
+    //ohhh, I should probably be using a dictionary. 0:blue, 1:green, 2:orange
 
     class MainClass
 
     {
         public static string[] guess = new string [2];
-        public static string[] password = new string [2];
-        public static bool win;
+        public static string[] password = new string [2];       
         public static void Main()
         {
             Console.WriteLine("Let's play Mastermind! I've chosen two colors from a choice of green, blue, and orange. Guess the right colors in the right order and you win!");
@@ -21,18 +20,18 @@ namespace Mastermind
                 Input(guess);
                 
                 Match(password, guess);
-            } while (!Win(win));
+            } while (!Win(guess, password));
             Console.ReadKey();
 
         }
         public static void Input(string[] guess)
         {
-            //ask and get user guess
+            
             Console.WriteLine("What is your guess?");
             string input = Console.ReadLine();
-            //split guess into an array
+            
             string[] splitInput = input.Split(' ');
-            //permastoring that data, baby
+            //perma-storing that data, baby
             Array.Copy(splitInput, guess, 2);
             
 
@@ -53,20 +52,12 @@ namespace Mastermind
         }
         public static void Match(string[] password, string[] guess)
         {
-            if (guess[0] == password[0])
+            //is there a better way than a thousand if/elses?
+            if (guess[0][1] == password[0][1])
             {
-                //first and second colors
-                if (guess[1] == password[1])
-                {
-                    Console.WriteLine("You guessed correctly!");
-                    win = true;
-                }
-                //first matches, but second does not
-                else
-                {
-                    Console.WriteLine("You have one color and it's position right!");
-                }
+                Win(guess, password);               
             }
+
             //test that password is keeping value
             foreach (string word in password)
             {
@@ -78,10 +69,11 @@ namespace Mastermind
                 Console.WriteLine("gword " + word);
             }
         }
-        public static bool Win(bool win)
+        public static bool Win(string[] guess, string[] password)
         {
-            if (win == true)
+            if (guess[0][1] == password[0][1])
             {
+                Console.WriteLine("You guessed correctly!");
                 return true;
             }
             else
