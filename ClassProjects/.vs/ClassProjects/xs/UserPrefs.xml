@@ -1,18 +1,22 @@
-﻿<Properties StartupConfiguration="{E4879155-99DD-4639-B6E1-1B6A1B7EF62A}|Default">
+﻿<Properties StartupConfiguration="{F1D5D76F-6491-4329-B860-74B683412151}|Default">
   <MonoDevelop.Ide.ItemProperties.RockPaperScissors PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ticTacToe/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PigLatin/Program.cs">
     <Files>
-      <File FileName="RockPaperScissors/Program.cs" Line="17" Column="1" />
+      <File FileName="RockPaperScissors/Program.cs" Line="33" Column="39" />
       <File FileName="ticTacToe/Program.cs" Line="9" Column="9" />
+      <File FileName="Mastermind/Program.cs" Line="31" Column="41" />
+      <File FileName="PigLatin/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ClassProjects" expanded="True">
-            <Node name="RockPaperScissors" expanded="True" />
-            <Node name="ticTacToe" expanded="True">
+            <Node name="Mastermind" expanded="True" />
+            <Node name="PigLatin" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
+            <Node name="RockPaperScissors" expanded="True" />
+            <Node name="ticTacToe" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -22,6 +26,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.ItemProperties.PigLatin PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Mastermind PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

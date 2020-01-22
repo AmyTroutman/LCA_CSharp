@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissors", "RockPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ticTacToe", "ticTacToe\ticTacToe.csproj", "{D814CF5C-D88E-4570-B2B0-9E9CB01A206F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mastermind", "Mastermind\Mastermind.csproj", "{F1D5D76F-6491-4329-B860-74B683412151}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -31,5 +33,9 @@ Global
 		{D814CF5C-D88E-4570-B2B0-9E9CB01A206F}.Debug|anycpu.Build.0 = Debug|anycpu
 		{D814CF5C-D88E-4570-B2B0-9E9CB01A206F}.Release|anycpu.ActiveCfg = Release|anycpu
 		{D814CF5C-D88E-4570-B2B0-9E9CB01A206F}.Release|anycpu.Build.0 = Release|anycpu
+		{F1D5D76F-6491-4329-B860-74B683412151}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{F1D5D76F-6491-4329-B860-74B683412151}.Debug|anycpu.Build.0 = Debug|anycpu
+		{F1D5D76F-6491-4329-B860-74B683412151}.Release|anycpu.ActiveCfg = Release|anycpu
+		{F1D5D76F-6491-4329-B860-74B683412151}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
