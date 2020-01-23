@@ -63,7 +63,8 @@ namespace Mastermind
             {
                 for (int i = 0; i < guess.Length; i += 1)
                 {
-                    Console.WriteLine(guess[i] == password[i] ? "One is correct!" : "One is incorrect");
+                    //how can I check all four scenarios??
+                    Console.WriteLine(guess[i][i] == password[i][i] ? "One is correct!" : "One is incorrect");
 
                 }                
             }
