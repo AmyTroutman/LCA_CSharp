@@ -2,8 +2,8 @@
 
 namespace Mastermind
 {
-    //ohhh, I should probably be using a dictionary. 0:blue, 1:green, 2:orange
-
+    //ohhh, I should probably be using a dictionary. 0:blue, 1:green, 2:oranges
+    
     class MainClass
 
     {
