@@ -11,69 +11,78 @@ namespace Gradebook
         {
             string student;
             string grades;
+            bool hasQuit = false;
             Dictionary<string, string> studentRecord = new Dictionary<string, string>();
             do
             {
                 Console.WriteLine("Enter Student's name. If you are done entering all students, type quit.");
                 student = Console.ReadLine().ToLower();
 
-                //try catch here to check for quit
                 if (student == "quit")
                 {
-                    break;
+                    hasQuit = true;
                 }
-
-                Console.WriteLine("Enter the student's grades, separated by a space (example: 100 90 97 85).");
-                grades = Console.ReadLine();
-                studentRecord.Add(student, grades);
-                Console.WriteLine(studentRecord[student]);
+                else
+                {
+                    Console.WriteLine("Enter the student's grades, separated by a space (example: 100 90 97 85).");
+                    grades = Console.ReadLine();
+                    //try catch here to check for duplicate student
+                    studentRecord.Add(student, grades);                    
+                }
             }
-            //this isn't working, but the if/break is working
-            while (student != "quit");
+            while (hasQuit == false);
 
             ProcessGrades(studentRecord);
             PrintGradebook(studentRecord);
         }
         public static void ProcessGrades(Dictionary<string, string> studentRecord)
         {
+            int highest;
+            int lowest;
+            int average;
             //one big foreach loop around highest, lowest, average
-            //I want to grab the values(grades) and convert to ints
-            //first, copy the value to an array
-            //second, split the values into an int array, split on " "
+            /*foreach (var key in studentRecord.Keys)
+               {
+                   foreach (var grade in studentRecord[key])
+                   {
+                        //I want to grab the values(grades) and convert to ints
+                        //first, copy the value to an array
+                        string[] gradeArray = grade;
+                        //second, split the values into an int array, split on " "
+                        string splitGradeArray = gradeArray.Split(" ");
+                        int [] numGradeArray = splitGradeArray.TryParse(Int32);
+                        //find the highest grade, save to int highest
+            
+                        foreach (var i in numGradeArray)
+                        {
+                            if (i > highest)
+                            {
+                                i = highest;
+                            }
+                        }
 
-            //find the highest grade, save to int highest, add to key
-            /*
-            foreach (var i in array)
-            {
-                if (i > highest)
-                {
-                    i = highest;
+                        //find the lowest grade, save to int lowest
+            
+                        foreach (var i in array)
+                        {
+                            if (i < lowest)
+                            {
+                                i = lowest;
+                            }
+                        }
+
+                        //find the average, save to int average
+
+                        //convert highest, lowest, average to strings
+
+                        //concatenate highest, lowest, and average
+                        string processedGrades = highestStr + lowestStr + averageStr;
+
+                    }
+                    //replace orignal value with new string
+                        studentRecord[key] = processedGrades;
                 }
-            }
-            
-            */
-
-            //find the lowest grade, save to int lowest, add to key
-            /*
-            foreach (var i in array)
-            {
-                if (i < lowest)
-                {
-                    i = lowest;
-                }
-            }
-            
-            */
-            //find the average, save to int average, add to key
-
-
-            //concatenate highest, lowest, and average
-
-            //convert to a string
-
-            //replace orignal value with new string
-
-            
+                */
         }
         public static void PrintGradebook(Dictionary<string, string> studentRecord)
         {
