@@ -1,22 +1,18 @@
 ﻿<Properties StartupConfiguration="{F1D5D76F-6491-4329-B860-74B683412151}|Default">
   <MonoDevelop.Ide.ItemProperties.RockPaperScissors PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PigLatin/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.Gradebook FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Gradebook/Program.cs">
     <Files>
-      <File FileName="RockPaperScissors/Program.cs" Line="33" Column="39" />
-      <File FileName="PigLatin/Program.cs" Line="15" Column="61" />
-      <File FileName="ticTacToe/Program.cs" Line="9" Column="9" />
-      <File FileName="Mastermind/Program.cs" Line="66" Column="59" />
+      <File FileName="Mastermind/Program.cs" Line="5" Column="80" />
+      <File FileName="Gradebook/Program.cs" Line="2" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ClassProjects" expanded="True">
-            <Node name="Mastermind" expanded="True" />
-            <Node name="PigLatin" expanded="True">
+            <Node name="Gradebook" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
-            <Node name="RockPaperScissors" expanded="True" />
-            <Node name="ticTacToe" expanded="True" />
           </Node>
         </State>
       </Pad>
