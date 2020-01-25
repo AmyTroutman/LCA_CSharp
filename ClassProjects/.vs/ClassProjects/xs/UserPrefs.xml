@@ -1,10 +1,10 @@
-﻿<Properties StartupConfiguration="{F1D5D76F-6491-4329-B860-74B683412151}|Default">
+﻿<Properties StartupConfiguration="{DD28AC65-DC2E-409E-84AB-3FE40425E9D3}|Default">
   <MonoDevelop.Ide.ItemProperties.RockPaperScissors PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.Gradebook FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Gradebook/Program.cs">
     <Files>
       <File FileName="Mastermind/Program.cs" Line="5" Column="80" />
-      <File FileName="Gradebook/Program.cs" Line="2" Column="14" />
+      <File FileName="Gradebook/Program.cs" Line="83" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,6 +13,7 @@
             <Node name="Gradebook" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
+            <Node name="Mastermind" expanded="True" />
           </Node>
         </State>
       </Pad>
