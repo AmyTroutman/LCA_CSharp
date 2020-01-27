@@ -57,7 +57,7 @@ namespace Mastermind
 
             for (int i = 0; i < 2; i++)
             {
-                //thanks scott
+                //thanks scott and anthony!
                 if (password[1-i] == guess[i]) colorCorrect++;
                 if (password[i] == guess[i]) posCorrect++;
             }
