@@ -8,7 +8,7 @@ namespace Gradebook
 
         public static string grades;
         public static string newGrades;
-        //public string processedGrades;
+        
 
         public static void Main()
         {

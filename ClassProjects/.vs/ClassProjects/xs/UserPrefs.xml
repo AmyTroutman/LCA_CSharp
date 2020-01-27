@@ -1,11 +1,24 @@
-﻿<Properties StartupConfiguration="{DD28AC65-DC2E-409E-84AB-3FE40425E9D3}|Default">
+﻿<Properties StartupConfiguration="{F1D5D76F-6491-4329-B860-74B683412151}|Default">
   <MonoDevelop.Ide.ItemProperties.RockPaperScissors PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Gradebook/Program.cs">
     <Files>
-      <File FileName="Mastermind/Program.cs" Line="5" Column="80" />
-      <File FileName="Gradebook/Program.cs" Line="83" Column="42" />
+      <File FileName="Mastermind/Program.cs" Line="58" Column="28" />
+      <File FileName="Gradebook/Program.cs" Line="11" Column="9" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ClassProjects" expanded="True">
+            <Node name="Gradebook" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+            <Node name="Mastermind" expanded="True" />
+            <Node name="RockPaperScissors" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.ManyMethods PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
@@ -13,7 +26,10 @@
   <MonoDevelop.Ide.ItemProperties.PigLatin PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Mastermind PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/homeboi/Documents/DevFolder/LCA_CSharp/ClassProjects/Gradebook/Program.cs" relfile="Gradebook/Program.cs" line="37" column="27" />
+      <Breakpoint file="/Users/homeboi/Documents/DevFolder/LCA_CSharp/ClassProjects/Mastermind/Program.cs" relfile="Mastermind/Program.cs" line="55" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
