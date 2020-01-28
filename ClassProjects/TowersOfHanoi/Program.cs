@@ -6,9 +6,12 @@ namespace TowersOfHanoi
     
     class MainClass
     {
-        private static Dictionary<string, Stack<int>> board = new Dictionary<string, Stack<int>>();
+        
+        private static Dictionary<string, Stack<int>> tower = new Dictionary<string, Stack<int>>();
+
         static void Main(string[] args)
         {
+            //establishing the board. Verbose names so I can visualize it.
             Stack<int> ring1 = new Stack<int>();
             Stack<int> ring2 = new Stack<int>();
             Stack<int> ring3 = new Stack<int>();
@@ -16,9 +19,9 @@ namespace TowersOfHanoi
             ring1.Push(3);
             ring1.Push(2);
             ring1.Push(1);
-            board.Add("A", ring1);
-            board.Add("B", ring2);
-            board.Add("C", ring3);
+            tower.Add("A", ring1);
+            tower.Add("B", ring2);
+            tower.Add("C", ring3);
             
             do
             {
@@ -29,13 +32,11 @@ namespace TowersOfHanoi
                 Console.WriteLine("Which tower would you like to move to?");
                 string to = Console.ReadLine().ToUpper();
 
-                if (IsMoveValid(from, to))
+                if (CanDo(from, to))
                 {
-                    // use the stack.Push(object) to move the peg from the original position to the new position
-                    // you can substitute the "object" in the push method with the stack.Pop() 
-                    // ex:  stack.Push(stack.Pop());
+                    
                  
-                    board[to].Push(board[from].Pop());
+                    tower[to].Push(tower[from].Pop());
                 }
                 else
                 {
@@ -45,7 +46,7 @@ namespace TowersOfHanoi
                     Console.ReadKey();
                 }
 
-            } while (!CheckWin());
+            } while (!IsWin());
 
             Console.Clear();
             PrintBoard();
@@ -53,46 +54,43 @@ namespace TowersOfHanoi
             Console.ReadKey();
         }
 
-        private static bool IsMoveValid(string from, string to)
+        private static bool CanDo(string from, string to)
         {
             //check for empty input
             if (from == "" || to == "")
             {
                 return false;
             }            
-            // if the count is zero, it means the tower has nothing to move, and you can't move nothing
-            else if (board[from].Count == 0)
+            //is there anything to move from the tower
+            else if (tower[from].Count == 0)
             {
-                // nothing in this tower
                 return false;
             }
+            //why are you moving from and to the same tower??
             else if (to == from)
-            {
-                // can't move a peg from and to the same tower
+            {                
                 return false;
             }                        
-            // check that the destination tower is not empty before using Peek, otherwise it will throw an error
-            else if (board[to].Count != 0)
+            //are we going to an empty tower?
+            else if (tower[to].Count != 0)
             {
-                // can't move a larger number on top of a smaller number
-                if (board[from].Peek() > board[to].Peek())
+                //making sure we're not bigger than what's on the tower
+                if (tower[from].Peek() > tower[to].Peek())
                 {
                     return false;
-                }
-
-                // if the above expression is false, it assumes the move is legal
+                }               
                 return true;
             }
-            else // move is legal
+            else //all clear, kid!
             {
                 return true;
             }
         }
 
-        private static bool CheckWin()
+        private static bool IsWin()
         {
-            // How many items must there be in Stack "C" to win?
-            if (board["C"].Count == 4)
+            //Win when all four are in tower C
+            if (tower["C"].Count == 4)
             {
                 return true;
             }
@@ -101,8 +99,8 @@ namespace TowersOfHanoi
 
         private static void PrintBoard()
         {
-            foreach (var item in board)
-            {
+            foreach (var item in tower)
+            {                
                 Console.Write($"\n{item.Key}: ");
                 var numbers = item.Value.ToArray();                
                 for (int i = numbers.Length; i > 0; i--)
