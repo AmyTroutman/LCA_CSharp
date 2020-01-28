@@ -55,8 +55,13 @@ namespace TowersOfHanoi
 
         private static bool IsMoveValid(string from, string to)
         {
+            //check for empty input
+            if (from == "" || to == "")
+            {
+                return false;
+            }            
             // if the count is zero, it means the tower has nothing to move, and you can't move nothing
-            if (board[from].Count == 0)
+            else if (board[from].Count == 0)
             {
                 // nothing in this tower
                 return false;
@@ -65,7 +70,7 @@ namespace TowersOfHanoi
             {
                 // can't move a peg from and to the same tower
                 return false;
-            }
+            }                        
             // check that the destination tower is not empty before using Peek, otherwise it will throw an error
             else if (board[to].Count != 0)
             {
