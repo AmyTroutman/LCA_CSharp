@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradebook", "Gradebook\Grad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TowersOfHanoi", "TowersOfHanoi\TowersOfHanoi.csproj", "{C2D3FC0E-194C-449A-8141-7BA856AF4C0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassCollections", "ClassCollections\ClassCollections.csproj", "{59D7E27B-EA64-4CCD-824C-B086FB36AB33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -49,5 +51,9 @@ Global
 		{C2D3FC0E-194C-449A-8141-7BA856AF4C0E}.Debug|anycpu.Build.0 = Debug|anycpu
 		{C2D3FC0E-194C-449A-8141-7BA856AF4C0E}.Release|anycpu.ActiveCfg = Release|anycpu
 		{C2D3FC0E-194C-449A-8141-7BA856AF4C0E}.Release|anycpu.Build.0 = Release|anycpu
+		{59D7E27B-EA64-4CCD-824C-B086FB36AB33}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{59D7E27B-EA64-4CCD-824C-B086FB36AB33}.Debug|anycpu.Build.0 = Debug|anycpu
+		{59D7E27B-EA64-4CCD-824C-B086FB36AB33}.Release|anycpu.ActiveCfg = Release|anycpu
+		{59D7E27B-EA64-4CCD-824C-B086FB36AB33}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

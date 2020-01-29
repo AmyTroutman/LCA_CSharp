@@ -1,27 +1,29 @@
-﻿<Properties StartupConfiguration="{F1D5D76F-6491-4329-B860-74B683412151}|Default">
+﻿<Properties StartupConfiguration="{C2D3FC0E-194C-449A-8141-7BA856AF4C0E}|Default">
   <MonoDevelop.Ide.ItemProperties.RockPaperScissors PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Mastermind/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ClassCollections/Program.cs">
     <Files>
-      <File FileName="Mastermind/Program.cs" Line="17" Column="77" />
-      <File FileName="TowersOfHanoi/Program.cs" Line="40" Column="21" />
+      <File FileName="TowersOfHanoi/Program.cs" Line="103" Column="14" />
+      <File FileName="ClassCollections/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ClassProjects" expanded="True">
-            <Node name="Gradebook" expanded="True" />
-            <Node name="Mastermind" expanded="True">
+            <Node name="ClassCollections" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
+            <Node name="Gradebook" expanded="True" />
+            <Node name="Mastermind" expanded="True" />
             <Node name="RockPaperScissors" expanded="True" />
+            <Node name="ticTacToe" expanded="True" />
             <Node name="TowersOfHanoi" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.TowersOfHanoi FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.TowersOfHanoi PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.ManyMethods PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
@@ -33,4 +35,5 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ClassCollections FirstBuild="True" />
 </Properties>
