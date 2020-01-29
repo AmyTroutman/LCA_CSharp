@@ -4,12 +4,17 @@ namespace ClassCollections
 {  
     class MainClass
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
-            License myLicense = new License("Amy", "Troutman", "female", 6);
-            //oy, why can't you acces these???
-            License.MakeFullName(initialFirst, initialLast);
-            Console.WriteLine(myLicense.FullName);
+            License myLicense = new License("Amy", "Troutman", "female", 74324506);            
+            Console.WriteLine(myLicense.MakeFullName());
+            Console.WriteLine("DL Number: " +myLicense.DLNumber);
+
+            Book myBook = new Book("Too Much", "Sufjan Stevens", 135);            
+            Console.WriteLine(myBook.AboutBook());
+
+            Airplane myPlane = new Airplane("Boeing", "SuperBird", 7);
+            Console.WriteLine(myPlane.AboutPlane());
         }
        
     }
@@ -20,7 +25,7 @@ namespace ClassCollections
         //last name
         public string LastName { get; set; }
         //full name
-        public string FullName { get; private set; }
+        public string FullName { get; set; }
         //gender
         public string Gender { get; set; }
         //int license number
@@ -34,11 +39,10 @@ namespace ClassCollections
             DLNumber = initialDLN;
         }
         //now a method that concatenates names        
-        public void MakeFullName(string initialFirst, string initialLast)
+        public string MakeFullName()
         {
-            FullName = initialFirst + " " + initialLast;
-        }
-
+            return FullName= FirstName +" "+ LastName;
+        }        
     }
 
 
@@ -47,8 +51,7 @@ namespace ClassCollections
         //title
         public string Title { get; set; }
         //authors (allow for multiple)        
-        public string[] Author { get; set; }
-        public int Size { get; set; }        
+        public string Author { get; set; }       
         //int pages
         public int Pages { get; set; }
         //SKU
@@ -57,12 +60,19 @@ namespace ClassCollections
         public string Publisher { get; set; }
         //int price
         public int Price { get; set; }
+        public string BookBlurb { get; set; }
+
         //constructor
-        
-        public Book(int initialSize, string[] Author)
+        public Book(string initialTitle, string initialAuthor, int initialPages)
         {
-            Size = initialSize;
-            this.Author = new string[initialSize];
+            Title = initialTitle;
+            Author = initialAuthor;
+            Pages = initialPages;
+        }
+       
+        public string AboutBook()
+        {
+            return BookBlurb = Title + " by " + Author + " has " + Pages + " pages.";
         }
         
     }
@@ -79,10 +89,17 @@ namespace ClassCollections
         public int Capacity { get; set; }
         //int engines
         public int Engines { get; set; }
+        public string PlaneBlurb { get; set; }
         //constructor
-        public Airplane()
+        public Airplane(string initialManu, string initialMod, int initialCap)
         {
-
+            Manufacturer = initialManu;
+            Model = initialMod;
+            Capacity = initialCap;
+        }
+        public string AboutPlane()
+        {
+            return PlaneBlurb = "The " + Manufacturer + " " + Model + " can hold " + Capacity + " passengers.";
         }
     }
 }
