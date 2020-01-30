@@ -17,7 +17,7 @@ namespace ToDoList
                 Console.WriteLine("When do you need to get this done by? (mm/dd/yy)");
                 string date = Console.ReadLine();
                 Console.WriteLine("And how important is this? (high, medium, low)");
-                string priority = Console.ReadLine();
+                string pri = Console.ReadLine();
                 Console.WriteLine("Do you need to do anything else?");
                 string noMore = Console.ReadLine().ToLower();
                 if (noMore == "no")
@@ -27,7 +27,9 @@ namespace ToDoList
                 else
                 {
                     //method from MakeList class to add task, date, and priority
-                    //as value to dictionary key task1
+                    //as value to a list
+                    MakeList myList = new MakeList(task, date, pri);
+                    myList.AddList();
                 }
             } while (imDone == false);
             //
@@ -36,6 +38,18 @@ namespace ToDoList
     }
     class MakeList
     {
-        public Dictionary<string, string[]> toDoList = new Dictionary<string, string[]>();
+        public string Task;
+        public string Date;
+        public string Priority;
+        public MakeList(string getTask, string getDate, string getPri)
+        {
+            Task = getTask;
+            Date = getDate;
+            Priority = getPri;
+        }
+        public void AddList()
+        {
+            List<string> todo = new List<string>();
+        }
     }
 }
