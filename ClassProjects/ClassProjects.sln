@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TowersOfHanoi", "TowersOfHa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassCollections", "ClassCollections\ClassCollections.csproj", "{59D7E27B-EA64-4CCD-824C-B086FB36AB33}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList", "ToDoList\ToDoList.csproj", "{0C78094C-DDB6-4822-A72D-CAA8F9DD516D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -55,5 +57,9 @@ Global
 		{59D7E27B-EA64-4CCD-824C-B086FB36AB33}.Debug|anycpu.Build.0 = Debug|anycpu
 		{59D7E27B-EA64-4CCD-824C-B086FB36AB33}.Release|anycpu.ActiveCfg = Release|anycpu
 		{59D7E27B-EA64-4CCD-824C-B086FB36AB33}.Release|anycpu.Build.0 = Release|anycpu
+		{0C78094C-DDB6-4822-A72D-CAA8F9DD516D}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{0C78094C-DDB6-4822-A72D-CAA8F9DD516D}.Debug|anycpu.Build.0 = Debug|anycpu
+		{0C78094C-DDB6-4822-A72D-CAA8F9DD516D}.Release|anycpu.ActiveCfg = Release|anycpu
+		{0C78094C-DDB6-4822-A72D-CAA8F9DD516D}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

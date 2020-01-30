@@ -1,18 +1,22 @@
-﻿<Properties StartupConfiguration="{59D7E27B-EA64-4CCD-824C-B086FB36AB33}|Default">
+﻿<Properties StartupConfiguration="{0C78094C-DDB6-4822-A72D-CAA8F9DD516D}|Default">
   <MonoDevelop.Ide.ItemProperties.RockPaperScissors PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ClassCollections/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Gradebook/Program.cs">
     <Files>
-      <File FileName="TowersOfHanoi/Program.cs" Line="103" Column="14" />
       <File FileName="ClassCollections/Program.cs" Line="69" Column="36" />
+      <File FileName="ToDoList/Program.cs" Line="38" Column="1" />
+      <File FileName="Gradebook/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ClassProjects" expanded="True">
-            <Node name="ClassCollections" expanded="True">
+            <Node name="ClassCollections" expanded="True" />
+            <Node name="Gradebook" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
+            <Node name="Mastermind" expanded="True" />
+            <Node name="ToDoList" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -24,6 +28,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.ItemProperties.PigLatin PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Mastermind PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.ToDoList PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/homeboi/Documents/DevFolder/LCA_CSharp/ClassProjects/Gradebook/Program.cs" relfile="Gradebook/Program.cs" line="37" column="27" />
