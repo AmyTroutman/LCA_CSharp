@@ -1,10 +1,10 @@
-﻿<Properties StartupConfiguration="{C2D3FC0E-194C-449A-8141-7BA856AF4C0E}|Default">
+﻿<Properties StartupConfiguration="{59D7E27B-EA64-4CCD-824C-B086FB36AB33}|Default">
   <MonoDevelop.Ide.ItemProperties.RockPaperScissors PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="ClassCollections/Program.cs">
     <Files>
       <File FileName="TowersOfHanoi/Program.cs" Line="103" Column="14" />
-      <File FileName="ClassCollections/Program.cs" Line="1" Column="1" />
+      <File FileName="ClassCollections/Program.cs" Line="69" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,11 +13,6 @@
             <Node name="ClassCollections" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
-            <Node name="Gradebook" expanded="True" />
-            <Node name="Mastermind" expanded="True" />
-            <Node name="RockPaperScissors" expanded="True" />
-            <Node name="ticTacToe" expanded="True" />
-            <Node name="TowersOfHanoi" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -35,5 +30,5 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ClassCollections FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.ClassCollections PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
