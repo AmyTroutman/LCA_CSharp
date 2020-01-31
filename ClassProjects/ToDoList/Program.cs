@@ -24,32 +24,42 @@ namespace ToDoList
                 {
                     imDone = true;
                 }
-                else
-                {
-                    //method from MakeList class to add task, date, and priority
-                    //as value to a list
-                    MakeList myList = new MakeList(task, date, pri);
-                    myList.AddList();
-                }
+                
+               
+                ToDoList MyList = new ToDoList(task, date, pri);
+                //it's erasing masterlist when it gets here. why??
+                //it wasn't STATIC! now it 'members. le sigh of relief...
+                MyList.ListOfLists();
+                
+                
+
             } while (imDone == false);
-            //
+            
         }
         
     }
-    class MakeList
+    class ToDoList
     {
         public string Task;
         public string Date;
-        public string Priority;
-        public MakeList(string getTask, string getDate, string getPri)
+        public string Priority;        
+        public static List<List<string>> MasterList = new List<List<string>>();
+        public ToDoList(string getTask, string getDate, string getPri)
         {
             Task = getTask;
             Date = getDate;
             Priority = getPri;
         }
-        public void AddList()
+        public void ListOfLists()
         {
-            List<string> todo = new List<string>();
+            MasterList.Add(new List<string>{Task});
+            MasterList.Add(new List<string> { Date });
+            MasterList.Add(new List<string> { Priority });
+            foreach (List<string>list in MasterList)
+                foreach (string item in list)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
