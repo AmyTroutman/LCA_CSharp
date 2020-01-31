@@ -22,7 +22,9 @@ namespace TowersOfHanoi
             tower.Add("A", ring1);
             tower.Add("B", ring2);
             tower.Add("C", ring3);
-            
+
+            Console.WriteLine("Welcome to Towers of Hanoi!!! The aim of the game is to get all the numbers to tower C. The only rule is that you cannot place a larger number on top of a smaller number. Good luck!");
+
             do
             {
                 Console.Clear();
@@ -34,15 +36,13 @@ namespace TowersOfHanoi
 
                 if (CanDo(from, to))
                 {
-                    
-                 
                     tower[to].Push(tower[from].Pop());
                 }
                 else
                 {
-                    Console.WriteLine("Move was not valid.");
+                    Console.WriteLine("...Yeah, no, I can't do that.");
                     //I've never used this method, so mayhaps change it
-                    Console.WriteLine("Press any key to try again.");
+                    Console.WriteLine("You do know how to play, right? Press any key to prove you can do this.");
                     Console.ReadKey();
                 }
 
@@ -50,7 +50,7 @@ namespace TowersOfHanoi
 
             Console.Clear();
             PrintBoard();
-            Console.WriteLine("You win!");
+            Console.WriteLine("You only bloody did it! Well done!");
             Console.ReadKey();
         }
 
