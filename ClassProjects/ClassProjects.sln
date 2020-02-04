@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassCollections", "ClassCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList", "ToDoList\ToDoList.csproj", "{0C78094C-DDB6-4822-A72D-CAA8F9DD516D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Points", "Points\Points.csproj", "{2D1E1D09-2800-4F9D-8C0A-A2E5F84681BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -61,5 +63,9 @@ Global
 		{0C78094C-DDB6-4822-A72D-CAA8F9DD516D}.Debug|anycpu.Build.0 = Debug|anycpu
 		{0C78094C-DDB6-4822-A72D-CAA8F9DD516D}.Release|anycpu.ActiveCfg = Release|anycpu
 		{0C78094C-DDB6-4822-A72D-CAA8F9DD516D}.Release|anycpu.Build.0 = Release|anycpu
+		{2D1E1D09-2800-4F9D-8C0A-A2E5F84681BD}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{2D1E1D09-2800-4F9D-8C0A-A2E5F84681BD}.Debug|anycpu.Build.0 = Debug|anycpu
+		{2D1E1D09-2800-4F9D-8C0A-A2E5F84681BD}.Release|anycpu.ActiveCfg = Release|anycpu
+		{2D1E1D09-2800-4F9D-8C0A-A2E5F84681BD}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
