@@ -4,19 +4,31 @@ namespace Points
 {
     public class Point2D
     {
+        public int x { get; set; }
+        public int y { get; set; }
+        public override String ToString()
+        {
+            return String.Format("({0}, {1})", x, y);
+        }
+
         public Point2D()
         {
             // your code here
+
         }
+
 
         public Point2D(int x, int y)
         {
-            // your code here  
+            // your code here
+            int getX = x;
+            int getY = y;
         }
 
-        // your code here
-
     }
+
+    // your code here
+    
 
     public class Point3D : Point2D
     {
@@ -27,6 +39,7 @@ namespace Points
         public Point3D(int x, int y, int z) : base(x, y)
         {
             // your code here
+
         }
 
         // your code here

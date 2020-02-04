@@ -60,7 +60,7 @@ namespace ToDoList
             {                
                 foreach (string item in list)
                 {
-
+                    Console.WriteLine(item);
                 }               
             }
             Console.WriteLine("");
