@@ -11,11 +11,9 @@ namespace Points
             return String.Format("({0}, {1})", X, Y);
         }
 
-        public Point2D()
-        {
-            // your code here
+        public Point2D() : this(0, 0)
+        { }
 
-        }
 
 
         public Point2D(int x, int y)
@@ -24,7 +22,23 @@ namespace Points
             X = x;
             Y = y;
         }
-
+        public override bool Equals(Object obj)
+        {
+            //Check for null and compare run-time types.
+            if ((obj == null) || !this.GetType().Equals(obj.GetType()))
+            {
+                return false;
+            }
+            else
+            {
+                Point2D p = (Point2D)obj;
+                return (X == p.X) && (Y == p.Y);
+            }
+        }
+        public override int GetHashCode()
+        {
+            return (X << 2) ^ Y;
+        }
     }
 
     // your code here
@@ -32,10 +46,9 @@ namespace Points
 
     public class Point3D : Point2D
     {
-        public Point3D()
-        {
-            // your code here
-        }
+        public Point3D() : this(0, 0, 0)
+        { }
+
         public Point3D(int x, int y, int z) : base(x, y)
         {
             // your code here
@@ -47,6 +60,23 @@ namespace Points
         public override String ToString()
         {
             return String.Format("({0}, {1}, {2})", X, Y, Z);
+        }
+        public override bool Equals(Object obj)
+        {
+            //Check for null and compare run-time types.
+            if ((obj == null) || !this.GetType().Equals(obj.GetType()))
+            {
+                return false;
+            }
+            else
+            {
+                Point3D p = (Point3D)obj;
+                return (X == p.X) && (Y == p.Y) && (Z ==p.Z);
+            }
+        }
+        public override int GetHashCode()
+        {
+            return (base.GetHashCode() << 2) ^ Z;
         }
     }
 
