@@ -23,29 +23,31 @@ namespace SuperHeroes
             }
         }
     }
+
     public class Person
     {
         public string Name { get; set; }
         public string NickName { get; set; }
+
         public Person(string name, string nickName)
         {
             this.Name = name;
             this.NickName = nickName;
         }
-        //Why do I do this? 
-        //ohhh, I missed an instruction
+        
         public override String ToString() { return String.Format("{0}: ", Name); }
 
         public virtual void PrintGreeting()
         {
-            Console.WriteLine(ToString());
-            Console.WriteLine("Hello, my name is {0} but you can call me {1}.", Name, NickName);
+            Console.WriteLine(ToString() + "Hello, my name is {0} but you can call me {1}.", Name, NickName);
         }
     }
+
     public class Hero : Person
     {
         public string RealName { get; set; }
         public string SuperPower { get; set; }
+
         public Hero(string name, string realName, string superPower, string nickName) : base (name, nickName)
         {
             this.Name = name;
@@ -56,14 +58,15 @@ namespace SuperHeroes
 
         public override void PrintGreeting()
         {
-            Console.WriteLine(ToString());
-            Console.WriteLine("I am {0}. When I am {1}, my super power is {2}!", RealName, Name, SuperPower);
+            Console.WriteLine(ToString() + "I am {0}. When I am {1}, my super power is {2}!", RealName, Name, SuperPower);
         }
 
     }
+
     public class Villain :  Person
     {
         string Nemesis { get; set; }
+
         public Villain(string nemesis, string name, string nickName) : base (name, nickName)
         {
             this.Nemesis = nemesis;
@@ -73,8 +76,7 @@ namespace SuperHeroes
 
         public override void PrintGreeting()
         {
-            Console.WriteLine(ToString());
-            Console.WriteLine("I am {0}. Have you seen {1}?!!",
+            Console.WriteLine(ToString() + "I am {0}. Have you seen {1}?!!",
             Name, Nemesis);
         }
     }
