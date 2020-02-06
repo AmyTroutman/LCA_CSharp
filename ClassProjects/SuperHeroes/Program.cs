@@ -32,11 +32,13 @@ namespace SuperHeroes
             this.Name = name;
             this.NickName = nickName;
         }
-        //Why do I do this? Somewhere I'm supposed to ToString...
-        //Aha, so it knows how to print!
-        public override String ToString() { return String.Format("{0}", Name); }
+        //Why do I do this? 
+        //ohhh, I missed an instruction
+        public override String ToString() { return String.Format("{0}: ", Name); }
+
         public virtual void PrintGreeting()
         {
+            Console.WriteLine(ToString());
             Console.WriteLine("Hello, my name is {0} but you can call me {1}.", Name, NickName);
         }
     }
@@ -51,9 +53,10 @@ namespace SuperHeroes
             this.SuperPower = superPower;
             this.NickName = null;
         }
-        public override String ToString() { return String.Format("{0}", Name); }
+
         public override void PrintGreeting()
         {
+            Console.WriteLine(ToString());
             Console.WriteLine("I am {0}. When I am {1}, my super power is {2}!", RealName, Name, SuperPower);
         }
 
@@ -63,13 +66,14 @@ namespace SuperHeroes
         string Nemesis { get; set; }
         public Villain(string nemesis, string name, string nickName) : base (name, nickName)
         {
+            this.Nemesis = nemesis;
             this.Name = name;
             this.NickName = null;
-            this.Nemesis = nemesis;
         }
-        public override String ToString() { return String.Format("{0}", Name); }
+
         public override void PrintGreeting()
         {
+            Console.WriteLine(ToString());
             Console.WriteLine("I am {0}. Have you seen {1}?!!",
             Name, Nemesis);
         }
