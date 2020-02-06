@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList", "ToDoList\ToDoLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Points", "Points\Points.csproj", "{2D1E1D09-2800-4F9D-8C0A-A2E5F84681BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperHeroes", "SuperHeroes\SuperHeroes.csproj", "{72C9EBA7-F0BE-4DEB-86BC-80EB412E5775}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -67,5 +69,9 @@ Global
 		{2D1E1D09-2800-4F9D-8C0A-A2E5F84681BD}.Debug|anycpu.Build.0 = Debug|anycpu
 		{2D1E1D09-2800-4F9D-8C0A-A2E5F84681BD}.Release|anycpu.ActiveCfg = Release|anycpu
 		{2D1E1D09-2800-4F9D-8C0A-A2E5F84681BD}.Release|anycpu.Build.0 = Release|anycpu
+		{72C9EBA7-F0BE-4DEB-86BC-80EB412E5775}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{72C9EBA7-F0BE-4DEB-86BC-80EB412E5775}.Debug|anycpu.Build.0 = Debug|anycpu
+		{72C9EBA7-F0BE-4DEB-86BC-80EB412E5775}.Release|anycpu.ActiveCfg = Release|anycpu
+		{72C9EBA7-F0BE-4DEB-86BC-80EB412E5775}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
