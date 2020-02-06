@@ -8,14 +8,19 @@ namespace SuperHeroes
         public static void Main(string[] args)
         {
             Person p1 = new Person("Robert", "Bob");
-            Hero h1 = new Hero("Fireman", null, "John", "Fireball");
+            Hero h1 = new Hero("Fireman", "John", "Fireball", null);
             Villain v1 = new Villain("Fireman", "AquaMan", null);
-            List<Person> mereMortals = new List<Person>();
-            List<Hero> goodGuys = new List<Hero>();
-            List<Villain> badDudes = new List<Villain>();
-            mereMortals.Add(p1);
-            goodGuys.Add(h1);
-            badDudes.Add(v1);
+            List<Person> people = new List<Person>
+            {
+                p1,
+                h1,
+                v1
+            };
+
+            foreach (Person character in people)
+            {
+                character.PrintGreeting();
+            }
         }
     }
     public class Person
@@ -28,8 +33,9 @@ namespace SuperHeroes
             this.NickName = nickName;
         }
         //Why do I do this? Somewhere I'm supposed to ToString...
+        //Aha, so it knows how to print!
         public override String ToString() { return String.Format("{0}", Name); }
-        public void PrintGreeting()
+        public virtual void PrintGreeting()
         {
             Console.WriteLine("Hello, my name is {0} but you can call me {1}.", Name, NickName);
         }
@@ -38,16 +44,17 @@ namespace SuperHeroes
     {
         public string RealName { get; set; }
         public string SuperPower { get; set; }
-        public Hero(string name, string nickName, string realName, string superPower) : base (name, nickName)
+        public Hero(string name, string realName, string superPower, string nickName) : base (name, nickName)
         {
             this.Name = name;
             this.RealName = realName;
             this.SuperPower = superPower;
-            NickName = null;
+            this.NickName = null;
         }
-        public new void PrintGreeting()
+        public override String ToString() { return String.Format("{0}", Name); }
+        public override void PrintGreeting()
         {
-            Console.WriteLine("I am {0}. When I am {1}, my super power is { 2 }!", RealName, Name, SuperPower);
+            Console.WriteLine("I am {0}. When I am {1}, my super power is {2}!", RealName, Name, SuperPower);
         }
 
     }
@@ -60,10 +67,11 @@ namespace SuperHeroes
             this.NickName = null;
             this.Nemesis = nemesis;
         }
-        public new void PrintGreeting()
+        public override String ToString() { return String.Format("{0}", Name); }
+        public override void PrintGreeting()
         {
             Console.WriteLine("I am {0}. Have you seen {1}?!!",
-            Nemesis, Name);
+            Name, Nemesis);
         }
     }
 }

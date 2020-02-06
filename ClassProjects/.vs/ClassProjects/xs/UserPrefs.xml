@@ -1,32 +1,19 @@
-﻿<Properties StartupConfiguration="{2D1E1D09-2800-4F9D-8C0A-A2E5F84681BD}|Default">
+﻿<Properties StartupConfiguration="{72C9EBA7-F0BE-4DEB-86BC-80EB412E5775}|Default">
   <MonoDevelop.Ide.ItemProperties.RockPaperScissors PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Points PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Points/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SuperHeroes/Program.cs">
     <Files>
       <File FileName="Points/Program.cs" Line="79" Column="49" />
-      <File FileName="SuperHeroes/Program.cs" Line="18" Column="1" />
+      <File FileName="SuperHeroes/Program.cs" Line="30" Column="66" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="ClassProjects" expanded="True">
-            <Node name="ClassCollections" expanded="True" />
-            <Node name="Points" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
-            <Node name="SuperHeroes" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.TowersOfHanoi PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.ManyMethods PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.ItemProperties.PigLatin PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.SuperHeroes FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.SuperHeroes FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Mastermind PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.ToDoList PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
