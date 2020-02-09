@@ -1,12 +1,12 @@
-﻿<Properties StartupConfiguration="{72C9EBA7-F0BE-4DEB-86BC-80EB412E5775}|Default">
+﻿<Properties StartupConfiguration="{D814CF5C-D88E-4570-B2B0-9E9CB01A206F}|Default">
   <MonoDevelop.Ide.ItemProperties.RockPaperScissors PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Points PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="CarLot/Program.cs">
     <Files>
       <File FileName="Points/Program.cs" Line="79" Column="49" />
-      <File FileName="SuperHeroes/Program.cs" Line="69" Column="1" />
-      <File FileName="CarLot/Program.cs" Line="1" Column="1" />
+      <File FileName="SuperHeroes/Program.cs" Line="1" Column="1" />
+      <File FileName="CarLot/Program.cs" Line="27" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,13 +15,8 @@
             <Node name="CarLot" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
-            <Node name="Points" expanded="True" />
-            <Node name="SuperHeroes" expanded="True" />
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
@@ -29,6 +24,7 @@
   <MonoDevelop.Ide.ItemProperties.ManyMethods PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.CarLot FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.ticTacToe PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.ItemProperties.PigLatin PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.SuperHeroes PreferredExecutionTarget="MonoDevelop.Default" />

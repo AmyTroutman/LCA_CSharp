@@ -27,15 +27,18 @@ namespace ticTacToe
                 DrawBoard();
                 GetInput();
                 PlaceMark(row, column);
-
-
-
             } while (!CheckForWin(win) && !CheckForTie());
 
             if (CheckForTie() == true)
             {
                 DrawBoard();
                 Console.WriteLine("It's a tie!");
+            }
+
+            if (CheckForWin(win) == true)
+            {
+                DrawBoard();
+                Console.WriteLine(winner + " is the winner!");
             }
 
             // leave this command at the end so your program does not
@@ -197,7 +200,7 @@ namespace ticTacToe
                     {
                         win = true;
                         winner = "X";
-                        Console.Write(winner + " is the winner!");
+                        //Console.Write(winner + " is the winner!");
                     }
                     else
                     {
@@ -221,7 +224,7 @@ namespace ticTacToe
                     {
                         win = true;
                         winner = "X";
-                        Console.Write(winner + " is the winner!");
+                        //Console.Write(winner + " is the winner!");
                     }
                     else
                     {
@@ -246,7 +249,7 @@ namespace ticTacToe
                     {
                         win = true;
                         winner = "X";
-                        Console.Write(winner + " is the winner!");
+                       // Console.Write(winner + " is the winner!");
                     }
                     else
                     {
@@ -270,7 +273,7 @@ namespace ticTacToe
                     {
                         win = true;
                         winner = "O";
-                        Console.Write(winner + " is the winner!");
+                        //Console.Write(winner + " is the winner!");
                     }
                     else
                     {
@@ -294,7 +297,7 @@ namespace ticTacToe
                     {
                         win = true;
                         winner = "O";
-                        Console.Write(winner + " is the winner!");
+                        //Console.Write(winner + " is the winner!");
                     }
                     else
                     {
@@ -318,7 +321,7 @@ namespace ticTacToe
                     {
                         win = true;
                         winner = "O";
-                        Console.Write(winner + " is the winner!");
+                        //Console.Write(winner + " is the winner!");
                     }
                     else
                     {
@@ -349,7 +352,7 @@ namespace ticTacToe
                     {
                         win = true;
                         winner = "X";
-                        Console.Write(winner + " is the winner!");
+                        //Console.Write(winner + " is the winner!");
                     }
                     else
                     {
@@ -373,7 +376,7 @@ namespace ticTacToe
                     {
                         win = true;
                         winner = "X";
-                        Console.Write(winner + " is the winner!");
+                        //Console.Write(winner + " is the winner!");
                     }
                     else
                     {
@@ -398,7 +401,7 @@ namespace ticTacToe
                     {
                         win = true;
                         winner = "X";
-                        Console.Write(winner + " is the winner!");
+                        //Console.Write(winner + " is the winner!");
                     }
                     else
                     {
@@ -422,7 +425,7 @@ namespace ticTacToe
                     {
                         win = true;
                         winner = "O";
-                        Console.Write(winner + " is the winner!");
+                        //Console.Write(winner + " is the winner!");
                     }
                     else
                     {
@@ -446,7 +449,7 @@ namespace ticTacToe
                     {
                         win = true;
                         winner = "O";
-                        Console.Write(winner + " is the winner!");
+                        //Console.Write(winner + " is the winner!");
                     }
                     else
                     {
@@ -470,7 +473,7 @@ namespace ticTacToe
                     {
                         win = true;
                         winner = "O";
-                        Console.Write(winner + " is the winner!");
+                        //Console.Write(winner + " is the winner!");
                     }
                     else
                     {
@@ -501,7 +504,7 @@ namespace ticTacToe
                     {
                         win = true;
                         winner = "X";
-                        Console.Write(winner + " is the winner!");
+                        //Console.Write(winner + " is the winner!");
                     }
                     else
                     {
@@ -525,7 +528,7 @@ namespace ticTacToe
                     {
                         win = true;
                         winner = "X";
-                        Console.Write(winner + " is the winner!");
+                        //Console.Write(winner + " is the winner!");
                     }
                     else
                     {
@@ -551,7 +554,7 @@ namespace ticTacToe
                     {
                         win = true;
                         winner = "O";
-                        Console.Write(winner + " is the winner!");
+                        //Console.Write(winner + " is the winner!");
                     }
                     else
                     {
@@ -575,7 +578,7 @@ namespace ticTacToe
                     {
                         win = true;
                         winner = "O";
-                        Console.Write(winner + " is the winner!");
+                        //Console.Write(winner + " is the winner!");
                     }
                     else
                     {

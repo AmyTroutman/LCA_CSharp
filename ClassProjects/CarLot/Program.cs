@@ -2,7 +2,12 @@
 using System.Collections.Generic;
 
 //my enums, they should be for like make, model, jdpowers, type, hauling?
-//an enum for each field. 
+//an enum for each field.
+public enum Make { Mazda, Toyota, Ford, Honda }
+public enum Model { Mazda3, Mazda5, Corolla, Tacoma, F150, Taurus, Civic, Fit }
+public enum JDPower { BestInClass, BestValue, BestPerformance }
+public enum Type { Sedan, Coupe, Hatchback }
+public enum HaulingCap { Ton, MegaTon, Tonne, GrossTon }
 
 namespace CarLot
 {
