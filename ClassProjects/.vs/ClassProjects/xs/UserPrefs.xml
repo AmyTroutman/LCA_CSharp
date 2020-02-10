@@ -5,20 +5,9 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="CarLot/Program.cs">
     <Files>
       <File FileName="Points/Program.cs" Line="79" Column="49" />
-      <File FileName="SuperHeroes/Program.cs" Line="1" Column="1" />
-      <File FileName="CarLot/Program.cs" Line="27" Column="5" />
+      <File FileName="SuperHeroes/Program.cs" />
+      <File FileName="CarLot/Program.cs" Line="23" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="ClassProjects" expanded="True">
-            <Node name="CarLot" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.TowersOfHanoi PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.ManyMethods PreferredExecutionTarget="MonoDevelop.Default" />

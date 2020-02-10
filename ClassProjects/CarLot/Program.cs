@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 
-//my enums, they should be for like make, model, jdpowers, type, hauling?
+//my enums, they should be for like make, model, type, hauling?
 //an enum for each field.
 public enum Make { Mazda, Toyota, Ford, Honda }
 public enum Model { Mazda3, Mazda5, Corolla, Tacoma, F150, Taurus, Civic, Fit }
-public enum JDPower { BestInClass, BestValue, BestPerformance }
 public enum Type { Sedan, Coupe, Hatchback }
 public enum HaulingCap { Ton, MegaTon, Tonne, GrossTon }
 
@@ -17,7 +16,7 @@ namespace CarLot
         {
             //make two CarLots
             CarLot cl1 = new CarLot("Pretty Good Cars");
-            CarLot cl2 = new CarLot("Bob's O-K Cars");
+            CarLot cl2 = new CarLot("Bob's O-K Car-ral");
 
             //make some cars
 
@@ -59,15 +58,15 @@ namespace CarLot
         public string Make { get; set; }
         public string Model { get; set; }
         public int Price { get; set; }
-        public string JDPowers { get; set; }
+        
 
-        public Vehicle(string plate, string make, string model, int price, string jdPowers)
+        public Vehicle(string plate, string make, string model, int price)
         {
             this.Plate = plate;
             this.Make = make;
             this.Model = model;
             this.Price = price;
-            this.JDPowers = jdPowers;
+            
         }
     }
 
@@ -76,7 +75,7 @@ namespace CarLot
         public string Type { get; set; }
         public int Doors { get; set; }        
 
-        public Car(string plate, string make, string model, int price, string jdPowers, string type, int doors) : base(plate, make, model, price, jdPowers)
+        public Car(string plate, string make, string model, int price, string type, int doors) : base(plate, make, model, price)
         {
             this.Plate = plate;
             this.Make = make;
@@ -92,7 +91,7 @@ namespace CarLot
         public string BedSize { get; set; }
         public string HaulingCap { get; set; }
 
-        public Truck(string plate, string make, string model, int price, string jdPowers, string bedSize, string haulingCap) : base(plate, make, model, price, jdPowers)
+        public Truck(string plate, string make, string model, int price, string bedSize, string haulingCap) : base(plate, make, model, price)
         {
             this.Plate = plate;
             this.Make = make;
@@ -100,7 +99,7 @@ namespace CarLot
             this.Price = price;
             this.BedSize = bedSize;
             this.HaulingCap = haulingCap;
-            this.JDPowers = jdPowers;
+            
         }
     }
 
