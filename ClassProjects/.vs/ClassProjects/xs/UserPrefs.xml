@@ -4,9 +4,8 @@
   <MonoDevelop.Ide.ItemProperties.Points PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="CarLot/Program.cs">
     <Files>
-      <File FileName="Points/Program.cs" Line="79" Column="49" />
-      <File FileName="SuperHeroes/Program.cs" />
-      <File FileName="CarLot/Program.cs" Line="23" Column="1" />
+      <File FileName="SuperHeroes/Program.cs" Line="1" Column="1" />
+      <File FileName="CarLot/Program.cs" Line="48" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.TowersOfHanoi PreferredExecutionTarget="MonoDevelop.Default" />

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 
 //my enums, they should be for like make, model, type, hauling?
 //an enum for each field.
-public enum Make { Mazda, Toyota, Ford, Honda }
-public enum Model { Mazda3, Mazda5, Corolla, Tacoma, F150, Taurus, Civic, Fit }
-public enum Type { Sedan, Coupe, Hatchback }
-public enum HaulingCap { Ton, MegaTon, Tonne, GrossTon }
+//public enum Make { Mazda, Toyota, Ford, Honda }
+//public enum Model { Mazda3, Mazda5, Corolla, Tacoma, F150, Taurus, Civic, Fit }
+//public enum Type { Sedan, Coupe, Hatchback }
+//public enum HaulingCap { Ton, MegaTon, Tonne, GrossTon }
 
 namespace CarLot
 {
@@ -15,37 +15,46 @@ namespace CarLot
         public static void Main(string[] args)
         {
             //make two CarLots
-            CarLot cl1 = new CarLot("Pretty Good Cars");
-            CarLot cl2 = new CarLot("Bob's O-K Car-ral");
+            CarLot cl1 = new CarLot("Pretty Good Cars", new List<Vehicle>());
+            CarLot cl2 = new CarLot("Bob's O-K Car-ral", new List<Vehicle>());
 
             //make some cars
+            Car car01 = new Car("ABC1234", "Mazda", "Mazda3", 22000, "hatchback", 5);
+            Car car02 = new Car("DEF5678", "Honda", "Fit", 32000, "hatchback", 5);
+            Truck truck01 = new Truck("GHI9012", "Toyota", "Tacoma", 54000, "XXl", "20 gross tons");
+            Truck truck02 = new Truck("TRU3452", "Ford", "F150", 65000, "X-Tendo-Matic", "5 tonnes");
 
-            //add to list
-            //Add();
+            //add to list            
+            cl1.ToList(car01);
+            cl1.ToList(truck02);
+            cl2.ToList(truck01);
+            cl2.ToList(car02);
 
             //print inventory
-            //PrintInv();
+            PrintInv();
         }
     }
 
     class CarLot
     {
         string LotName { get; set; }
-        List<Vehicle> vehicles = new List<Vehicle>();
+        List<Vehicle> Vehicles = new List<Vehicle>();
 
-        public CarLot (string lotName)
+        public CarLot (string lotName, List<Vehicle> vehicles)
         {
             this.LotName = lotName;
+            this.Vehicles = vehicles;
         }
-        public void Add(Vehicle vehicle)
+
+        //the list add thingy
+        public void ToList(Vehicle vehicle)
         {
-            //the list add thingy
-            vehicles.Add(vehicle);
+                Vehicles.Add(vehicle);
         }
         public void PrintInv()
         {
             //mebbe like this??
-            foreach (object car in vehicles)
+            foreach (object car in Vehicles)
             {
                 Console.WriteLine(car);
             }
