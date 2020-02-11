@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperHeroes", "SuperHeroes\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarLot", "CarLot\CarLot.csproj", "{DE8998F1-F5A2-4562-A29B-936516DDD223}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRentable", "IRentable\IRentable.csproj", "{243CCF32-9369-4347-B44A-E5FB5F61328A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -79,5 +81,9 @@ Global
 		{DE8998F1-F5A2-4562-A29B-936516DDD223}.Debug|anycpu.Build.0 = Debug|anycpu
 		{DE8998F1-F5A2-4562-A29B-936516DDD223}.Release|anycpu.ActiveCfg = Release|anycpu
 		{DE8998F1-F5A2-4562-A29B-936516DDD223}.Release|anycpu.Build.0 = Release|anycpu
+		{243CCF32-9369-4347-B44A-E5FB5F61328A}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{243CCF32-9369-4347-B44A-E5FB5F61328A}.Debug|anycpu.Build.0 = Debug|anycpu
+		{243CCF32-9369-4347-B44A-E5FB5F61328A}.Release|anycpu.ActiveCfg = Release|anycpu
+		{243CCF32-9369-4347-B44A-E5FB5F61328A}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
