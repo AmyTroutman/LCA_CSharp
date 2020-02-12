@@ -1,26 +1,28 @@
-﻿<Properties StartupConfiguration="{DE8998F1-F5A2-4562-A29B-936516DDD223}|Default">
+﻿<Properties StartupConfiguration="{243CCF32-9369-4347-B44A-E5FB5F61328A}|Default">
   <MonoDevelop.Ide.ItemProperties.RockPaperScissors PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Points PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.IRentable FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="IRentable/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.IRentable PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Checkers/Program.cs">
     <Files>
       <File FileName="CarLot/Program.cs" Line="33" Column="32" />
-      <File FileName="IRentable/Program.cs" Line="113" Column="1" />
+      <File FileName="Checkers/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ClassProjects" expanded="True">
             <Node name="CarLot" expanded="True" />
-            <Node name="IRentable" expanded="True">
+            <Node name="Checkers" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
+            <Node name="IRentable" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Checkers FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.TowersOfHanoi PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.ManyMethods PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

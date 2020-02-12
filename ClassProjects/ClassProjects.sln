@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarLot", "CarLot\CarLot.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRentable", "IRentable\IRentable.csproj", "{243CCF32-9369-4347-B44A-E5FB5F61328A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkers", "Checkers\Checkers.csproj", "{A2280558-D1E6-44E7-8803-F525A8E75B5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -85,5 +87,9 @@ Global
 		{243CCF32-9369-4347-B44A-E5FB5F61328A}.Debug|anycpu.Build.0 = Debug|anycpu
 		{243CCF32-9369-4347-B44A-E5FB5F61328A}.Release|anycpu.ActiveCfg = Release|anycpu
 		{243CCF32-9369-4347-B44A-E5FB5F61328A}.Release|anycpu.Build.0 = Release|anycpu
+		{A2280558-D1E6-44E7-8803-F525A8E75B5C}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{A2280558-D1E6-44E7-8803-F525A8E75B5C}.Debug|anycpu.Build.0 = Debug|anycpu
+		{A2280558-D1E6-44E7-8803-F525A8E75B5C}.Release|anycpu.ActiveCfg = Release|anycpu
+		{A2280558-D1E6-44E7-8803-F525A8E75B5C}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
