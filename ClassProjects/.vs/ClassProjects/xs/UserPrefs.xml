@@ -1,20 +1,23 @@
-﻿<Properties StartupConfiguration="{243CCF32-9369-4347-B44A-E5FB5F61328A}|Default">
+﻿<Properties StartupConfiguration="{A2280558-D1E6-44E7-8803-F525A8E75B5C}|Default">
   <MonoDevelop.Ide.ItemProperties.RockPaperScissors PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Points PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.IRentable PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Checkers/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../Samples/Checkers_Sample/Checkers_Sample/Game.cs">
     <Files>
-      <File FileName="CarLot/Program.cs" Line="33" Column="32" />
-      <File FileName="Checkers/Program.cs" Line="1" Column="1" />
+      <File FileName="../../../Samples/Checkers_Sample/Checkers_Sample/Board.cs" Line="1" Column="1" />
+      <File FileName="../../../Samples/Checkers_Sample/Checkers_Sample/Checker.cs" Line="1" Column="1" />
+      <File FileName="../../../Samples/Checkers_Sample/Checkers_Sample/Game.cs" Line="1" Column="1" />
+      <File FileName="../../../Samples/Checkers_Sample/Checkers_Sample/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ClassProjects" expanded="True">
             <Node name="CarLot" expanded="True" />
-            <Node name="Checkers" expanded="True">
-              <Node name="Program.cs" selected="True" />
+            <Node name="Checkers" expanded="True" />
+            <Node name="Checkers_Sample" expanded="True">
+              <Node name="Game.cs" selected="True" />
             </Node>
             <Node name="IRentable" expanded="True" />
           </Node>
@@ -22,7 +25,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Checkers FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Checkers PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.TowersOfHanoi PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.ManyMethods PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
