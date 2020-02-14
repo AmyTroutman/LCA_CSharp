@@ -8,10 +8,7 @@ namespace Checkers_Sample
     {
         static void Main(string[] args)
         {
-            // The line below is needed so Console window can display
-            // the black disk and the white circle correctly
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-
             Game newGame = new Game();
             newGame.Start();
             Console.ReadKey();
