@@ -22,6 +22,7 @@ namespace Checkers_Sample
 
         public void Start()
         {
+
             DrawBoard();
            
             while (!CheckForWin())
@@ -35,7 +36,7 @@ namespace Checkers_Sample
 
         public bool IsLegalMove(Color player, Position source, Position destination)
         {
-            //These check that the destination is valid
+            //These check that the destination is on the board
             //Both the source position and the destination position must be integers between 0 and 7
             if (source.Row < 0 || source.Row > 7 || source.Column < 0 || source.Column > 7
                 || destination.Row < 0 || destination.Row > 7 || destination.Column < 0
@@ -90,10 +91,7 @@ namespace Checkers_Sample
 
         public bool IsCapture(Position source, Position destination)
         {
-            //TODO: something in here isn't working consistently
             
-            //TODO: what is this? would this work better than Math?
-            // |destination.Row - source.Row|==2 && |destination.Column - source.Column|==2
             int rowDistance = Math.Abs(destination.Row - source.Row);
             int colDistance = Math.Abs(destination.Column - source.Column);
             

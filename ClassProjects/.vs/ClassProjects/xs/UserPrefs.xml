@@ -1,14 +1,14 @@
-﻿<Properties StartupConfiguration="{33FC8633-B5D7-4A9B-AF6A-2FDFA8786B77}|Default">
+﻿<Properties StartupConfiguration="{A2280558-D1E6-44E7-8803-F525A8E75B5C}|Default">
   <MonoDevelop.Ide.ItemProperties.RockPaperScissors PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Points PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.IRentable PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Checkers/Board.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Checkers/Game.cs">
     <Files>
-      <File FileName="Checkers/Program.cs" Line="30" Column="23" />
-      <File FileName="Checkers/Game.cs" Line="1" Column="1" />
-      <File FileName="Checkers/Checker.cs" Line="1" Column="1" />
-      <File FileName="Checkers/Board.cs" Line="1" Column="1" />
+      <File FileName="Checkers/Program.cs" Line="13" Column="23" />
+      <File FileName="Checkers/Game.cs" Line="180" Column="22" />
+      <File FileName="Checkers/Checker.cs" Line="33" Column="2" />
+      <File FileName="Checkers/Board.cs" Line="53" Column="47" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,10 +16,10 @@
           <Node name="ClassProjects" expanded="True">
             <Node name="CarLot" expanded="True" />
             <Node name="Checkers" expanded="True">
-              <Node name="Board.cs" selected="True" />
+              <Node name="Game.cs" selected="True" />
             </Node>
             <Node name="Checkers_Sample" expanded="True" />
-            <Node name="IRentable" expanded="True" />
+            <Node name="TowersOfHanoi" expanded="True" />
           </Node>
         </State>
       </Pad>

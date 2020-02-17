@@ -50,7 +50,7 @@ namespace Checkers_Sample
         public void MoveChecker(Checker checker, Position destination)
         {
             Checker c = new Checker(checker.Team, destination.Row, destination.Column);
-            //Add the checker the destination
+            //Add the checker the destinationq
             Checkers.Add(c);
             //Remove checker from the source
             Checkers.Remove(checker);
