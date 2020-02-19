@@ -1,0 +1,30 @@
+CREATE TABLE books(
+    id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    title TEXT,
+    author TEXT    
+);
+
+INSERT INTO books (title, author)
+VALUES('The Thief', 'Megan Whaler Turner');
+
+INSERT INTO books (title, author)
+VALUES('Fahrenheit 451', 'Ray Bradbury');
+
+INSERT INTO books (id, title, author)
+VALUES('Pride and Prejudice', 'Jane Austen');
+
+INSERT INTO books (title, author)
+VALUES('Red Rising', 'Pierce Brown');
+
+INSERT INTO books (title, author)
+VALUES('Deep Breath Hold Tight', 'Jason Gurley');
+
+INSERT INTO books (title, author)
+VALUES('Wool', 'Hugh Howey');
+
+SELECT * FROM books;
+SELECT * FROM books WHERE id = 4;
+SELECT title FROM books;
+UPDATE books SET title = 'Deep Breath, Hold Tight' WHERE id = 5;
+DELETE FROM books WHERE id = 7; 
+ 

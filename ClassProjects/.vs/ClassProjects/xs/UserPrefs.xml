@@ -3,12 +3,12 @@
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Points PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.IRentable PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Checkers/Game.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Checkers/Board.cs">
     <Files>
       <File FileName="Checkers/Program.cs" Line="13" Column="23" />
-      <File FileName="Checkers/Game.cs" Line="180" Column="22" />
+      <File FileName="Checkers/Game.cs" Line="37" Column="47" />
       <File FileName="Checkers/Checker.cs" Line="33" Column="2" />
-      <File FileName="Checkers/Board.cs" Line="53" Column="47" />
+      <File FileName="Checkers/Board.cs" Line="41" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +16,7 @@
           <Node name="ClassProjects" expanded="True">
             <Node name="CarLot" expanded="True" />
             <Node name="Checkers" expanded="True">
-              <Node name="Game.cs" selected="True" />
+              <Node name="Board.cs" selected="True" />
             </Node>
             <Node name="Checkers_Sample" expanded="True" />
             <Node name="TowersOfHanoi" expanded="True" />
