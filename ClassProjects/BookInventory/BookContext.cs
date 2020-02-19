@@ -23,8 +23,6 @@ namespace BookInventory
             //Console.WriteLine("using database file :"+DatabaseFile);
 
             optionsBuilder.UseSqlite("Data Source=" + DatabaseFile);
-        }
-
-        
+        }    
     }
 }
