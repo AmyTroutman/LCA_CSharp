@@ -1,7 +1,7 @@
 ﻿using System;
 namespace BookInventory
 {
-    class Book : BookContext
+    class Book
     {
         public int Id { get; private set; }
         public string Title { get; set; }
