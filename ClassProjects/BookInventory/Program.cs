@@ -7,9 +7,7 @@ namespace BookInventory
     {
         public static void Main(string[] args)
         {
-            bool stop = false;
-
-            //
+            bool stop = false;         
             BookContext context = new BookContext();
             context.Database.EnsureCreated();
 
