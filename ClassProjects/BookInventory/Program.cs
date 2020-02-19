@@ -18,7 +18,7 @@ namespace BookInventory
                 Book newBook = new Book(title, author);
                 context.MyLibrary.Add(newBook);
                 context.SaveChanges();
-                Console.WriteLine("{0} was added to your library! Would you like to add another book?");
+                Console.WriteLine("{0} was added to your library! Would you like to add another book?", title);
                 string answer = Console.ReadLine().ToLower();
                 if (answer == "no")
                 {
@@ -29,7 +29,7 @@ namespace BookInventory
 
             foreach (Book b in context.MyLibrary)
             {
-                Console.WriteLine("{0}: {1} {2}", b.Id, b.Title, b.Author);
+                Console.WriteLine("{0}: {1} by {2}", b.Id, b.Title, b.Author);
             }
         }
     }
