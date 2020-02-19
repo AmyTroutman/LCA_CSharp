@@ -24,5 +24,7 @@ namespace BookInventory
 
             optionsBuilder.UseSqlite("Data Source=" + DatabaseFile);
         }
+
+        
     }
 }
