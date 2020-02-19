@@ -1,25 +1,22 @@
 ﻿<Properties StartupConfiguration="{A2280558-D1E6-44E7-8803-F525A8E75B5C}|Default">
+  <MonoDevelop.Ide.ItemProperties.BookInventory FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.RockPaperScissors PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Points PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.IRentable PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Checkers/Board.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BookInventory/BookContext.cs">
     <Files>
-      <File FileName="Checkers/Program.cs" Line="13" Column="23" />
-      <File FileName="Checkers/Game.cs" Line="37" Column="47" />
-      <File FileName="Checkers/Checker.cs" Line="33" Column="2" />
-      <File FileName="Checkers/Board.cs" Line="41" Column="16" />
+      <File FileName="BookInventory/Program.cs" Line="25" Column="33" />
+      <File FileName="BookInventory/EmptyClass.cs" Line="17" Column="1" />
+      <File FileName="BookInventory/BookContext.cs" Line="6" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ClassProjects" expanded="True">
-            <Node name="CarLot" expanded="True" />
-            <Node name="Checkers" expanded="True">
-              <Node name="Board.cs" selected="True" />
+            <Node name="BookInventory" expanded="True">
+              <Node name="BookContext.cs" selected="True" />
             </Node>
-            <Node name="Checkers_Sample" expanded="True" />
-            <Node name="TowersOfHanoi" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -31,7 +28,6 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.CarLot PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.ticTacToe PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.Checkers__Sample PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.ItemProperties.PigLatin PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.SuperHeroes PreferredExecutionTarget="MonoDevelop.Default" />
