@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkers", "Checkers\Checke
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookInventory", "BookInventory\BookInventory.csproj", "{7C3E2C5D-8C5B-427E-BF90-201306267802}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoApp", "ToDoApp\ToDoApp.csproj", "{616E381F-44A9-4069-ACC4-42BF6308DB85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -159,5 +161,13 @@ Global
 		{7C3E2C5D-8C5B-427E-BF90-201306267802}.Debug|x86.Build.0 = Debug|anycpu
 		{7C3E2C5D-8C5B-427E-BF90-201306267802}.Release|x86.ActiveCfg = Release|anycpu
 		{7C3E2C5D-8C5B-427E-BF90-201306267802}.Release|x86.Build.0 = Release|anycpu
+		{616E381F-44A9-4069-ACC4-42BF6308DB85}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{616E381F-44A9-4069-ACC4-42BF6308DB85}.Debug|anycpu.Build.0 = Debug|anycpu
+		{616E381F-44A9-4069-ACC4-42BF6308DB85}.Release|anycpu.ActiveCfg = Release|anycpu
+		{616E381F-44A9-4069-ACC4-42BF6308DB85}.Release|anycpu.Build.0 = Release|anycpu
+		{616E381F-44A9-4069-ACC4-42BF6308DB85}.Debug|x86.ActiveCfg = Debug|anycpu
+		{616E381F-44A9-4069-ACC4-42BF6308DB85}.Debug|x86.Build.0 = Debug|anycpu
+		{616E381F-44A9-4069-ACC4-42BF6308DB85}.Release|x86.ActiveCfg = Release|anycpu
+		{616E381F-44A9-4069-ACC4-42BF6308DB85}.Release|x86.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
