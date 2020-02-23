@@ -6,7 +6,7 @@ namespace ToDoApp
 {
     class ItemContext : DbContext
     {        
-        public DbSet<ToDoItem> MyLibrary { get; set; }
+        public DbSet<ToDoItem> ToDoList { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

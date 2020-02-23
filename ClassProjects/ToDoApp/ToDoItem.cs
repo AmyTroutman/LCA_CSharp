@@ -10,7 +10,9 @@ namespace ToDoApp
         public ToDoItem(string description, string status)
         {
             this.Description = description;
-            this.Status = status;
+            //Pending by default, because surely I'm the only person who adds
+            //finished tasks to my list to make myself feel like I'm accomplishing a lot.
+            Status = "Pending";
         }
     }
 }

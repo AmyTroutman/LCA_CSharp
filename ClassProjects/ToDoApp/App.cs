@@ -3,8 +3,27 @@ namespace ToDoApp
 {
     public class App
     {
+        public bool isDone;
+
         public App()
         {
+        }
+
+        public void Start()
+        {
+            do
+            {
+                Menu();
+            } while (isDone == false);
+        }
+
+        public void Quit()
+        {
+            if (isDone == true)
+            {
+                ItemRepo.Save();
+                Console.ReadKey();
+            }
         }
     }
 }
