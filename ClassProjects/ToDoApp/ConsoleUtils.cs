@@ -3,82 +3,124 @@ namespace ToDoApp
 {
     public class ConsoleUtils
     {
-        public string MenuSelect;
-        public string NewTask;
-        int MarkDone;
-        int DeleteTask;
-
-        public ConsoleUtils(string menuSelect, string newTask, int markDone, int deleteTask)
+              
+        public ConsoleUtils()
         {
-            this.MenuSelect = menuSelect;
-            this.NewTask = newTask;
-            this.MarkDone = markDone;
-            this.DeleteTask = deleteTask;
         }
-
-        public void Menu(string menuSelect)
+       
+        public static void Menu()
         {
             Console.WriteLine(
-            "List-0-Matic",        
-            "What would like to do?",
+            "List-0-Matic",                    
             "NEW: add a new task to your todo list.",
             "DONE: mark a task as done.",
-            "DELETE: remove a task from your list.",
-            "ALL: Print all tasks.",
+            "DELETE: remove a task from your list.",            
             "ACTIVE: Print active tasks.",
             "INACTIVE: Print completed tasks.",
+            "ALL: Print all tasks.",
             "QUIT: Paranoid save and exit the program."
-            );
-            menuSelect = Console.ReadLine().ToUpper();
+            );          
         }
 
-        public void New(string newTask)
+        public static string NewPrompt()
         {
             Console.WriteLine("Tell me what you need to do:");
-            newTask = Console.ReadLine();
+            string task = Console.ReadLine();
+            return task;
         }
-
-        //todo: convert strings to ints
-        public void Done(int markDone)
+       
+        public static int DonePrompt()
         {
             PrintActive();
             Console.WriteLine("Enter the ID of the task you want to mark as done:");
-            //put in the convert to int thing
-            //int markDone = Console.ReadLine();
+            string idStr = Console.ReadLine();
+            int idDone = Convert.ToInt32(idStr);
+            return idDone;
         }
 
-        public void Delete(int deleteTask)
+        public static int DeletePrompt()
         {
             PrintAll();
             Console.WriteLine("Enter the ID of the task you would like to delete: ");
-            //put in the convert to int thing
-            //int deleteTask = Console.ReadLine();
+            string idStr = Console.ReadLine();
+            int idDel = Convert.ToInt32(idStr);
+            return idDel;
         }
 
         //todo: build print methods
-        public void PrintAll()
+        public static void PrintAll()
         {
-            //Prints all tasks
+            foreach (ToDoItem t in context.ToDoList)
+            {
+                Console.WriteLine("{0}: {1} by {2}", t.ID, t.Description, t.Status);
+            }
         }
 
-        public void PrintActive()
+        public static void PrintActive()
         {
             //Prints all active tasks
+            //linq where status == pending
         }
 
-        public void PrintInactive()
+        public static void PrintInactive()
         {
             //Prints all inactive tasks
+            //linq where status == done
         }
 
-        public void BadRequest()
+        public static void QuitPrint()
         {
-            Console.WriteLine("I don't recognize that command. Try one of the UPPERCASE commands.");
-        }
-
-        public void QuitPrint()
-        {
+            Console.WriteLine("ToDo list saved.");
             Console.WriteLine("Here are you active tasks: ");
+            PrintActive();
+            Console.WriteLine("Get to work!");
+        }
+        
+        public static string GetInput()
+        {            
+            Console.WriteLine("/nWhat would like to do?"); 
+            string userInput = Console.ReadLine().ToUpper().Trim();
+            string input = "";
+            bool validInput = false;
+
+            do
+            {
+                switch (userInput) // find user selection 
+                {
+                    case "NEW":
+                        input = "addItem";
+                        validInput = true;
+                        break;
+                    case "DELETE":
+                        input = "deleteItem";
+                        validInput = true;
+                        break;
+                    case "DONE":                  
+                        input = "markDone";
+                        validInput = true;
+                        break;
+                    case "All":                    
+                        input = "printAll";
+                        validInput = true;
+                        break;
+                    case "ACTIVE":                    
+                        input = "printActive";
+                        validInput = true;
+                        break;
+                    case "INACTIVE":                    
+                        input = "printInactive";
+                        validInput = true;
+                        break;
+                    case "QUIT":
+                        input = "quit";
+                        validInput = true;
+                        break;
+                    default: //error display message                    
+                        Console.WriteLine("\nInvaid Option!");
+                        break;
+                }
+            } while (validInput == false);
+            return input;
         }
     }
 }

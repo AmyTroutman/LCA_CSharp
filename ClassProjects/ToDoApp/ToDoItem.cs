@@ -7,7 +7,7 @@ namespace ToDoApp
         public string Description { get; set; }
         public string Status { get; set; }
 
-        public ToDoItem(string description, string status)
+        public ToDoItem(string description)
         {
             this.Description = description;
             //Pending by default, because surely I'm the only person who adds

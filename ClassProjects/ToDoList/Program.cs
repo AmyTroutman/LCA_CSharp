@@ -8,7 +8,7 @@ namespace ToDoList
          
         public static void Main(string[] args)
         {
-            bool imDone = false;
+            bool isDone = false;
             Console.WriteLine("Let's make a list!");
             do
             {
@@ -22,13 +22,13 @@ namespace ToDoList
                 string noMore = Console.ReadLine().ToLower();
                 if (noMore == "no")
                 {
-                    imDone = true;
+                    isDone = true;
                 }                               
                 ToDoList MyList = new ToDoList(task, date, pri);
                 //it's erasing masterlist when it gets here. why??
                 //it wasn't STATIC! now it 'members. le sigh of relief...
                 MyList.ListOfLists();                                
-            } while (imDone == false);
+            } while (isDone == false);
             //fuck me, just make everything static. want to use an outside method? it better be STATIC! Want that list to remember everything? Make it STATIC!
             ToDoList.PrintAll();
         }

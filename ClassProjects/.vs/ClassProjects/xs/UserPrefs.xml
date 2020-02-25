@@ -4,24 +4,25 @@
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Points PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.IRentable PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ToDoApp/ItemContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BookInventory/Program.cs">
     <Files>
-      <File FileName="ToDoApp/Program.cs" Line="13" Column="1" />
-      <File FileName="ToDoApp/App.cs" Line="1" Column="1" />
-      <File FileName="ToDoApp/ItemRepository.cs" Line="15" Column="1" />
-      <File FileName="ToDoApp/ConsoleUtils.cs" Line="17" Column="3" />
-      <File FileName="ToDoApp/ToDoItem.cs" Line="14" Column="15" />
-      <File FileName="ToDoApp/ItemContext.cs" Line="9" Column="32" />
-      <File FileName="ToDoList/Program.cs" Line="1" Column="1" />
+      <File FileName="ToDoApp/Program.cs" Line="11" Column="30" />
+      <File FileName="ToDoApp/App.cs" Line="58" Column="22" />
+      <File FileName="ToDoApp/ConsoleUtils.cs" Line="99" Column="44" />
+      <File FileName="ToDoApp/ItemRepo.cs" Line="10" Column="62" />
+      <File FileName="BookInventory/Program.cs" Line="21" Column="52" />
+      <File FileName="ToDoList/Program.cs" Line="36" Column="6" />
+      <File FileName="ToDoApp/ToDoItem.cs" Line="10" Column="43" />
+      <File FileName="ToDoApp/ItemContext.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ClassProjects" expanded="True">
-            <Node name="BookInventory" expanded="True" />
-            <Node name="ToDoApp" expanded="True">
-              <Node name="ItemContext.cs" selected="True" />
+            <Node name="BookInventory" expanded="True">
+              <Node name="Program.cs" selected="True" />
             </Node>
+            <Node name="ToDoApp" expanded="True" />
             <Node name="ToDoList" expanded="True" />
           </Node>
         </State>
