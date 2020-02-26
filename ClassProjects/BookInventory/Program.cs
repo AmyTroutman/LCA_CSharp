@@ -34,8 +34,7 @@ namespace BookInventory
                 }
             } while (stop == false);
 
-            Console.WriteLine(" ");
-            Console.WriteLine("These are the books in your library:");
+            Console.WriteLine(" ");           
 
             foreach (Book b in context.MyLibrary)
             {
@@ -78,12 +77,15 @@ namespace BookInventory
             }
 
             Console.WriteLine(" ");
+            int bookCount = context.MyLibrary.Count();
+            Console.WriteLine("You have {0} books in your library.", bookCount);
             Console.WriteLine("These are the books in your library:");
 
             foreach (Book b in context.MyLibrary)
             {
                 Console.WriteLine("{0}: {1} by {2}", b.Id, b.Title, b.Author);
             }
+            
         }
     }
 }

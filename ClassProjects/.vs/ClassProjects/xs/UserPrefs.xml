@@ -6,14 +6,15 @@
   <MonoDevelop.Ide.ItemProperties.IRentable PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="BookInventory/Program.cs">
     <Files>
-      <File FileName="ToDoApp/Program.cs" Line="11" Column="30" />
-      <File FileName="ToDoApp/App.cs" Line="58" Column="22" />
-      <File FileName="ToDoApp/ConsoleUtils.cs" Line="99" Column="44" />
-      <File FileName="ToDoApp/ItemRepo.cs" Line="10" Column="62" />
-      <File FileName="BookInventory/Program.cs" Line="21" Column="52" />
+      <File FileName="ToDoApp/Program.cs" Line="8" Column="10" IsPinned="True" />
+      <File FileName="ToDoApp/App.cs" Line="28" Column="39" IsPinned="True" />
+      <File FileName="ToDoApp/ConsoleUtils.cs" Line="27" Column="34" />
+      <File FileName="ToDoApp/ItemRepo.cs" Line="33" Column="43" />
       <File FileName="ToDoList/Program.cs" Line="36" Column="6" />
-      <File FileName="ToDoApp/ToDoItem.cs" Line="10" Column="43" />
-      <File FileName="ToDoApp/ItemContext.cs" Line="1" Column="1" />
+      <File FileName="ToDoApp/ToDoItem.cs" Line="19" Column="1" />
+      <File FileName="ToDoApp/ItemContext.cs" Line="7" Column="12" />
+      <File FileName="BookInventory/Program.cs" Line="92" Column="2" />
+      <File FileName="BookInventory/BookContext.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -34,7 +35,7 @@
   <MonoDevelop.Ide.ItemProperties.ManyMethods PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.CarLot PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.ToDoApp FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.ToDoApp PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.ticTacToe PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.ItemProperties.PigLatin PreferredExecutionTarget="MonoDevelop.Default" />
