@@ -14,18 +14,19 @@ namespace ToDoApp
             context.Database.EnsureCreated();
         }
 
-        //public static (List<ToDoItem>, int) GetList(string status) //create list
-        //{
-        //    IEnumerable<ToDoItem> itemList; //create list
-        //    if (status != null) //filter status 
-        //    {
-        //        itemList = context.ToDoList.Where(x => x.Status == status);
-        //    }
-        //    else
-        //    {
-        //        itemList = context.ToDoList;
-        //    }
-        //}
+        public static List<ToDoItem> GetList(string status)
+        {
+            IEnumerable<ToDoItem> itemList; //create list
+            if (status != null) //filter status 
+            {
+                itemList = context.ToDoList.Where(x => x.Status == status);
+            }
+            else
+            {
+                itemList = context.ToDoList;
+            }
+            return (itemList.ToList());
+        }
 
         public static void AddTask()
         {

@@ -41,12 +41,15 @@ namespace ToDoApp
                     break;
 
                     case "printAll":
-                         //Todo: call method
+                        //Todo: call method
+                        
                     break;
 
                     case "printActive":
                         //todo: call method
-                    break;
+                        GetList("pending");
+                        PrintActive();
+                        break;
 
                     case "printInactive":
                         //Todo: call method

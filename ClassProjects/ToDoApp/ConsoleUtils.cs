@@ -63,6 +63,10 @@ namespace ToDoApp
         {
             //Prints all active tasks
             //linq where status == pending
+            foreach(var item in ItemRepository.GetList("pending"))
+            {
+                Console.WriteLine(item);
+            }
         }
 
         public static void PrintInactive()
