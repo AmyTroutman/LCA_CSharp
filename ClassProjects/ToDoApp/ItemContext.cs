@@ -4,7 +4,7 @@ using System.IO;
 
 namespace ToDoApp
 {
-    class ItemContext : DbContext
+    public class ItemContext : DbContext
     {        
         public DbSet<ToDoItem> ToDoList { get; set; }
 

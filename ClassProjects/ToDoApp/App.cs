@@ -19,24 +19,24 @@ namespace ToDoApp
         {
             do
             {          
-                ConsoleUtils.Menu();
+                Menu();
                 string input = GetInput();
                 switch(input)
                 {
                     case "addItem":
                         //call add method
-                        NewPrompt();
-                        AddTask(NewPrompt());
+                        //NewPrompt();
+                        AddTask();
                     break;
 
                     case "deleteItem":
-                        DeletePrompt();
+                        //DeletePrompt();
                         DeleteTask();
                     break;
 
                     case "markDone":
                         //call method
-                        DonePrompt();
+                        //DonePrompt();
                         DoneTask();
                     break;
 

@@ -11,22 +11,20 @@ namespace ToDoApp
         public static void Menu()
         {
             Console.WriteLine(
-            "List-0-Matic",                    
-            "NEW: add a new task to your todo list.",
-            "DONE: mark a task as done.",
-            "DELETE: remove a task from your list.",            
-            "ACTIVE: Print active tasks.",
-            "INACTIVE: Print completed tasks.",
-            "ALL: Print all tasks.",
-            "QUIT: Paranoid save and exit the program."
+            "List-0-Matic /nNEW: add a new task to your todo list. /nDONE: mark a task as done. /nDELETE: remove a task from your list. /nACTIVE: Print active tasks. /nINACTIVE: Print completed tasks. /nALL: Print all tasks. /nQUIT: Paranoid save and exit the program."
             );          
         }
 
         public static string NewPrompt()
         {
             Console.WriteLine("Tell me what you need to do:");
+            //todo: check for null input
             string task = Console.ReadLine();
-            return task;
+            if (task != null)
+            {
+                return task;
+            }
+            return "Invalid input";
         }
        
         public static int DonePrompt()
@@ -34,7 +32,9 @@ namespace ToDoApp
             PrintActive();
             Console.WriteLine("Enter the ID of the task you want to mark as done:");
             string idStr = Console.ReadLine();
-            int idDone = Convert.ToInt32(idStr);
+            //done: switch to tryparse for error handling
+            //int idDone = Convert.ToInt32(idStr);
+            Int32.TryParse(idStr, out int idDone);
             return idDone;
         }
 
@@ -43,17 +43,20 @@ namespace ToDoApp
             PrintAll();
             Console.WriteLine("Enter the ID of the task you would like to delete: ");
             string idStr = Console.ReadLine();
-            int idDel = Convert.ToInt32(idStr);
+            //done: switch to tryparse for error handling
+            //int idDel = Convert.ToInt32(idStr);
+            Int32.TryParse(idStr, out int idDel);
             return idDel;
         }
 
         //todo: build print methods
+        //how do I access context if ConsoleUtils isn't allowed to access ItemRepo?
         public static void PrintAll()
         {
-            foreach (ToDoItem t in context.ToDoList)
-            {
-                Console.WriteLine("{0}: {1} by {2}", t.ID, t.Description, t.Status);
-            }
+            //foreach (ToDoItem t in context.ToDoList)
+            //{
+            //    Console.WriteLine("{0}: {1} by {2}", t.ID, t.Description, t.Status);
+            //}
         }
 
         public static void PrintActive()
@@ -78,7 +81,7 @@ namespace ToDoApp
         
         public static string GetInput()
         {            
-            Console.WriteLine("/nWhat would like to do?"); 
+            Console.WriteLine("What would like to do?"); 
             string userInput = Console.ReadLine().ToUpper().Trim();
             string input = "";
             bool validInput = false;

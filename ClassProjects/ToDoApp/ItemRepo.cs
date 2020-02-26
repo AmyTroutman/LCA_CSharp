@@ -7,16 +7,29 @@ namespace ToDoApp
 {
     public class ItemRepository
     {
-        static ItemContext context = new ItemContext();
+        public static ItemContext context = new ItemContext();
 
         public ItemRepository()
         {
             context.Database.EnsureCreated();
-        }       
+        }
 
-        public static void AddTask(string task)
+        //public static (List<ToDoItem>, int) GetList(string status) //create list
+        //{
+        //    IEnumerable<ToDoItem> itemList; //create list
+        //    if (status != null) //filter status 
+        //    {
+        //        itemList = context.ToDoList.Where(x => x.Status == status);
+        //    }
+        //    else
+        //    {
+        //        itemList = context.ToDoList;
+        //    }
+        //}
+
+        public static void AddTask()
         {
-            ToDoItem newTask = new ToDoItem(task);
+            ToDoItem newTask = new ToDoItem(NewPrompt());
             context.ToDoList.Add(newTask);
             context.SaveChanges();
         }
