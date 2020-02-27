@@ -1,29 +1,29 @@
-﻿<Properties StartupConfiguration="{7C3E2C5D-8C5B-427E-BF90-201306267802}|Default">
+﻿<Properties StartupConfiguration="{616E381F-44A9-4069-ACC4-42BF6308DB85}|Default">
   <MonoDevelop.Ide.ItemProperties.BookInventory PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.RockPaperScissors PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Points PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.IRentable PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ToDoList/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ToDoApp/ItemRepo.cs">
     <Files>
       <File FileName="ToDoApp/Program.cs" Line="8" Column="10" IsPinned="True" />
-      <File FileName="ToDoApp/App.cs" Line="28" Column="39" IsPinned="True" />
-      <File FileName="ToDoList/Program.cs" Line="36" Column="6" IsPinned="True" />
-      <File FileName="ToDoApp/ConsoleUtils.cs" Line="27" Column="34" />
-      <File FileName="ToDoApp/ItemRepo.cs" Line="33" Column="43" />
-      <File FileName="ToDoApp/ToDoItem.cs" Line="19" Column="1" />
-      <File FileName="ToDoApp/ItemContext.cs" Line="7" Column="12" />
-      <File FileName="BookInventory/Program.cs" Line="37" Column="36" />
+      <File FileName="ToDoApp/App.cs" IsPinned="True" />
+      <File FileName="ToDoApp/ConsoleUtils.cs" />
+      <File FileName="ToDoApp/ItemRepo.cs" Line="29" Column="1" />
+      <File FileName="ToDoApp/ToDoItem.cs" />
+      <File FileName="ToDoApp/ItemContext.cs" />
+      <File FileName="ToDoList/Program.cs" />
+      <File FileName="BookInventory/Program.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ClassProjects" expanded="True">
             <Node name="BookInventory" expanded="True" />
-            <Node name="ToDoApp" expanded="True" />
-            <Node name="ToDoList" expanded="True">
-              <Node name="Program.cs" selected="True" />
+            <Node name="ToDoApp" expanded="True">
+              <Node name="ItemRepo.cs" selected="True" />
             </Node>
+            <Node name="ToDoList" expanded="True" />
           </Node>
         </State>
       </Pad>

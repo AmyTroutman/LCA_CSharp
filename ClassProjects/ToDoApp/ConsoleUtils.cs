@@ -7,14 +7,72 @@ namespace ToDoApp
         public ConsoleUtils()
         {
         }
-       
+
+       //prints main menu
         public static void Menu()
         {
             Console.WriteLine(
-            "List-0-Matic /nNEW: add a new task to your todo list. /nDONE: mark a task as done. /nDELETE: remove a task from your list. /nACTIVE: Print active tasks. /nINACTIVE: Print completed tasks. /nALL: Print all tasks. /nQUIT: Paranoid save and exit the program."
+            "List-0-Matic /nNEW: add a new task to your todo list./n /nDONE: mark a task as done./n /nDELETE: remove a task from your list./n /nACTIVE: Print active tasks./n /nINACTIVE: Print completed tasks./n /nALL: Print all tasks./n /nQUIT: Paranoid save and exit the program./n"
             );          
         }
 
+        #region User Prompts
+
+        /// <summary>
+        /// Takes main menu user input and checks that it is valid.
+        /// </summary>
+        /// <returns>Returns input to App switch, whichs calls the various methods</returns>
+        public static string GetInput()
+        {
+            Console.WriteLine("What would like to do?");
+            string userInput = Console.ReadLine().ToUpper().Trim();
+            string input = "";
+            bool validInput = false;
+
+            do
+            {
+                switch (userInput)  
+                {
+                    case "NEW":
+                        input = "addItem";
+                        validInput = true;
+                        break;
+                    case "DELETE":
+                        input = "deleteItem";
+                        validInput = true;
+                        break;
+                    case "DONE":
+                        input = "markDone";
+                        validInput = true;
+                        break;
+                    case "All":
+                        input = "printAll";
+                        validInput = true;
+                        break;
+                    case "ACTIVE":
+                        input = "printActive";
+                        validInput = true;
+                        break;
+                    case "INACTIVE":
+                        input = "printInactive";
+                        validInput = true;
+                        break;
+                    case "QUIT":
+                        input = "quit";
+                        validInput = true;
+                        break;
+                    default: //error display message                    
+                        Console.WriteLine("\nInvaid Option!");
+                        break;
+                }
+            } while (validInput == false);
+            return input;
+        }
+
+        /// <summary>
+        /// Asks for a task.
+        /// </summary>
+        /// <returns>Returns new task to ItemRepo's AddTask method</returns>
         public static string NewPrompt()
         {
             Console.WriteLine("Tell me what you need to do:");
@@ -26,7 +84,11 @@ namespace ToDoApp
             }
             return "Invalid input";
         }
-       
+
+        /// <summary>
+        /// Asks for the ID of the task to be marked completed
+        /// </summary>
+        /// <returns>Returns ID to ItemRepo's DoneTask method</returns>
         public static int DonePrompt()
         {
             PrintActive();
@@ -37,7 +99,15 @@ namespace ToDoApp
             Int32.TryParse(idStr, out int idDone);
             return idDone;
         }
+        public static void DoneReply() {
+            Console.WriteLine("Status updated.");            
+        }
 
+
+        /// <summary>
+        /// Asks for the ID of the task to be deleted.
+        /// </summary>
+        /// <returns>Returns ID to ItemRepo's DeleteTask method.</returns>
         public static int DeletePrompt()
         {
             PrintAll();
@@ -48,7 +118,9 @@ namespace ToDoApp
             Int32.TryParse(idStr, out int idDel);
             return idDel;
         }
+        #endregion
 
+        #region Print methods
         //todo: build print methods
         //how do I access context if ConsoleUtils isn't allowed to access ItemRepo?
         public static void PrintAll()
@@ -63,10 +135,10 @@ namespace ToDoApp
         {
             //Prints all active tasks
             //linq where status == pending
-            foreach(var item in ItemRepository.GetList("pending"))
-            {
-                Console.WriteLine(item);
-            }
+            //foreach(var item in ItemRepository.GetList("pending"))
+            //{
+            //    Console.WriteLine(item);
+            //}
         }
 
         public static void PrintInactive()
@@ -82,53 +154,9 @@ namespace ToDoApp
             PrintActive();
             Console.WriteLine("Get to work!");
         }
-        
-        public static string GetInput()
-        {            
-            Console.WriteLine("What would like to do?"); 
-            string userInput = Console.ReadLine().ToUpper().Trim();
-            string input = "";
-            bool validInput = false;
+        #endregion
 
-            do
-            {
-                switch (userInput) // find user selection 
-                {
-                    case "NEW":
-                        input = "addItem";
-                        validInput = true;
-                        break;
-                    case "DELETE":
-                        input = "deleteItem";
-                        validInput = true;
-                        break;
-                    case "DONE":                  
-                        input = "markDone";
-                        validInput = true;
-                        break;
-                    case "All":                    
-                        input = "printAll";
-                        validInput = true;
-                        break;
-                    case "ACTIVE":                    
-                        input = "printActive";
-                        validInput = true;
-                        break;
-                    case "INACTIVE":                    
-                        input = "printInactive";
-                        validInput = true;
-                        break;
-                    case "QUIT":
-                        input = "quit";
-                        validInput = true;
-                        break;
-                    default: //error display message                    
-                        Console.WriteLine("\nInvaid Option!");
-                        break;
-                }
-            } while (validInput == false);
-            return input;
-        }
+        
     }
 }
 

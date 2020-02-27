@@ -47,15 +47,19 @@ namespace ToDoApp
 
                     case "printActive":
                         //todo: call method
-                        GetList("pending");
+                        //GetList("pending");
                         PrintActive();
                         break;
 
                     case "printInactive":
                         //Todo: call method
                     break;
+
                     case "quit":                        
                         isDone = true; //stop program
+                    break;
+
+                    default:
                     break;
                 }
             } while (isDone == false);
@@ -64,7 +68,7 @@ namespace ToDoApp
 
         public void Quit()
         {                            
-            ConsoleUtils.QuitPrint();
+            QuitPrint();
             Console.ReadKey();
         }
     }
