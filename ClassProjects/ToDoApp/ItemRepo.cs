@@ -15,48 +15,77 @@ namespace ToDoApp
             context.Database.EnsureCreated();
         }
 
-        //public static List<ToDoItem> GetList(string status)
-        //{
-        //    IEnumerable<ToDoItem> itemList; //create list
-        //    if (status != null) //filter status 
-        //    {
-        //        itemList = context.ToDoList.Where(x => x.Status == status);
-        //    }
-        //    else
-        //    {
-        //        itemList = context.ToDoList;
-        //    }
-        //    return (itemList.ToList());
-        //}
+        /// <summary>
+        /// Creates a list from db based on the filter returned from PrintPrompt
+        /// </summary>
+        /// <param name="printType">All, Done, Pending</param>
+        /// <returns></returns>
+        /// //todo: fig out why done and pending don't print!!
+        public List<ToDoItem> GetList(string printType)
+        {
+            List<ToDoItem> FilterList = new List<ToDoItem>().ToList();
+            if (printType == "ALL")
+            {
+                FilterList = context.ToDoList.ToList();
+            }
+            else if (printType == "DONE")
+            {
+                FilterList = context.ToDoList.Where(x => x.Status == "DONE").ToList();
+            }
+            else if (printType == "PENDING")
+            {
+                FilterList = context.ToDoList.Where(x => x.Status == "PENDING").ToList();
+            }            
+            return FilterList;
+        }
 
+        /// <summary>
+        /// Uses AddPrompt to add a new task to the list.
+        /// </summary>
         public static void AddTask()
         {
-            ToDoItem newTask = new ToDoItem(NewPrompt());
+            ToDoItem newTask = new ToDoItem(AddPrompt());
             context.ToDoList.Add(newTask);
             context.SaveChanges();
         }
 
+        /// <summary>
+        /// Uses IDPrompt to get the ID of the task to be changed.
+        /// Deletes the task.
+        /// </summary>
         public static void DeleteTask()
         {
-            ToDoItem DeleteTask = context.ToDoList.Where(x => x.ID == DeletePrompt()).FirstOrDefault();
-            context.Remove(DeleteTask);
-            context.SaveChanges();
-        }
-
-        public static void DoneTask()
-        {
-            ToDoItem DoneTask = context.ToDoList.Where(x => x.ID == DonePrompt()).FirstOrDefault();
-            
-            if (DoneTask != null) //if found
+            ToDoItem DeleteTask = context.ToDoList.Where(x => x.ID == IDPrompt()).FirstOrDefault();
+            if (DeleteTask != null)
             {
-                DoneTask.Status = DoneTask.Status == "Pending" ? "Done" : "Pending"; //change status if pending then finished or finished then pending
-                context.Update(DoneTask); //change status
-                context.SaveChanges(); // commit changes
+                context.Remove(DeleteTask);
+                context.SaveChanges();
                 DoneReply();
             }
             else
             {
-                
+                FailReply();
+            }
+        }
+
+        /// <summary>
+        /// Uses IDPrompt to get the ID of the task to be changed.
+        /// Changes status from pending to done, or done to pending
+        /// </summary>
+        public static void DoneTask()
+        {
+            ToDoItem DoneTask = context.ToDoList.Where(x => x.ID == IDPrompt()).FirstOrDefault();
+            
+            if (DoneTask != null)
+            {
+                DoneTask.Status = DoneTask.Status == "PENDING" ? "DONE" : "PENDING";
+                context.Update(DoneTask); 
+                context.SaveChanges(); 
+                DoneReply();
+            }
+            else
+            {
+                FailReply();
             }
         }
     }

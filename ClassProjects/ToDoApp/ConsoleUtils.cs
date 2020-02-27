@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace ToDoApp
 {
     public class ConsoleUtils
@@ -11,9 +13,13 @@ namespace ToDoApp
        //prints main menu
         public static void Menu()
         {
-            Console.WriteLine(
-            "List-0-Matic /nNEW: add a new task to your todo list./n /nDONE: mark a task as done./n /nDELETE: remove a task from your list./n /nACTIVE: Print active tasks./n /nINACTIVE: Print completed tasks./n /nALL: Print all tasks./n /nQUIT: Paranoid save and exit the program./n"
-            );          
+            Console.WriteLine("~~List-0-Matic~~");
+            Console.WriteLine("What would like to do?");
+            Console.WriteLine("ADD: add a new task to your todo list.");
+            Console.WriteLine("DONE: mark a task as done.");
+            Console.WriteLine("DELETE: remove a task from your list.");
+            Console.WriteLine("PRINT: Prints your ToDo list.");
+            Console.WriteLine("QUIT: Paranoid save and exit the program.");                     
         }
 
         #region User Prompts
@@ -23,17 +29,16 @@ namespace ToDoApp
         /// </summary>
         /// <returns>Returns input to App switch, whichs calls the various methods</returns>
         public static string GetInput()
-        {
-            Console.WriteLine("What would like to do?");
+        {            
             string userInput = Console.ReadLine().ToUpper().Trim();
             string input = "";
-            bool validInput = false;
+            bool validInput;
 
             do
             {
                 switch (userInput)  
                 {
-                    case "NEW":
+                    case "ADD":
                         input = "addItem";
                         validInput = true;
                         break;
@@ -45,24 +50,17 @@ namespace ToDoApp
                         input = "markDone";
                         validInput = true;
                         break;
-                    case "All":
-                        input = "printAll";
+                    case "PRINT":
+                        input = "printList";
                         validInput = true;
-                        break;
-                    case "ACTIVE":
-                        input = "printActive";
-                        validInput = true;
-                        break;
-                    case "INACTIVE":
-                        input = "printInactive";
-                        validInput = true;
-                        break;
+                        break;                    
                     case "QUIT":
                         input = "quit";
                         validInput = true;
                         break;
                     default: //error display message                    
-                        Console.WriteLine("\nInvaid Option!");
+                        Console.WriteLine("Invaid Option!");
+                        validInput = false;
                         break;
                 }
             } while (validInput == false);
@@ -73,90 +71,87 @@ namespace ToDoApp
         /// Asks for a task.
         /// </summary>
         /// <returns>Returns new task to ItemRepo's AddTask method</returns>
-        public static string NewPrompt()
+        public static string AddPrompt()
         {
-            Console.WriteLine("Tell me what you need to do:");
-            //todo: check for null input
+            Console.WriteLine("Tell me what you need to do:");        
             string task = Console.ReadLine();
             if (task != null)
             {
                 return task;
             }
-            return "Invalid input";
+            //todo: break this loop!
+            return "Invalid input.";
         }
 
         /// <summary>
-        /// Asks for the ID of the task to be marked completed
+        /// Asks for the ID of the task to be modified
         /// </summary>
-        /// <returns>Returns ID to ItemRepo's DoneTask method</returns>
-        public static int DonePrompt()
+        /// <returns>Returns ID to ItemRepo's DoneTask and DeleteTask methods</returns>
+        public static int IDPrompt()
         {
-            PrintActive();
-            Console.WriteLine("Enter the ID of the task you want to mark as done:");
-            string idStr = Console.ReadLine();
-            //done: switch to tryparse for error handling
-            //int idDone = Convert.ToInt32(idStr);
-            Int32.TryParse(idStr, out int idDone);
-            return idDone;
+            //PrintActive();
+            Console.WriteLine("Enter the ID of the task you want to modify:");
+            string idStr = Console.ReadLine();                        
+            Int32.TryParse(idStr, out int idTask);
+            return idTask;                       
         }
-        public static void DoneReply() {
-            Console.WriteLine("Status updated.");            
-        }
-
 
         /// <summary>
-        /// Asks for the ID of the task to be deleted.
+        /// Called after choosing PRINT from main menu.
         /// </summary>
-        /// <returns>Returns ID to ItemRepo's DeleteTask method.</returns>
-        public static int DeletePrompt()
+        /// <returns>Returns printType to ItemRepo's GetList</returns>
+        public static string PrintPrompt()
         {
-            PrintAll();
-            Console.WriteLine("Enter the ID of the task you would like to delete: ");
-            string idStr = Console.ReadLine();
-            //done: switch to tryparse for error handling
-            //int idDel = Convert.ToInt32(idStr);
-            Int32.TryParse(idStr, out int idDel);
-            return idDel;
+            
+            Console.WriteLine("What tasks would you like to see: ALL, PENDING, DONE?");
+            string printType = Console.ReadLine().ToUpper().Trim();
+            if(printType != null)
+            {
+                return printType;                
+            }
+            else
+            {
+                return "Invalid input.";
+                //todo: break this loop!
+            }
         }
+      
         #endregion
 
         #region Print methods
-        //todo: build print methods
-        //how do I access context if ConsoleUtils isn't allowed to access ItemRepo?
-        public static void PrintAll()
+        //todo: build print methods      
+        public List<ToDoItem> PrintList(List<ToDoItem> tdList)
         {
-            //foreach (ToDoItem t in context.ToDoList)
-            //{
-            //    Console.WriteLine("{0}: {1} by {2}", t.ID, t.Description, t.Status);
-            //}
+            Console.Clear();
+            
+            Console.WriteLine();
+            foreach (ToDoItem task in tdList)
+            {
+                Console.WriteLine($"{task.ID} | {task.Description} | {task.Status}");
+            }
+            Console.WriteLine();
+            return tdList;
+        }
+        #endregion
+
+        #region Replies
+
+        public static void DoneReply()
+        {
+            Console.WriteLine("Action successful.");
         }
 
-        public static void PrintActive()
+        public static void FailReply()
         {
-            //Prints all active tasks
-            //linq where status == pending
-            //foreach(var item in ItemRepository.GetList("pending"))
-            //{
-            //    Console.WriteLine(item);
-            //}
-        }
-
-        public static void PrintInactive()
-        {
-            //Prints all inactive tasks
-            //linq where status == done
+            Console.WriteLine("Action failed.");
         }
 
         public static void QuitPrint()
         {
             Console.WriteLine("ToDo list saved.");
-            Console.WriteLine("Here are you active tasks: ");
-            PrintActive();
-            Console.WriteLine("Get to work!");
+            Console.WriteLine("See you later!");
         }
         #endregion
-
-        
     }
 }
 
@@ -165,4 +160,4 @@ namespace ToDoApp
 //We want to contain all code that handles user input and display to the
 //ConsoleUtils class. Should not directly interact with the ItemRepository
 //class or edit the database. (This is the only class that should have
-//Console.WriteLine() and Console.ReadLine().)
+//Console.WriteLine() and Console.ReadLine().

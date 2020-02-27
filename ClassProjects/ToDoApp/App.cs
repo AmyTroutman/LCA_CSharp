@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using static ToDoApp.ConsoleUtils;
 using static ToDoApp.ItemRepository;
 namespace ToDoApp
@@ -6,17 +7,60 @@ namespace ToDoApp
     public class App
     {
         public bool isDone;
-        private ItemRepository itemRepository;
-        public ConsoleUtils consoleUtils;
+        private ItemRepository ItemRepo;
+        public ConsoleUtils ConsoleUtil;
 
         public App()
         {
-            itemRepository = new ItemRepository();
-            consoleUtils = new ConsoleUtils();
+            ItemRepo = new ItemRepository();
+            ConsoleUtil = new ConsoleUtils();
         }
+
+        #region DisplayAll Method        
+        private void DisplayAll()
+        {
+            string printType = "ALL";
+
+            List<ToDoItem> List = ItemRepo.GetList(printType);
+            ConsoleUtil.PrintList(List);
+        }
+        #endregion
+
+        #region DisplayFilter Method
+        //method that handles filtering
+        //calls the filter method from console to prompt filter selection
+        //switch statement handles multiple scenarios based on command given
+        private void DisplayFilter()
+        {            
+            string filter = PrintPrompt();
+
+            switch (filter)
+            {
+                case "DONE":
+                    List<ToDoItem> comList = ItemRepo.GetList(filter);
+                    ConsoleUtil.PrintList(comList);
+                    break;
+
+                case "PENDING":
+                    List<ToDoItem> incomList = ItemRepo.GetList(filter);
+                    ConsoleUtil.PrintList(incomList);
+                    break;
+
+                case "ALL":
+                    List<ToDoItem> allList = ItemRepo.GetList(filter);
+                    ConsoleUtil.PrintList(allList);
+                    break;
+
+                default:
+                    FailReply();
+                    break;
+            }
+        }
+        #endregion
 
         public void Start()
         {
+            DisplayAll();
             do
             {          
                 Menu();
@@ -40,20 +84,10 @@ namespace ToDoApp
                         DoneTask();
                     break;
 
-                    case "printAll":
+                    case "printList":
                         //Todo: call method
-                        
-                    break;
-
-                    case "printActive":
-                        //todo: call method
-                        //GetList("pending");
-                        PrintActive();
-                        break;
-
-                    case "printInactive":
-                        //Todo: call method
-                    break;
+                        DisplayFilter();                        
+                    break;                    
 
                     case "quit":                        
                         isDone = true; //stop program
