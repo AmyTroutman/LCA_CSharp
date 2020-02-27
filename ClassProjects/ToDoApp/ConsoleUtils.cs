@@ -75,12 +75,12 @@ namespace ToDoApp
         {
             Console.WriteLine("Tell me what you need to do:");        
             string task = Console.ReadLine();
-            if (task != null)
+            if (task == null)
             {
-                return task;
+                return "Invalid input.";                
             }
             //todo: break this loop!
-            return "Invalid input.";
+            return task;
         }
 
         /// <summary>
@@ -105,13 +105,13 @@ namespace ToDoApp
             
             Console.WriteLine("What tasks would you like to see: ALL, PENDING, DONE?");
             string printType = Console.ReadLine().ToUpper().Trim();
-            if(printType != null)
-            {
-                return printType;                
+            if(printType == null)
+            {                
+                return "Invalid input.";
             }
             else
             {
-                return "Invalid input.";
+                return printType;
                 //todo: break this loop!
             }
         }
@@ -120,17 +120,17 @@ namespace ToDoApp
 
         #region Print methods
         //todo: build print methods      
-        public List<ToDoItem> PrintList(List<ToDoItem> tdList)
+        public List<ToDoItem> PrintList(List<ToDoItem> ToDoList)
         {
             Console.Clear();
             
             Console.WriteLine();
-            foreach (ToDoItem task in tdList)
+            foreach(var task in ToDoList)
             {
                 Console.WriteLine($"{task.ID} | {task.Description} | {task.Status}");
             }
             Console.WriteLine();
-            return tdList;
+            return ToDoList;
         }
         #endregion
 

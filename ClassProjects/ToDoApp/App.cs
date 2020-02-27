@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using static ToDoApp.ConsoleUtils;
 using static ToDoApp.ItemRepository;
+
 namespace ToDoApp
 {
     public class App
@@ -26,29 +27,37 @@ namespace ToDoApp
         }
         #endregion
 
+        private void DisplayDone()
+        {
+            string printType = "DONE";
+            List<ToDoItem> list = ItemRepo.GetList(printType);
+            ConsoleUtil.PrintList(list);
+        }
+
+
         #region DisplayFilter Method
         //method that handles filtering
         //calls the filter method from console to prompt filter selection
         //switch statement handles multiple scenarios based on command given
         private void DisplayFilter()
         {            
-            string filter = PrintPrompt();
+            //string filter = PrintPrompt();
 
-            switch (filter)
+            switch (PrintPrompt())
             {
                 case "DONE":
-                    List<ToDoItem> comList = ItemRepo.GetList(filter);
-                    ConsoleUtil.PrintList(comList);
+                    DisplayDone();
                     break;
 
                 case "PENDING":
-                    List<ToDoItem> incomList = ItemRepo.GetList(filter);
-                    ConsoleUtil.PrintList(incomList);
+                    List<ToDoItem> PendingList = ItemRepo.GetList("PENDING");
+                    ConsoleUtil.PrintList(PendingList);
                     break;
 
                 case "ALL":
-                    List<ToDoItem> allList = ItemRepo.GetList(filter);
-                    ConsoleUtil.PrintList(allList);
+                    //List<ToDoItem> AllList = ItemRepo.GetList("ALL");
+                    //ConsoleUtil.PrintList(AllList);
+                    DisplayAll();
                     break;
 
                 default:
