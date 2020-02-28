@@ -17,8 +17,13 @@ namespace ToDoApp
             ConsoleUtil = new ConsoleUtils();
         }
 
-        #region PrintFilter Method
-        
+        #region Print Methods
+        /// <summary>
+        /// Takes the input from PrintPrompt and runs it through a switch.
+        /// Got hung up here for a while because it was looking for UPPER words,
+        /// but ToDoItem and ItemRepo were setting them as Normal.
+        /// Thus it was never finding a match, but also not throwing an error.     
+        /// </summary>
         private void PrintFilter()
         {            
             string filter = PrintPrompt();
@@ -26,17 +31,17 @@ namespace ToDoApp
             switch (filter)
             {
                 case "DONE":
-                    List<ToDoItem> DoneList = ItemRepo.GetList("DONE");
+                    List<ToDoItem> DoneList = ItemRepo.GetList(filter);
                     ConsoleUtil.PrintList(DoneList);
                     break;
 
                 case "PENDING":
-                    List<ToDoItem> PendingList = ItemRepo.GetList("PENDING");
+                    List<ToDoItem> PendingList = ItemRepo.GetList(filter);
                     ConsoleUtil.PrintList(PendingList);
                     break;
 
                 case "ALL":
-                    List<ToDoItem> AllList = ItemRepo.GetList("ALL");
+                    List<ToDoItem> AllList = ItemRepo.GetList(filter);
                     ConsoleUtil.PrintList(AllList);                    
                     break;
 
@@ -45,11 +50,25 @@ namespace ToDoApp
                     break;
             }
         }
-        #endregion
 
-        public void Start()
+        /// <summary>
+        /// Some super nesting to simply print the full list. Probs could be done more simply.
+        /// </summary>
+        private void PrintAll()
         {
             ConsoleUtil.PrintList(ItemRepo.GetList("ALL"));
+        }
+        #endregion
+
+        #region Motor starter
+        /// <summary>
+        /// Prints list (maybe remove) prints menu.
+        /// Grabs input and calls the associated methods.
+        /// Stops once isDone is true.
+        /// </summary>
+        public void Start()
+        {
+            PrintAll();
             do
             {          
                 Menu();
@@ -62,39 +81,35 @@ namespace ToDoApp
 
                     case "deleteItem":
                         Console.Clear();
-                        ConsoleUtil.PrintList(ItemRepo.GetList("ALL"));
+                        PrintAll();
                         DeleteTask();
                     break;
 
                     case "markDone":
                         Console.Clear();
-                        ConsoleUtil.PrintList(ItemRepo.GetList("ALL"));
+                        PrintAll();
                         DoneTask();
                     break;
 
-                    case "printList":
-                        //Todo: call method
+                    case "printList":                       
                         PrintFilter();                        
                     break;                    
 
                     case "quit":                        
-                        isDone = true; //stop program
+                        isDone = true;
                     break;
 
                     default:
                     break;
                 }
             } while (isDone == false);
-            Quit();
-        }
-
-        public void Quit()
-        {                            
             QuitPrint();
-            Console.ReadKey();
         }
+        #endregion
     }
 }
+
+//CLASS RESPONSIBILITIES
 //The brains that manages all the rules and coordinates the user interactions
 //and the database interactions. Should not directly update the database,
 //but should go through the ItemRepository class.

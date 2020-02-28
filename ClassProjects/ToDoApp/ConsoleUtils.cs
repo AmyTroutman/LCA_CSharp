@@ -10,7 +10,9 @@ namespace ToDoApp
         {
         }
 
-       //prints main menu
+        /// <summary>
+        /// Main menu printer.
+        /// </summary>
         public static void Menu()
         {
             Console.WriteLine("~~List-0-Matic~~");
@@ -22,12 +24,13 @@ namespace ToDoApp
             Console.WriteLine("QUIT: Paranoid save and exit the program.");                     
         }
 
-        #region User Prompts
-
+        #region User Prompts        
         /// <summary>
         /// Takes main menu user input and checks that it is valid.
         /// </summary>
-        /// <returns>Returns input to App switch, whichs calls the various methods</returns>
+        /// <returns>
+        /// Returns input to the App switch, whichs calls the various methods
+        /// </returns>
         public static string GetInput()
         {            
             string userInput = Console.ReadLine().ToUpper().Trim();
@@ -70,7 +73,9 @@ namespace ToDoApp
         /// <summary>
         /// Asks for a task.
         /// </summary>
-        /// <returns>Returns new task to ItemRepo's AddTask method</returns>
+        /// <returns>
+        /// Returns new task to ItemRepo's AddTask method
+        /// </returns>
         public static string AddPrompt()
         {
             Console.WriteLine("Tell me what you need to do:");        
@@ -86,20 +91,24 @@ namespace ToDoApp
         /// <summary>
         /// Asks for the ID of the task to be modified
         /// </summary>
-        /// <returns>Returns ID to ItemRepo's DoneTask and DeleteTask methods</returns>
+        /// <returns>
+        /// Returns ID to ItemRepo's DoneTask and DeleteTask methods
+        /// </returns>
         public static int IDPrompt()
-        {
-            //PrintActive();
+        {            
             Console.WriteLine("Enter the ID of the task you want to modify:");
-            string idStr = Console.ReadLine();                        
+            string idStr = Console.ReadLine();
+            //todo: make sure non-numerical input doesn't break the app
             Int32.TryParse(idStr, out int idTask);
-            return idTask;                       
+            return idTask;
         }
 
         /// <summary>
         /// Called after choosing PRINT from main menu.
         /// </summary>
-        /// <returns>Returns printType to ItemRepo's GetList</returns>
+        /// <returns>
+        /// Returns printType to ItemRepo's GetList
+        /// </returns>
         public static string PrintPrompt()
         {
             
@@ -114,12 +123,15 @@ namespace ToDoApp
                 return printType;
                 //todo: break this loop!
             }
-        }
-      
+        }      
         #endregion
 
         #region Print methods
-        //todo: build print methods      
+        /// <summary>
+        /// A print stencil
+        /// </summary>
+        /// <param name="ToDoList"></param>
+        /// <returns></returns>
         public List<ToDoItem> PrintList(List<ToDoItem> ToDoList)
         {
             Console.Clear();
@@ -135,7 +147,9 @@ namespace ToDoApp
         #endregion
 
         #region Replies
-
+        /// <summary>
+        /// Prints with no input/output. Mostly to acknowledge a process happened.
+        /// </summary>
         public static void DoneReply()
         {
             Console.WriteLine("Action successful.");
@@ -150,12 +164,13 @@ namespace ToDoApp
         {
             Console.WriteLine("ToDo list saved.");
             Console.WriteLine("See you later!");
+            Console.ReadKey();
         }
         #endregion
     }
 }
 
-
+//CLASS RESPONSIBLITIES
 //handle printing to the console, and reading from the console.
 //We want to contain all code that handles user input and display to the
 //ConsoleUtils class. Should not directly interact with the ItemRepository

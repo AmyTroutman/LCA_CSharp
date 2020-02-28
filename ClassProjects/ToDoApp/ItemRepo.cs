@@ -16,11 +16,12 @@ namespace ToDoApp
         }
 
         /// <summary>
-        /// Creates a list from db based on the filter returned from PrintPrompt
+        /// Creates a list from db based on the filter returned from PrintPrompt.
         /// </summary>
-        /// <param name="printType">All, Done, Pending</param>
-        /// <returns></returns>
-        /// //todo: fig out why done and pending don't print!!
+        /// <param name="printType">From PrintPrompt: All, Done, Pending</param>
+        /// <returns>
+        /// Returns the list associated with the printType.
+        /// </returns>        
         public List<ToDoItem> GetList(string printType)
         {
             List<ToDoItem> FilterList = new List<ToDoItem>().ToList();
@@ -39,8 +40,9 @@ namespace ToDoApp
             return FilterList;
         }
 
+        #region Tasks
         /// <summary>
-        /// Uses AddPrompt to add a new task to the list.
+        /// Uses AddPrompt return to add a new task to the list.
         /// </summary>
         public static void AddTask()
         {
@@ -50,7 +52,7 @@ namespace ToDoApp
         }
 
         /// <summary>
-        /// Uses IDPrompt to get the ID of the task to be changed.
+        /// Uses IDPrompt return to get the ID of the task to be deleted.
         /// Deletes the task.
         /// </summary>
         public static void DeleteTask()
@@ -69,7 +71,7 @@ namespace ToDoApp
         }
 
         /// <summary>
-        /// Uses IDPrompt to get the ID of the task to be changed.
+        /// Uses IDPrompt return to get the ID of the task to be updated.
         /// Changes status from pending to done, or done to pending
         /// </summary>
         public static void DoneTask()
@@ -88,9 +90,12 @@ namespace ToDoApp
                 FailReply();
             }
         }
+        #endregion
     }
 }
 
+
+//CLASS RESPONSIILITIES
 //Acts as the interface between your application and the database that store
 //the ToDoItems. This class is responsible for managing the list of items and
 //how it is saved and fetched from the database.
