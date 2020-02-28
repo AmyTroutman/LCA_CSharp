@@ -4,14 +4,14 @@
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Points PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.IRentable PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ToDoApp/ToDoItem.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ToDoApp/App.cs">
     <Files>
       <File FileName="ToDoApp/Program.cs" Line="8" Column="10" IsPinned="True" />
       <File FileName="ToDoApp/App.cs" Line="99" Column="39" IsPinned="True" />
-      <File FileName="ToDoApp/ConsoleUtils.cs" Line="167" Column="31" />
-      <File FileName="ToDoApp/ItemRepo.cs" Line="93" Column="19" />
-      <File FileName="ToDoApp/ToDoItem.cs" Line="15" Column="30" />
-      <File FileName="ToDoApp/ItemContext.cs" Line="1" Column="1" />
+      <File FileName="ToDoApp/ConsoleUtils.cs" />
+      <File FileName="ToDoApp/ItemRepo.cs" />
+      <File FileName="ToDoApp/ToDoItem.cs" />
+      <File FileName="ToDoApp/ItemContext.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,7 +19,7 @@
           <Node name="ClassProjects" expanded="True">
             <Node name="BookInventory" expanded="True" />
             <Node name="ToDoApp" expanded="True">
-              <Node name="ToDoItem.cs" selected="True" />
+              <Node name="App.cs" selected="True" />
             </Node>
             <Node name="ToDoList" expanded="True" />
           </Node>

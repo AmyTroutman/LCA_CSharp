@@ -24,49 +24,52 @@ namespace ToDoApp
             Console.WriteLine("QUIT: Paranoid save and exit the program.");                     
         }
 
-        #region User Prompts        
+        #region User Prompts
+        
         /// <summary>
         /// Takes main menu user input and checks that it is valid.
         /// </summary>
         /// <returns>
         /// Returns input to the App switch, whichs calls the various methods
-        /// </returns>
+        /// </returns>        
         public static string GetInput()
         {            
             string userInput = Console.ReadLine().ToUpper().Trim();
             string input = "";
-            bool validInput;
+            bool run;
 
             do
-            {
+            {               
                 switch (userInput)  
                 {
                     case "ADD":
                         input = "addItem";
-                        validInput = true;
+                        run = false;
                         break;
                     case "DELETE":
                         input = "deleteItem";
-                        validInput = true;
+                        run = false;
                         break;
                     case "DONE":
                         input = "markDone";
-                        validInput = true;
+                        run = false;
                         break;
                     case "PRINT":
                         input = "printList";
-                        validInput = true;
+                        run = false;
                         break;                    
                     case "QUIT":
                         input = "quit";
-                        validInput = true;
+                        run = false;
                         break;
-                    default: //error display message                    
+                    default: //error display message
+                        Console.Clear();
+                        Console.WriteLine();
                         Console.WriteLine("Invaid Option!");
-                        validInput = false;
+                        run = false;                        
                         break;
                 }
-            } while (validInput == false);
+            } while (run == true);
             return input;
         }
 
@@ -76,15 +79,26 @@ namespace ToDoApp
         /// <returns>
         /// Returns new task to ItemRepo's AddTask method
         /// </returns>
+        /// todo: don't allow empty strings
         public static string AddPrompt()
         {
-            Console.WriteLine("Tell me what you need to do:");        
-            string task = Console.ReadLine();
-            if (task == null)
+            string task = null;
+            bool validInput = false;
+            do
             {
-                return "Invalid input.";                
-            }
-            //todo: break this loop!
+                Console.WriteLine("Tell me what you need to do:");
+                string input = Console.ReadLine();
+                if(input == "")
+                {
+                    Console.WriteLine("You can't do nothing...");
+                }
+                else
+                {
+                    task = input;
+                    validInput = true;
+                }
+
+            } while (validInput == false);
             return task;
         }
 
@@ -97,8 +111,7 @@ namespace ToDoApp
         public static int IDPrompt()
         {            
             Console.WriteLine("Enter the ID of the task you want to modify:");
-            string idStr = Console.ReadLine();
-            //todo: make sure non-numerical input doesn't break the app
+            string idStr = Console.ReadLine();            
             Int32.TryParse(idStr, out int idTask);
             return idTask;
         }
@@ -114,19 +127,12 @@ namespace ToDoApp
             
             Console.WriteLine("What tasks would you like to see: ALL, PENDING, DONE?");
             string printType = Console.ReadLine().ToUpper().Trim();
-            if(printType == null)
-            {                
-                return "Invalid input.";
-            }
-            else
-            {
-                return printType;
-                //todo: break this loop!
-            }
+            return printType;            
         }      
         #endregion
 
-        #region Print methods
+        #region List Printer
+
         /// <summary>
         /// A print stencil
         /// </summary>
@@ -147,21 +153,27 @@ namespace ToDoApp
         #endregion
 
         #region Replies
+
         /// <summary>
         /// Prints with no input/output. Mostly to acknowledge a process happened.
         /// </summary>
         public static void DoneReply()
         {
+            Console.Clear();
             Console.WriteLine("Action successful.");
+            Console.WriteLine();
         }
 
         public static void FailReply()
         {
+            Console.Clear();
             Console.WriteLine("Action failed.");
+            Console.WriteLine();
         }
 
         public static void QuitPrint()
         {
+            Console.WriteLine();
             Console.WriteLine("ToDo list saved.");
             Console.WriteLine("See you later!");
             Console.ReadKey();

@@ -75,8 +75,8 @@ namespace ToDoApp
                 string input = GetInput();
                 switch(input)
                 {
-                    case "addItem":                        
-                        AddTask();
+                    case "addItem":                       
+                            AddTask();                       
                     break;
 
                     case "deleteItem":

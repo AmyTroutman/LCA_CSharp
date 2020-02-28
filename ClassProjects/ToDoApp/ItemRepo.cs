@@ -44,11 +44,13 @@ namespace ToDoApp
         /// <summary>
         /// Uses AddPrompt return to add a new task to the list.
         /// </summary>
+        /// //todo: reject empty strings
         public static void AddTask()
-        {
-            ToDoItem newTask = new ToDoItem(AddPrompt());
-            context.ToDoList.Add(newTask);
-            context.SaveChanges();
+        {            
+            ToDoItem newTask = new ToDoItem(AddPrompt());            
+                context.ToDoList.Add(newTask);
+                context.SaveChanges();
+                DoneReply();                     
         }
 
         /// <summary>
