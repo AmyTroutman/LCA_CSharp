@@ -17,36 +17,17 @@ namespace ToDoApp
             ConsoleUtil = new ConsoleUtils();
         }
 
-        #region DisplayAll Method        
-        private void DisplayAll()
-        {
-            string printType = "ALL";
-
-            List<ToDoItem> List = ItemRepo.GetList(printType);
-            ConsoleUtil.PrintList(List);
-        }
-        #endregion
-
-        private void DisplayDone()
-        {
-            string printType = "DONE";
-            List<ToDoItem> list = ItemRepo.GetList(printType);
-            ConsoleUtil.PrintList(list);
-        }
-
-
-        #region DisplayFilter Method
-        //method that handles filtering
-        //calls the filter method from console to prompt filter selection
-        //switch statement handles multiple scenarios based on command given
-        private void DisplayFilter()
+        #region PrintFilter Method
+        
+        private void PrintFilter()
         {            
-            //string filter = PrintPrompt();
-
-            switch (PrintPrompt())
+            string filter = PrintPrompt();
+            
+            switch (filter)
             {
                 case "DONE":
-                    DisplayDone();
+                    List<ToDoItem> DoneList = ItemRepo.GetList("DONE");
+                    ConsoleUtil.PrintList(DoneList);
                     break;
 
                 case "PENDING":
@@ -55,9 +36,8 @@ namespace ToDoApp
                     break;
 
                 case "ALL":
-                    //List<ToDoItem> AllList = ItemRepo.GetList("ALL");
-                    //ConsoleUtil.PrintList(AllList);
-                    DisplayAll();
+                    List<ToDoItem> AllList = ItemRepo.GetList("ALL");
+                    ConsoleUtil.PrintList(AllList);                    
                     break;
 
                 default:
@@ -69,33 +49,32 @@ namespace ToDoApp
 
         public void Start()
         {
-            DisplayAll();
+            ConsoleUtil.PrintList(ItemRepo.GetList("ALL"));
             do
             {          
                 Menu();
                 string input = GetInput();
                 switch(input)
                 {
-                    case "addItem":
-                        //call add method
-                        //NewPrompt();
+                    case "addItem":                        
                         AddTask();
                     break;
 
                     case "deleteItem":
-                        //DeletePrompt();
+                        Console.Clear();
+                        ConsoleUtil.PrintList(ItemRepo.GetList("ALL"));
                         DeleteTask();
                     break;
 
                     case "markDone":
-                        //call method
-                        //DonePrompt();
+                        Console.Clear();
+                        ConsoleUtil.PrintList(ItemRepo.GetList("ALL"));
                         DoneTask();
                     break;
 
                     case "printList":
                         //Todo: call method
-                        DisplayFilter();                        
+                        PrintFilter();                        
                     break;                    
 
                     case "quit":                        

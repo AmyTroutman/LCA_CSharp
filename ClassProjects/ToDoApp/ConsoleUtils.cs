@@ -125,13 +125,13 @@ namespace ToDoApp
             Console.Clear();
             
             Console.WriteLine();
-            foreach(var task in ToDoList)
+            foreach(var i in ToDoList)
             {
-                Console.WriteLine($"{task.ID} | {task.Description} | {task.Status}");
+                Console.WriteLine($"{i.ID} | {i.Description} | {i.Status}");
             }
             Console.WriteLine();
             return ToDoList;
-        }
+        }     
         #endregion
 
         #region Replies

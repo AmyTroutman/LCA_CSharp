@@ -35,7 +35,7 @@ namespace ToDoApp
             else if (printType == "PENDING")
             {
                 FilterList = context.ToDoList.Where(x => x.Status == "PENDING").ToList();
-            }            
+            }
             return FilterList;
         }
 
