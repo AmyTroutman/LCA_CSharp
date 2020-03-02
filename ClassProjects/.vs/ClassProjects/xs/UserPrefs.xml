@@ -4,22 +4,23 @@
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Points PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.IRentable PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ToDoApp/ConsoleUtils.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ToDoApp/ItemRepo.cs">
     <Files>
       <File FileName="ToDoApp/Program.cs" Line="14" Column="1" IsPinned="True" />
-      <File FileName="ToDoApp/App.cs" IsPinned="True" />
-      <File FileName="ToDoApp/ConsoleUtils.cs" Line="89" Column="51" />
-      <File FileName="ToDoApp/ItemRepo.cs" />
-      <File FileName="ToDoApp/ToDoItem.cs" />
-      <File FileName="ToDoApp/ItemContext.cs" />
+      <File FileName="ToDoApp/App.cs" Line="90" Column="36" IsPinned="True" />
+      <File FileName="ToDoApp/ConsoleUtils.cs" Line="81" Column="23" />
+      <File FileName="ToDoApp/ItemRepo.cs" Line="30" Column="56" />
+      <File FileName="ToDoApp/ToDoItem.cs" Line="14" Column="48" />
+      <File FileName="ToDoApp/ItemContext.cs" Line="11" Column="86" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ClassProjects" expanded="True">
             <Node name="BookInventory" expanded="True" />
+            <Node name="Checkers" expanded="True" />
             <Node name="ToDoApp" expanded="True">
-              <Node name="ConsoleUtils.cs" selected="True" />
+              <Node name="ItemRepo.cs" selected="True" />
             </Node>
             <Node name="ToDoList" expanded="True" />
           </Node>

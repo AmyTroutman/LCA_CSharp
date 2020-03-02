@@ -11,7 +11,7 @@ namespace ToDoApp
         private ItemRepository ItemRepo;
         public ConsoleUtils ConsoleUtil;
 
-        public App()
+        public App() 
         {
             ItemRepo = new ItemRepository();
             ConsoleUtil = new ConsoleUtils();

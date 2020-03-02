@@ -78,8 +78,7 @@ namespace ToDoApp
         /// </summary>
         /// <returns>
         /// Returns new task to ItemRepo's AddTask method
-        /// </returns>
-        /// todo: don't allow empty strings
+        /// </returns>        
         public static string AddPrompt()
         {
             string task = null;
@@ -112,7 +111,7 @@ namespace ToDoApp
         {            
             Console.WriteLine("Enter the ID of the task you want to modify:");
             string idStr = Console.ReadLine();            
-            Int32.TryParse(idStr, out int idTask);
+             Int32.TryParse(idStr, out int idTask);
             return idTask;
         }
 
@@ -147,7 +146,7 @@ namespace ToDoApp
             {
                 Console.WriteLine($"{i.ID} | {i.Description} | {i.Status}");
             }
-            Console.WriteLine();
+            Console.WriteLine(); 
             return ToDoList;
         }     
         #endregion

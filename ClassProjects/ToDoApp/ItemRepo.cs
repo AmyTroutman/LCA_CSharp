@@ -43,8 +43,7 @@ namespace ToDoApp
         #region Tasks
         /// <summary>
         /// Uses AddPrompt return to add a new task to the list.
-        /// </summary>
-        /// //todo: reject empty strings
+        /// </summary>     
         public static void AddTask()
         {            
             ToDoItem newTask = new ToDoItem(AddPrompt());            
