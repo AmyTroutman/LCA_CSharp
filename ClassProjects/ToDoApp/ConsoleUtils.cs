@@ -42,7 +42,7 @@ namespace ToDoApp
             {               
                 switch (userInput)  
                 {
-                    case "ADD":
+                    case "ADD":                  
                         input = "addItem";
                         run = false;
                         break;
@@ -87,7 +87,7 @@ namespace ToDoApp
             do
             {
                 Console.WriteLine("Tell me what you need to do:");
-                string input = Console.ReadLine();
+                string input = Console.ReadLine().Trim();
                 if(input == "")
                 {
                     Console.WriteLine("You can't do nothing...");
