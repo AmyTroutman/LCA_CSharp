@@ -27,7 +27,7 @@ namespace ToDoApp
             List<ToDoItem> FilterList = new List<ToDoItem>().ToList();
             if (printType == "ALL")
             {
-                FilterList = context.ToDoList.ToList();
+                FilterList = context.ToDoList.ToList(); 
             }
             else if (printType == "DONE")
             {

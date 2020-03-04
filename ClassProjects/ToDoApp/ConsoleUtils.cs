@@ -111,7 +111,7 @@ namespace ToDoApp
         {            
             Console.WriteLine("Enter the ID of the task you want to modify:");
             string idStr = Console.ReadLine();            
-             Int32.TryParse(idStr, out int idTask);
+            Int32.TryParse(idStr, out int idTask);
             return idTask;
         }
 

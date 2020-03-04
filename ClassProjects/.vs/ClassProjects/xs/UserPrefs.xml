@@ -4,25 +4,22 @@
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Points PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.IRentable PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ToDoApp/ItemRepo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ToDoApp/Program.cs">
     <Files>
-      <File FileName="ToDoApp/Program.cs" Line="14" Column="1" IsPinned="True" />
-      <File FileName="ToDoApp/App.cs" Line="90" Column="36" IsPinned="True" />
-      <File FileName="ToDoApp/ConsoleUtils.cs" Line="81" Column="23" />
-      <File FileName="ToDoApp/ItemRepo.cs" Line="30" Column="56" />
-      <File FileName="ToDoApp/ToDoItem.cs" Line="14" Column="48" />
-      <File FileName="ToDoApp/ItemContext.cs" Line="11" Column="86" />
+      <File FileName="ToDoApp/App.cs" Line="19" Column="1" />
+      <File FileName="ToDoApp/ConsoleUtils.cs" />
+      <File FileName="ToDoApp/ItemRepo.cs" />
+      <File FileName="ToDoApp/ToDoItem.cs" />
+      <File FileName="ToDoApp/ItemContext.cs" Line="1" Column="1" />
+      <File FileName="ToDoApp/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ClassProjects" expanded="True">
-            <Node name="BookInventory" expanded="True" />
-            <Node name="Checkers" expanded="True" />
             <Node name="ToDoApp" expanded="True">
-              <Node name="ItemRepo.cs" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
-            <Node name="ToDoList" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -30,6 +27,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Checkers PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.TowersOfHanoi PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.MyLibrary FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.ManyMethods PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.CarLot PreferredExecutionTarget="MonoDevelop.Default" />

@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookInventory", "BookInvent
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoApp", "ToDoApp\ToDoApp.csproj", "{616E381F-44A9-4069-ACC4-42BF6308DB85}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLibrary", "MyLibrary\MyLibrary.csproj", "{6FCF3FF1-9029-4DBC-9FF8-39E2C7D345E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -169,5 +171,13 @@ Global
 		{616E381F-44A9-4069-ACC4-42BF6308DB85}.Debug|x86.Build.0 = Debug|anycpu
 		{616E381F-44A9-4069-ACC4-42BF6308DB85}.Release|x86.ActiveCfg = Release|anycpu
 		{616E381F-44A9-4069-ACC4-42BF6308DB85}.Release|x86.Build.0 = Release|anycpu
+		{6FCF3FF1-9029-4DBC-9FF8-39E2C7D345E0}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{6FCF3FF1-9029-4DBC-9FF8-39E2C7D345E0}.Debug|anycpu.Build.0 = Debug|anycpu
+		{6FCF3FF1-9029-4DBC-9FF8-39E2C7D345E0}.Release|anycpu.ActiveCfg = Release|anycpu
+		{6FCF3FF1-9029-4DBC-9FF8-39E2C7D345E0}.Release|anycpu.Build.0 = Release|anycpu
+		{6FCF3FF1-9029-4DBC-9FF8-39E2C7D345E0}.Debug|x86.ActiveCfg = Debug|anycpu
+		{6FCF3FF1-9029-4DBC-9FF8-39E2C7D345E0}.Debug|x86.Build.0 = Debug|anycpu
+		{6FCF3FF1-9029-4DBC-9FF8-39E2C7D345E0}.Release|x86.ActiveCfg = Release|anycpu
+		{6FCF3FF1-9029-4DBC-9FF8-39E2C7D345E0}.Release|x86.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
