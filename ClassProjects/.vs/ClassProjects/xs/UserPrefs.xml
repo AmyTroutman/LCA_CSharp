@@ -4,21 +4,21 @@
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Points PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.IRentable PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ToDoApp/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ToDoApp/App.cs">
     <Files>
+      <File FileName="ToDoApp/Program.cs" Line="1" Column="1" />
       <File FileName="ToDoApp/App.cs" Line="19" Column="1" />
       <File FileName="ToDoApp/ConsoleUtils.cs" />
       <File FileName="ToDoApp/ItemRepo.cs" />
       <File FileName="ToDoApp/ToDoItem.cs" />
-      <File FileName="ToDoApp/ItemContext.cs" Line="1" Column="1" />
-      <File FileName="ToDoApp/Program.cs" Line="1" Column="1" />
+      <File FileName="ToDoApp/ItemContext.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ClassProjects" expanded="True">
             <Node name="ToDoApp" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="App.cs" selected="True" />
             </Node>
           </Node>
         </State>

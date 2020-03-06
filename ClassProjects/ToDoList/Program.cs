@@ -25,11 +25,10 @@ namespace ToDoList
                     isDone = true;
                 }                               
                 ToDoList MyList = new ToDoList(task, date, pri);
-                //it's erasing masterlist when it gets here. why??
-                //it wasn't STATIC! now it 'members. le sigh of relief...
+                
                 MyList.ListOfLists();                                
             } while (isDone == false);
-            //fuck me, just make everything static. want to use an outside method? it better be STATIC! Want that list to remember everything? Make it STATIC!
+            
             ToDoList.PrintAll();
         }
         

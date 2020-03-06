@@ -108,7 +108,7 @@ namespace ticTacToe
 
         public static bool CheckForTie()
         {
-
+            //todo: use a switch here!
             //There's defintely a better way to do this...
             //check if the board is full
             if (board[0][0] != " ")
