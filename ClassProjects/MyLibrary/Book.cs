@@ -15,12 +15,14 @@ namespace MyLibrary
         public string LibraryLoc { get; set; }
         public string OffSyn { get; set; }
         public string MySyn { get; set; }
+        public bool Read { get; set; }
 
         public Book(string title, string author, string genre)
         {
             this.Title = title;
             this.Author = author;           
             this.Genre = genre;
+            Read = false;
         }
     }
 }

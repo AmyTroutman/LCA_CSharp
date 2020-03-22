@@ -13,6 +13,11 @@ namespace MyLibrary
         {
             context.Database.EnsureCreated();
         }
-        
+        public static void NewBook()
+        {
+            Book newBook = new Book(TitlePrompt(), AuthorPrompt(), GenrePrompt());
+            context.Library.Add(newBook);
+            context.SaveChanges();
+        }
     }
 }

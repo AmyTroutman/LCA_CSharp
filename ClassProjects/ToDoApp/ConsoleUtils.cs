@@ -54,7 +54,7 @@ namespace ToDoApp
                         input = "markDone";
                         run = false;
                         break;
-                    case "PRINT":
+                    case "PRINT": 
                         input = "printList";
                         run = false;
                         break;                    

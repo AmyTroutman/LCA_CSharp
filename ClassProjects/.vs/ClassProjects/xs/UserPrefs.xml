@@ -4,22 +4,28 @@
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Points PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.IRentable PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ToDoApp/App.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyLibrary/Brain.cs">
     <Files>
+      <File FileName="ToDoApp/App.cs" Line="70" Column="9" />
+      <File FileName="ToDoApp/ConsoleUtils.cs" Line="57" Column="35" />
+      <File FileName="ToDoApp/ItemRepo.cs" Line="31" Column="14" />
       <File FileName="ToDoApp/Program.cs" Line="1" Column="1" />
-      <File FileName="ToDoApp/App.cs" Line="19" Column="1" />
-      <File FileName="ToDoApp/ConsoleUtils.cs" />
-      <File FileName="ToDoApp/ItemRepo.cs" />
-      <File FileName="ToDoApp/ToDoItem.cs" />
-      <File FileName="ToDoApp/ItemContext.cs" />
+      <File FileName="BookInventory/Program.cs" Line="1" Column="1" />
+      <File FileName="MyLibrary/Brain.cs" Line="22" Column="38" NotebookId="1" />
+      <File FileName="MyLibrary/MouthEars.cs" Line="134" Column="18" NotebookId="1" />
+      <File FileName="MyLibrary/Catalog.cs" Line="16" Column="23" NotebookId="1" />
+      <File FileName="MyLibrary/Book.cs" Line="25" Column="13" NotebookId="1" />
+      <File FileName="MyLibrary/Program.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ClassProjects" expanded="True">
-            <Node name="ToDoApp" expanded="True">
-              <Node name="App.cs" selected="True" />
+            <Node name="BookInventory" expanded="True" />
+            <Node name="MyLibrary" expanded="True">
+              <Node name="Brain.cs" selected="True" />
             </Node>
+            <Node name="ToDoApp" expanded="True" />
           </Node>
         </State>
       </Pad>
