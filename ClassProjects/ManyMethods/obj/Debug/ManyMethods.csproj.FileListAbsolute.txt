@@ -8,3 +8,9 @@
 /Users/homeboi/Documents/DevFolder/LCA_CSharp/ClassProjects/ManyMethods/obj/Debug/ManyMethods.csprojAssemblyReference.cache
 /Users/homeboi/Documents/DevFolder/LCA_CSharp/ClassProjects/ManyMethods/obj/Debug/ManyMethods.exe
 /Users/homeboi/Documents/DevFolder/LCA_CSharp/ClassProjects/ManyMethods/obj/Debug/ManyMethods.pdb
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\ManyMethods\bin\Debug\ManyMethods.exe
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\ManyMethods\bin\Debug\ManyMethods.pdb
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\ManyMethods\obj\Debug\ManyMethods.csprojAssemblyReference.cache
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\ManyMethods\obj\Debug\ManyMethods.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\ManyMethods\obj\Debug\ManyMethods.exe
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\ManyMethods\obj\Debug\ManyMethods.pdb
