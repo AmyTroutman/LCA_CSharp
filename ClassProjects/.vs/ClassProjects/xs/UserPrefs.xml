@@ -1,29 +1,32 @@
-﻿<Properties StartupConfiguration="{616E381F-44A9-4069-ACC4-42BF6308DB85}|Default">
+﻿<Properties StartupConfiguration="{A2280558-D1E6-44E7-8803-F525A8E75B5C}|Default">
   <MonoDevelop.Ide.ItemProperties.BookInventory PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.RockPaperScissors PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Gradebook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Points PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.IRentable PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MyLibrary/Brain.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RockPaperScissors/Program.cs">
     <Files>
       <File FileName="ToDoApp/App.cs" Line="70" Column="9" />
-      <File FileName="ToDoApp/ConsoleUtils.cs" Line="57" Column="35" />
-      <File FileName="ToDoApp/ItemRepo.cs" Line="31" Column="14" />
+      <File FileName="ToDoApp/ConsoleUtils.cs" Line="1" Column="1" />
+      <File FileName="ToDoApp/ItemRepo.cs" Line="6" Column="1" />
       <File FileName="ToDoApp/Program.cs" Line="1" Column="1" />
-      <File FileName="BookInventory/Program.cs" Line="1" Column="1" />
-      <File FileName="MyLibrary/Brain.cs" Line="22" Column="38" NotebookId="1" />
-      <File FileName="MyLibrary/MouthEars.cs" Line="134" Column="18" NotebookId="1" />
-      <File FileName="MyLibrary/Catalog.cs" Line="16" Column="23" NotebookId="1" />
-      <File FileName="MyLibrary/Book.cs" Line="25" Column="13" NotebookId="1" />
-      <File FileName="MyLibrary/Program.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="PigLatin/Program.cs" Line="11" Column="6" />
+      <File FileName="RockPaperScissors/Program.cs" Line="19" Column="53" />
+      <File FileName="MyLibrary/Brain.cs" Line="26" Column="38" NotebookId="1" />
+      <File FileName="MyLibrary/MouthEars.cs" NotebookId="1" />
+      <File FileName="MyLibrary/Catalog.cs" NotebookId="1" />
+      <File FileName="MyLibrary/Book.cs" NotebookId="1" />
+      <File FileName="MyLibrary/Program.cs" NotebookId="1" />
+      <File FileName="Checkers/Game.cs" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ClassProjects" expanded="True">
             <Node name="BookInventory" expanded="True" />
-            <Node name="MyLibrary" expanded="True">
-              <Node name="Brain.cs" selected="True" />
+            <Node name="ManyMethods" expanded="True" />
+            <Node name="RockPaperScissors" expanded="True">
+              <Node name="Program.cs" selected="True" />
             </Node>
             <Node name="ToDoApp" expanded="True" />
           </Node>

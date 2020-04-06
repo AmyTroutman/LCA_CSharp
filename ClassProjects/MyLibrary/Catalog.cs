@@ -19,5 +19,23 @@ namespace MyLibrary
             context.Library.Add(newBook);
             context.SaveChanges();
         }
+
+        public List<Book> GetList(string printType)
+        {
+            List<Book> FilterList = new List<Book>().ToList();
+            if (printType == "all")
+            {
+                FilterList = context.Library.ToList();
+            }
+            else if (printType == "author")
+            {
+                FilterList = context.Library.Where(x => x.Author == /*todo*/).ToList();
+            }
+            else if (printType == "genre")
+            {
+                FilterList = context.Library.Where(x => x.Genre == /*todo*/).ToList();
+            }
+            return FilterList;
+        }
     }
 }

@@ -30,13 +30,13 @@ namespace MyLibrary
                         break;
                     case "deleteBook": 
                         PrintLibrary();
-                        MouthEars.DeletePrompt();
-                        MouthEars.DeleteBook();                        
+                        MouthEars.IdPrompt();
+                        Catalog.DeleteBook();                        
                         break;
                     case "updateBook":
                         PrintLibrary();
-                        MouthEars.UpdatePrompt();
-                        MouthEars.UpdateBook();                        
+                        MouthEars.IdPrompt();
+                        Catalog.UpdateBook();                        
                         break;
                     case "sortLibrary":
                         MouthEars.SortPrompt();

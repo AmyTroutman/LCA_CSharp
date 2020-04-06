@@ -11,16 +11,16 @@ namespace RockPaperScissors
         
         public static void Main()
         {
-            Console.WriteLine("Rock, Paper, Scissors!");
-            string yourHand = Console.ReadLine().ToLower();
-            CompareHands(yourHand);
-        }
-
-        public static void CompareHands(string yourHand)
-        {
             //randomly assign a value to myHand from Shapes. 
             Shapes myHand = (Shapes)(new Random()).Next(0, 3);
+            Console.WriteLine("Rock, Paper, Scissors!");
+            string yourHand = Console.ReadLine().ToLower();
+            Console.WriteLine("I choose " + myHand);
+            CompareHands(yourHand, myHand);
+        }
 
+        public static void CompareHands(string yourHand, Shapes myHand)
+        {
             //The swtich! 
             switch (myHand)
             {
@@ -29,18 +29,16 @@ namespace RockPaperScissors
                     if (yourHand == "rock")
                     {
                         //let the player know my choice
-                        Console.WriteLine("I choose " + myHand);
+                        
                         //declare if win, loss, or tie
                         Console.WriteLine("It's a tie!");
                     }
                     else if (yourHand == "paper")
                     {
-                        Console.WriteLine("I choose " + myHand);
                         Console.WriteLine("You win!");
                     }
                     else if (yourHand == "scissors")
                     {
-                        Console.WriteLine("I choose " + myHand);
                         Console.WriteLine("I win!");
                     }
                     break;
@@ -49,17 +47,14 @@ namespace RockPaperScissors
                 case Shapes.Paper:
                     if (yourHand == "rock")
                     {
-                        Console.WriteLine("I choose " + myHand);
                         Console.WriteLine("I win!");
                     }
                     else if (yourHand == "paper")
                     {
-                        Console.WriteLine("I choose " + myHand);
                         Console.WriteLine("It's a tie!");
                     }
                     else if (yourHand == "scissors")
                     {
-                        Console.WriteLine("I choose " + myHand);
                         Console.WriteLine("You win!");
                     }
                     break;
@@ -68,17 +63,14 @@ namespace RockPaperScissors
                 case Shapes.Scissors:
                     if (yourHand == "rock")
                     {
-                        Console.WriteLine("I choose " + myHand);
                         Console.WriteLine("You win!");
                     }
                     else if (yourHand == "paper")
                     {
-                        Console.WriteLine("I choose " + myHand);
                         Console.WriteLine("I win!");
                     }
                     else if (yourHand == "scissors")
                     {
-                        Console.WriteLine("I choose " + myHand);
                         Console.WriteLine("It's a tie!");
                     }
                     break;

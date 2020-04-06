@@ -6,22 +6,21 @@ namespace ManyMethods
     {
         public static void Main(string[] args)
         {
-            hello();
+            Hello();
             Addition();
-            catDog();
-            oddEvent();
-            inches();
-            echo();
-            killGrams();
-            date();
-            age();
-            guess();
+            CatDog();
+            OddEvent();
+            Inches();
+            Echo();
+            KillGrams();
+            Date();
+            Age();
+            Guess();
 
-
-                Console.ReadKey();
+            Console.ReadKey();
         }
 
-        static void hello()
+        static void Hello()
         {
             Console.WriteLine("Please enter your name");
             string name = Console.ReadLine();
@@ -36,9 +35,9 @@ namespace ManyMethods
             int secondNumber = Convert.ToInt32(Console.ReadLine());
             int sum = firstNumber + secondNumber;
             Console.WriteLine("The sum of your numbers is " + sum);
-        }
+        }      
 
-        static void catDog()
+        static void CatDog()
         {
             Console.WriteLine("Do you like cats or dogs?");
             string answer = Console.ReadLine().ToLower();
@@ -52,7 +51,7 @@ namespace ManyMethods
             }
         }
 
-        static void oddEvent()
+        static void OddEvent()
         {
             Console.WriteLine("Give me a number and I'll tell you if it's odd or even!");
             int number = Convert.ToInt32(Console.ReadLine());
@@ -66,14 +65,15 @@ namespace ManyMethods
             }
         }
 
-        static void inches()
+        static void Inches()
         {
+            //todo: sdflkjs
             Console.WriteLine("Give me your height in feet and I'll convert it to inches.");
             int height = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(height * 12);
         }
 
-        static void echo()
+        static void Echo()
         {
             Console.WriteLine("What's your favorite thing?!");
             string fav = Console.ReadLine();
@@ -82,19 +82,19 @@ namespace ManyMethods
             Console.WriteLine(fav.ToLower());
         }
 
-        static void killGrams()
+        static void KillGrams()
         {
             Console.WriteLine("Give me a weight in pounds and I'll convert it to kilograms!");
             int pounds = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(pounds / 2.2046);
         }
 
-        static void date()
+        static void Date()
         {
             Console.WriteLine(DateTime.Today.ToString("MM-dd-yyyy"));
         }
 
-        static void age()
+        static void Age()
         {
             Console.WriteLine("What year were you born?");
             int year = Convert.ToInt32(Console.ReadLine());
@@ -103,7 +103,7 @@ namespace ManyMethods
             Console.WriteLine("You are " + yourAge + " years old!");
         }
 
-        static void guess()
+        static void Guess()
         {
             Console.WriteLine("Guess the secret word!");
             string word = Console.ReadLine().ToLower();

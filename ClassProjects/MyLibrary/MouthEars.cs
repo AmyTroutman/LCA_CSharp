@@ -136,9 +136,9 @@ namespace MyLibrary
             return genre;
         }
 
-        public static int DeletePrompt()
+        public static int IdPrompt()
         {
-            Console.WriteLine("Enter the Id of the book you would like to remove from the library:");
+            Console.WriteLine("Enter the Id of the book you would like to modify:");
             string input = Console.ReadLine().Trim();
             Int32.TryParse(input, out int idBook);
             return idBook;
