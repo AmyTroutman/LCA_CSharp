@@ -2,23 +2,59 @@
 
 namespace RockPaperScissors
 {
-    //my array for the random picker to pick from
+    //my enum for the random picker to pick from
     public enum Shapes { Rock, Paper, Scissors }
 
 
     class MainClass
     {
-        
+        //da driver
         public static void Main()
         {
-            //randomly assign a value to myHand from Shapes. 
-            Shapes myHand = (Shapes)(new Random()).Next(0, 3);
-            Console.WriteLine("Rock, Paper, Scissors!");
-            string yourHand = Console.ReadLine().ToLower();
-            Console.WriteLine("I choose " + myHand);
-            CompareHands(yourHand, myHand);
+            CompareHands(YourHand(), MyHand());
+            PlayAgain();
         }
 
+        //Randomly assigns a shape for the computer to throw
+        public static Shapes MyHand()
+        {
+            Shapes myHand = (Shapes)(new Random()).Next(0, 3);
+            Console.WriteLine("I choose " + myHand);
+            return myHand;
+        }
+
+        //Gets input from user, checks and returns if valid, else prompts for valid input.
+        public static string YourHand()
+        {
+            bool valid;
+            Console.WriteLine("Rock, Paper, Scissors!");
+            string yourHand = Console.ReadLine().ToLower();
+            do
+            {
+                
+                if(yourHand == "rock")
+                {
+                    valid = true;
+                }
+                else if(yourHand == "paper")
+                {
+                    valid = true;
+                }
+                else if(yourHand == "scissors")
+                {
+                    valid = true;
+                }
+                else
+                {
+                    Console.WriteLine("Please enter rock or paper or scissors.");
+                    yourHand = Console.ReadLine().ToLower();
+                    valid = false;
+                }
+            } while (valid == false);
+            return yourHand;
+        }
+
+        //Runs yourHand and myHand through a switch to compare and check for winner
         public static void CompareHands(string yourHand, Shapes myHand)
         {
             //The swtich! 
@@ -78,9 +114,11 @@ namespace RockPaperScissors
                     Console.WriteLine(myHand);
                     break;
             }
+        }
 
-            //do you want to play again? Because who doesn't want to play again??
-            
+        //do you want to play again? Because who doesn't want to play again??
+        public static void PlayAgain()
+        {
             Console.WriteLine("Do you want to play another hand? y/n");
             string answer = Console.ReadLine().ToLower();
             if (answer == "y")
