@@ -46,6 +46,7 @@ namespace ticTacToe
             Console.ReadLine();
         }
 
+      
         public static void GetInput()
         {
             Console.WriteLine("Player " + playerTurn);
@@ -192,304 +193,150 @@ namespace ticTacToe
             // having figured out win and tie checker bools, I think I
             // know how to do these as bool instead of void, but it's Sunday
             //and I still have to fix Rock Paper Scissors.
-            if (board[0][0] == "X")
+            if (board[0][0] =="X" && board[0][1] =="X" && board[0][2] == "X")
             {
-                if (board[0][1] == "X")
-                {
-                    if (board[0][2] == "X")
-                    {
-                        win = true;
-                        winner = "X";
-                        //Console.Write(winner + " is the winner!");
-                    }
-                    else
-                    {
-                        win = false;
-                    }
-                }
-                else
-                {
-                    win = false;
-                }
+                win = true;
+                winner = "X";
+                //Console.Write(winner + " is the winner!");
             }
             else
             {
                 win = false;
             }
-            if (board[1][0] == "X")
+            if (board[1][0] == "X" && board[1][1] =="X" && board[1][2] == "X")
             {
-                if (board[1][1] == "X")
-                {
-                    if (board[1][2] == "X")
-                    {
-                        win = true;
-                        winner = "X";
-                        //Console.Write(winner + " is the winner!");
-                    }
-                    else
-                    {
-                        win = false;
-
-                    }
-                }
-                else
-                {
-                    win = false;
-                }
-            }
-            else
-            {
-                win = false;
-            }
-            if (board[2][0] == "X")
-            {
-                if (board[2][1] == "X")
-                {
-                    if (board[2][2] == "X")
-                    {
-                        win = true;
-                        winner = "X";
-                       // Console.Write(winner + " is the winner!");
-                    }
-                    else
-                    {
-                        win = false;
-                    }
-                }
-                else
-                {
-                    win = false;
-                }
-            }
-            else
-            {
-                win = false;
-            }
-            if (board[0][0] == "O")
-            {
-                if (board[0][1] == "O")
-                {
-                    if (board[0][2] == "O")
-                    {
-                        win = true;
-                        winner = "O";
-                        //Console.Write(winner + " is the winner!");
-                    }
-                    else
-                    {
-                        win = false;
-                    }
-                }
-                else
-                {
-                    win = false;
-                }
-            }
-            else
-            {
-                win = false;
-            }
-            if (board[1][0] == "O")
-            {
-                if (board[1][1] == "O")
-                {
-                    if (board[1][2] == "O")
-                    {
-                        win = true;
-                        winner = "O";
-                        //Console.Write(winner + " is the winner!");
-                    }
-                    else
-                    {
-                        win = false;
-                    }
-                }
-                else
-                {
-                    win = false;
-                }
-            }
-            else
-            {
-                win = false;
-            }
-            if (board[2][0] == "O")
-            {
-                if (board[2][1] == "O")
-                {
-                    if (board[2][2] == "O")
-                    {
-                        win = true;
-                        winner = "O";
-                        //Console.Write(winner + " is the winner!");
-                    }
-                    else
-                    {
-                        win = false;
-                    }
-                }
-                else
-                {
-                    win = false;
-                }
+                win = true;
+                winner = "X";
+                //Console.Write(winner + " is the winner!");
             }
             else
             {
                 win = false;
 
             }
+            if (board[2][0] == "X" && board[2][1] == "X" && board[2][2] == "X")
+            {
+                win = true;
+                winner = "X";
+                // Console.Write(winner + " is the winner!");
+            }
+            else
+            {
+                win = false;
+            }
+            
+            if (board[0][0] == "O" && board[0][1] == "O" && board[0][2] == "O")
+            {
+                win = true;
+                winner = "O";
+                //Console.Write(winner + " is the winner!");
+            }
+            else
+            {
+                win = false;
+            }
+          
+            if (board[1][0] == "O" && board[1][1] == "O" && board[1][2] == "O")
+            {
+                win = true;
+                winner = "O";
+                //Console.Write(winner + " is the winner!");
+            }
+            else
+            {
+                win = false;
+            }
+           
+            if (board[2][0] == "O" && board[2][1] == "O" && board[2][2] == "O")
+            {
+                win = true;
+                winner = "O";
+                //Console.Write(winner + " is the winner!");
+            }
+            else
+            {
+                win = false;
+            }
+            
         }
 
         public static void VerticalWin()
         {
             // your code goes here
 
-            if (board[0][0] == "X")
+            if (board[0][0] == "X" && board[1][0] == "X" && board[2][0] == "X")
             {
-                if (board[1][0] == "X")
-                {
-                    if (board[2][0] == "X")
-                    {
-                        win = true;
-                        winner = "X";
-                        //Console.Write(winner + " is the winner!");
-                    }
-                    else
-                    {
-                        win = false;
-                    }
-                }
-                else
-                {
-                    win = false;
-                }
+               
+                win = true;
+                winner = "X";
+                //Console.Write(winner + " is the winner!");
             }
             else
             {
                 win = false;
             }
-            if (board[0][1] == "X")
+              
+            if (board[0][1] == "X" && board[1][1] == "X" && board[2][1] == "X")
             {
-                if (board[1][1] == "X")
-                {
-                    if (board[2][1] == "X")
-                    {
-                        win = true;
-                        winner = "X";
-                        //Console.Write(winner + " is the winner!");
-                    }
-                    else
-                    {
-                        win = false;
-
-                    }
-                }
-                else
-                {
-                    win = false;
-                }
-            }
-            else
-            {
-                win = false;
-            }
-            if (board[0][2] == "X")
-            {
-                if (board[1][2] == "X")
-                {
-                    if (board[2][2] == "X")
-                    {
-                        win = true;
-                        winner = "X";
-                        //Console.Write(winner + " is the winner!");
-                    }
-                    else
-                    {
-                        win = false;
-                    }
-                }
-                else
-                {
-                    win = false;
-                }
-            }
-            else
-            {
-                win = false;
-            }
-            if (board[0][0] == "O")
-            {
-                if (board[1][0] == "O")
-                {
-                    if (board[2][0] == "O")
-                    {
-                        win = true;
-                        winner = "O";
-                        //Console.Write(winner + " is the winner!");
-                    }
-                    else
-                    {
-                        win = false;
-                    }
-                }
-                else
-                {
-                    win = false;
-                }
-            }
-            else
-            {
-                win = false;
-            }
-            if (board[0][1] == "O")
-            {
-                if (board[1][1] == "O")
-                {
-                    if (board[2][1] == "O")
-                    {
-                        win = true;
-                        winner = "O";
-                        //Console.Write(winner + " is the winner!");
-                    }
-                    else
-                    {
-                        win = false;
-                    }
-                }
-                else
-                {
-                    win = false;
-                }
-            }
-            else
-            {
-                win = false;
-            }
-            if (board[0][2] == "O")
-            {
-                if (board[1][2] == "O")
-                {
-                    if (board[2][2] == "O")
-                    {
-                        win = true;
-                        winner = "O";
-                        //Console.Write(winner + " is the winner!");
-                    }
-                    else
-                    {
-                        win = false;
-                    }
-                }
-                else
-                {
-                    win = false;
-                }
+              
+                win = true;
+                winner = "X";
+                //Console.Write(winner + " is the winner!");
             }
             else
             {
                 win = false;
 
             }
+              
+            if (board[0][2] == "X" && board[1][2] == "X" && board[2][2] == "X")
+            {
+               
+                win = true;
+                winner = "X";
+                //Console.Write(winner + " is the winner!");
+            }
+            else
+            {
+                win = false;
+            }
+                
+            if (board[0][0] == "O" && board[1][0] == "O" && board[2][0] == "O")
+            {
+              
+                win = true;
+                winner = "O";
+                //Console.Write(winner + " is the winner!");
+            }
+            else
+            {
+                win = false;
+            }
+              
+            if (board[0][1] == "O" && board[1][1] == "O" && board[2][1] == "O")
+            {
+               
+                win = true;
+                winner = "O";
+                //Console.Write(winner + " is the winner!");
+            }
+            else
+            {
+                win = false;
+            }
+                
+            if (board[0][2] == "O" && board[1][2] == "X" && board[2][2] == "X")
+            {
+              
+                win = true;
+                winner = "O";
+                //Console.Write(winner + " is the winner!");
+            }
+            else
+            {
+                win = false;
+            }
+           
         }
 
         public static void DiagonalWin()
@@ -606,8 +453,8 @@ namespace ticTacToe
             Console.WriteLine("1 " + String.Join("|", board[1]));
             Console.WriteLine("  -----");
             Console.WriteLine("2 " + String.Join("|", board[2]));
+          
         }
-
     }
 }
 

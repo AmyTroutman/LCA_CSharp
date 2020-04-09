@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoApp", "ToDoApp\ToDoApp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLibrary", "MyLibrary\MyLibrary.csproj", "{6FCF3FF1-9029-4DBC-9FF8-39E2C7D345E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{EF9BD2F0-594A-4CFC-AB5C-888C5248778C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -180,6 +182,14 @@ Global
 		{6FCF3FF1-9029-4DBC-9FF8-39E2C7D345E0}.Release|anycpu.Build.0 = Release|Any CPU
 		{6FCF3FF1-9029-4DBC-9FF8-39E2C7D345E0}.Release|x86.ActiveCfg = Release|Any CPU
 		{6FCF3FF1-9029-4DBC-9FF8-39E2C7D345E0}.Release|x86.Build.0 = Release|Any CPU
+		{EF9BD2F0-594A-4CFC-AB5C-888C5248778C}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{EF9BD2F0-594A-4CFC-AB5C-888C5248778C}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{EF9BD2F0-594A-4CFC-AB5C-888C5248778C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EF9BD2F0-594A-4CFC-AB5C-888C5248778C}.Debug|x86.Build.0 = Debug|Any CPU
+		{EF9BD2F0-594A-4CFC-AB5C-888C5248778C}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{EF9BD2F0-594A-4CFC-AB5C-888C5248778C}.Release|anycpu.Build.0 = Release|Any CPU
+		{EF9BD2F0-594A-4CFC-AB5C-888C5248778C}.Release|x86.ActiveCfg = Release|Any CPU
+		{EF9BD2F0-594A-4CFC-AB5C-888C5248778C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
