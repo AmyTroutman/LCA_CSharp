@@ -1,0 +1,6 @@
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\ticTacToe\bin\Debug\ticTacToe.exe
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\ticTacToe\bin\Debug\ticTacToe.pdb
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\ticTacToe\obj\anycpu\Debug\ticTacToe.csprojAssemblyReference.cache
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\ticTacToe\obj\anycpu\Debug\ticTacToe.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\ticTacToe\obj\anycpu\Debug\ticTacToe.exe
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\ticTacToe\obj\anycpu\Debug\ticTacToe.pdb
