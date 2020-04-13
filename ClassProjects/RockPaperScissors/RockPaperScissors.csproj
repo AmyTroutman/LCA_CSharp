@@ -28,6 +28,9 @@
     <ExternalConsole>true</ExternalConsole>
     <IntermediateOutputPath>obj\anycpu\Release</IntermediateOutputPath>
   </PropertyGroup>
+<!-- Needed for Visual Studio for Mac to recognize the macOS project configurations. -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug_macOS|AnyCPU' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release_macOS|AnyCPU' " />
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>

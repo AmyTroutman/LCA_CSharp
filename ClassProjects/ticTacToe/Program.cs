@@ -6,14 +6,14 @@ namespace ticTacToe
     {
 
         public static string playerTurn = "X";
-        public static string[][] board = new string[][]
+        public static string[][] board = new string [][]
         {
                 new string[] {" ", " ", " "},
                 new string[] {" ", " ", " "},
-                new string[] {" ", " ", " "}
+                new string[] {" ", " ", " "},                   
         };
-        public static int row;
-        public static int column;
+        public static int x;
+        public static int y;
         public static bool win;
         public static string winner;
 
@@ -26,7 +26,7 @@ namespace ticTacToe
             {
                 DrawBoard();
                 GetInput();
-                PlaceMark(row, column);
+                PlaceMark(x, y);
             } while (!CheckForWin(win) && !CheckForTie());
 
             if (CheckForTie() == true)
@@ -52,9 +52,9 @@ namespace ticTacToe
             Console.WriteLine("Player " + playerTurn);
             Console.WriteLine("Enter Row:");
 
-            row = int.Parse(Console.ReadLine());
+            x = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter Column:");
-            column = int.Parse(Console.ReadLine());
+            y = int.Parse(Console.ReadLine());
         }
 
         public static void PlaceMark(int row, int column)
