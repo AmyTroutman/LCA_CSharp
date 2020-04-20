@@ -1,0 +1,6 @@
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\TowersOfHanoi\bin\Debug\TowersOfHanoi.exe
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\TowersOfHanoi\bin\Debug\TowersOfHanoi.pdb
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\TowersOfHanoi\obj\anycpu\Debug\TowersOfHanoi.csprojAssemblyReference.cache
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\TowersOfHanoi\obj\anycpu\Debug\TowersOfHanoi.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\TowersOfHanoi\obj\anycpu\Debug\TowersOfHanoi.exe
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\TowersOfHanoi\obj\anycpu\Debug\TowersOfHanoi.pdb

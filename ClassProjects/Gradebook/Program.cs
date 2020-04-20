@@ -34,14 +34,15 @@ namespace Gradebook
                     {
                         studentRecord.Add(student, newGrades);
                     }
-                    catch (ArgumentException)
+                    catch (ArgumentException ex)
                     {
                         Console.WriteLine("Student already exists.");
+                        Console.WriteLine(ex.Message);
                     }
 
                 }
             }
-            while (hasQuit == false);
+            while (!hasQuit);
             PrintGradebook(studentRecord);
         }
 
@@ -53,7 +54,6 @@ namespace Gradebook
                 int lowest = 100;
                 int average = 0;
                 int sum = 0;
-                //int average = 0;
 
                 //first, split the values into an array, split on " "
                 string[] gradeArray = grades.Split(' ');
@@ -92,9 +92,10 @@ namespace Gradebook
                 //Console.WriteLine(processedGrades);
                 newGrades = "Highest grade: " + highest + ". Lowest grade: " + lowest + ". Average grade: " + average + ".";
             }
-            catch
+            catch (ArgumentException ex)
             {
                 Console.WriteLine("I think one of those wasn't a number!");
+                Console.WriteLine(ex.Message);
             }
         }
 
@@ -107,6 +108,16 @@ namespace Gradebook
                 Console.WriteLine("{0} {1}",
                     kvp.Key, kvp.Value);
             }
+
+          /*  foreach (var item in studentRecord)
+            {
+                Console.WriteLine($"{item.Key}\n");
+                int[] singleGrades = Array.ConvertAll<string, int>(studentRecord.Values)
+                foreach (var grade in studentRecord.Values)
+                {
+                    Console.WriteLine($"{grades} ");
+                }
+            }*/
 
         }
     }

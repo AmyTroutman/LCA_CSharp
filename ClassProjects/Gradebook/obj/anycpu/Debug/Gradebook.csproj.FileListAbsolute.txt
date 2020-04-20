@@ -1,0 +1,6 @@
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\Gradebook\bin\Debug\Gradebook.exe
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\Gradebook\bin\Debug\Gradebook.pdb
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\Gradebook\obj\anycpu\Debug\Gradebook.csprojAssemblyReference.cache
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\Gradebook\obj\anycpu\Debug\Gradebook.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\Gradebook\obj\anycpu\Debug\Gradebook.exe
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\Gradebook\obj\anycpu\Debug\Gradebook.pdb

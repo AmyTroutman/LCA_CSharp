@@ -14,16 +14,15 @@ namespace Mastermind
         public static void Main()
         {
             
-            Console.WriteLine("Let's play Mastermind! I've chosen two colors. Guess the right colors in the right order and you win!");
+            Console.WriteLine("Let's play Mastermind! I've chosen two of these colors: green, blue, orange. Guess the right colors in the right order and you win!");
 
             //Answer out here so it doesn't make a new password with every loop!
             Answer(password);
             do
             {
-                
                 Input(guess);
                 Match(password, guess);
-            } while (isWin == false);
+            } while (!isWin);
             Console.ReadKey();
 
         }
@@ -43,8 +42,6 @@ namespace Mastermind
             int randomNumber = generator.Next(0, 3);
             password[0] = Colors[randomNumber];
             password[1] = Colors[randomNumber];
-           
-            
         }
         public static void Match(string[] password, string[] guess)
         {

@@ -24,7 +24,6 @@ namespace PigLatin
             
             foreach (string englishWord in splitSentence)
             {
-
                 //grab first letter
                 string firstLetter = englishWord.Substring(0, 1);
 
@@ -63,10 +62,10 @@ namespace PigLatin
                     //Builds the pigLatin word, because reasons. 
                     string pigWord = clipWord + consonants + "ay";
                     Console.WriteLine(pigWord);
-
                 }
 
             }
+
             //do you want to play again? Because who doesn't want to play again??
             Console.WriteLine("Do you want to translate another word? y/n");
             string answer = Console.ReadLine().ToLower();
