@@ -9,11 +9,9 @@ namespace Mastermind
         public static string[] guess = new string[2];
         public static string[] password = new string[2];
         public static bool isWin = false;
-        
 
         public static void Main()
         {
-            
             Console.WriteLine("Let's play Mastermind! I've chosen two of these colors: green, blue, orange. Guess the right colors in the right order and you win!");
 
             //Answer out here so it doesn't make a new password with every loop!
@@ -24,7 +22,6 @@ namespace Mastermind
                 Match(password, guess);
             } while (!isWin);
             Console.ReadKey();
-
         }
         public static void Input(string[] guess)
         {
@@ -55,8 +52,6 @@ namespace Mastermind
                 if (password[i] == guess[i]) posCorrect++;
             }
            
-            
-
             if (posCorrect == 2 && colorCorrect == 2)
             {
                 isWin = true;
@@ -75,10 +70,5 @@ namespace Mastermind
                 Console.WriteLine("Your hint: " + posCorrect + "-" + colorCorrect);
             }
         }
-
-        
-
     }
-
-
 }

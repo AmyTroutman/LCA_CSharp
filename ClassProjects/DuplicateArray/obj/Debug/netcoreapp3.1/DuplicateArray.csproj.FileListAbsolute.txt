@@ -10,3 +10,4 @@ C:\Users\User\source\repos\LCA_CSharp\ClassProjects\DuplicateArray\obj\Debug\net
 C:\Users\User\source\repos\LCA_CSharp\ClassProjects\DuplicateArray\obj\Debug\netcoreapp3.1\DuplicateArray.dll
 C:\Users\User\source\repos\LCA_CSharp\ClassProjects\DuplicateArray\obj\Debug\netcoreapp3.1\DuplicateArray.pdb
 C:\Users\User\source\repos\LCA_CSharp\ClassProjects\DuplicateArray\obj\Debug\netcoreapp3.1\DuplicateArray.genruntimeconfig.cache
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\DuplicateArray\obj\Debug\netcoreapp3.1\DuplicateArray.csprojAssemblyReference.cache

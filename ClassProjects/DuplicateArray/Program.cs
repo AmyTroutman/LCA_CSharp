@@ -6,23 +6,37 @@ namespace DuplicateArray
     {
         static void Main(string[] args)
         {
-            int[] ogArray = new int[] { 1, 2, 3, 4, 5 };
-            int[] newArray = new int[ogArray.Length*2];
-            for (int i = 0; i < newArray.Length; i++)
+            
+            string word1 = "seat";
+            string word2 = "lollipop";
+            string word3 = "house";
+            string word4 = "hello";
+            stringCheck(word1);
+            stringCheck(word2);
+            stringCheck(word3);
+            stringCheck(word4);
+        }
+
+        
+        public static void stringCheck(string word)
+        {
+            int temp =-1;
+            for (int i = 0; i < word.Length; i++)
             {
-                if(i < ogArray.Length)
+                for (int j = i + 1; j < word.Length; j++)
                 {
-                    newArray[i] = ogArray[i];
+                    if (word[i] == word[j])
+                    {
+                        temp = i;
+                        break;
+                    }
                 }
-                else
+                if( temp != -1)
                 {
-                    newArray[i] = ogArray[i - 5];
+                    break;
                 }
             }
-            foreach(var i in newArray)
-            {
-                Console.WriteLine(newArray[i]);
-            }
+            Console.WriteLine(temp);
         }
     }
 }
