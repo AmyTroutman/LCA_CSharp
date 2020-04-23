@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\DuplicateArray\bin\Debug\netcoreapp3.1\DuplicateArray.exe
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\DuplicateArray\bin\Debug\netcoreapp3.1\DuplicateArray.deps.json
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\DuplicateArray\bin\Debug\netcoreapp3.1\DuplicateArray.runtimeconfig.json
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\DuplicateArray\bin\Debug\netcoreapp3.1\DuplicateArray.runtimeconfig.dev.json
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\DuplicateArray\bin\Debug\netcoreapp3.1\DuplicateArray.dll
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\DuplicateArray\bin\Debug\netcoreapp3.1\DuplicateArray.pdb
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\DuplicateArray\obj\Debug\netcoreapp3.1\DuplicateArray.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\DuplicateArray\obj\Debug\netcoreapp3.1\DuplicateArray.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\DuplicateArray\obj\Debug\netcoreapp3.1\DuplicateArray.AssemblyInfo.cs
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\DuplicateArray\obj\Debug\netcoreapp3.1\DuplicateArray.dll
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\DuplicateArray\obj\Debug\netcoreapp3.1\DuplicateArray.pdb
+C:\Users\User\source\repos\LCA_CSharp\ClassProjects\DuplicateArray\obj\Debug\netcoreapp3.1\DuplicateArray.genruntimeconfig.cache

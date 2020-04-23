@@ -42,7 +42,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "racecar", "racecar\racecar.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MM2", "MM2\MM2.csproj", "{20E5CA2C-72F6-44E7-8563-52E53CA4CFCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestWord", "LongestWord\LongestWord.csproj", "{6AB0D81A-28C3-4001-A3B7-E101A321A06A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LongestWord", "LongestWord\LongestWord.csproj", "{6AB0D81A-28C3-4001-A3B7-E101A321A06A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuplicateArray", "DuplicateArray\DuplicateArray.csproj", "{ED230E44-631F-4086-89F6-086588A13D39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -220,6 +222,14 @@ Global
 		{6AB0D81A-28C3-4001-A3B7-E101A321A06A}.Release|anycpu.Build.0 = Release|Any CPU
 		{6AB0D81A-28C3-4001-A3B7-E101A321A06A}.Release|x86.ActiveCfg = Release|Any CPU
 		{6AB0D81A-28C3-4001-A3B7-E101A321A06A}.Release|x86.Build.0 = Release|Any CPU
+		{ED230E44-631F-4086-89F6-086588A13D39}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{ED230E44-631F-4086-89F6-086588A13D39}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{ED230E44-631F-4086-89F6-086588A13D39}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ED230E44-631F-4086-89F6-086588A13D39}.Debug|x86.Build.0 = Debug|Any CPU
+		{ED230E44-631F-4086-89F6-086588A13D39}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{ED230E44-631F-4086-89F6-086588A13D39}.Release|anycpu.Build.0 = Release|Any CPU
+		{ED230E44-631F-4086-89F6-086588A13D39}.Release|x86.ActiveCfg = Release|Any CPU
+		{ED230E44-631F-4086-89F6-086588A13D39}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
